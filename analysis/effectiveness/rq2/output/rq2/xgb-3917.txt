@@ -1,0 +1,53 @@
+Problem: xgb-3917
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB_HEBO_Hyperband
+CMAES → CMAES_irace
+DE → DE
+DEHB → DEHB_PSO_ParamILS_SA_SMAC
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → BOHB_HEBO_Hyperband
+HillClimbing → HillClimbing
+Hyperband → BOHB_HEBO_Hyperband
+PSO → DEHB_PSO_ParamILS_SA_SMAC
+ParamILS → DEHB_PSO_ParamILS_SA_SMAC
+RandomSearch → RandomSearch
+SA → DEHB_PSO_ParamILS_SA_SMAC
+SMAC → DEHB_PSO_ParamILS_SA_SMAC
+UQGuided → UQGuided
+irace → CMAES_irace
+
+Statistics:
+                   optimizer_name    optimizer_name     mean      std      min      max
+0                RandomSearch  RandomSearch 0.002667 0.004498 0.000000 0.010000
+1                          DE            DE 0.003333 0.004795 0.000000 0.010000
+2                         GGA           GGA 0.004000 0.004983 0.000000 0.010000
+3                          GA            GA 0.005000 0.005085 0.000000 0.010000
+4                 CMAES_irace         CMAES 0.005333 0.005074 0.000000 0.010000
+5         BOHB_HEBO_Hyperband          BOHB 0.005667 0.005040 0.000000 0.010000
+6                          ES            ES 0.006000 0.004983 0.000000 0.010000
+7   DEHB_PSO_ParamILS_SA_SMAC          DEHB 0.006667 0.004795 0.000000 0.010000
+8                    UQGuided      UQGuided 0.007000 0.004661 0.000000 0.010000
+9                         ACO           ACO 0.008000 0.004842 0.000000 0.020000
+10                       HABO          HABO 0.008667 0.003457 0.000000 0.010000
+11               HillClimbing  HillClimbing 0.009000 0.004807 0.000000 0.020000
+12                         BO            BO 0.011667 0.005307 0.000000 0.020000
+
+Scott-Knott result:
+
+Groups:
+             RandomSearch                        DE                       GGA 
+                        1                         1                         1 
+                       GA               CMAES_irace       BOHB_HEBO_Hyperband 
+                        2                         3                         4 
+                       ES DEHB_PSO_ParamILS_SA_SMAC                  UQGuided 
+                        4                         4                         5 
+                      ACO                      HABO              HillClimbing 
+                        5                         6                         6 
+                       BO 
+                        6 

@@ -1,0 +1,60 @@
+Problem: MariaDB
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name      mean      std       min       max
+0          FLASH         FLASH 49.166736 1.941965 46.492660 52.265020
+1             ES            ES 49.363351 2.053154 46.492660 53.094520
+2      OtterTune     OtterTune 49.513677 1.851208 46.492660 52.731880
+3            PSO           PSO 49.568242 2.240489 46.492660 52.612860
+4         ATConf        ATConf 49.821405 1.547771 46.492660 52.195980
+5             SA            SA 49.901659 2.230452 46.492660 52.990140
+6           SWAY          SWAY 50.180329 1.731884 46.551480 52.713560
+7            ACO           ACO 50.216212 1.884191 46.492660 52.715060
+8    PromiseTune   PromiseTune 50.307012 2.268706 46.492660 53.448240
+9          ConEx         ConEx 50.347982 1.868833 46.492660 52.908340
+10         CMAES         CMAES 50.623819 1.603006 46.551480 52.686540
+11            GA            GA 50.821445 1.973335 46.492660 53.088640
+12  RandomSearch  RandomSearch 50.911895 1.152075 49.072440 52.981840
+13    BestConfig    BestConfig 51.143962 1.265030 49.072440 53.347980
+14       Tuneful       Tuneful 51.193707 2.039172 46.492660 55.800300
+15          BOCA          BOCA 51.194287 1.606946 46.551480 52.981840
+16      ROBOTune      ROBOTune 51.240384 0.976521 46.551480 52.702680
+17            DE            DE 51.591979 1.656591 46.891120 53.622640
+18  HillClimbing  HillClimbing 52.530873 2.255131 46.492660 59.996800
+19            BO            BO 52.740613 1.318976 50.246880 55.732920
+20       ResTune       ResTune 52.870364 1.532819 48.575080 55.357600
+
+Scott-Knott result:
+
+Groups:
+       FLASH           ES    OtterTune          PSO       ATConf           SA 
+           1            1            2            2            2            3 
+        SWAY          ACO  PromiseTune        ConEx        CMAES           GA 
+           3            3            3            4            4            4 
+RandomSearch   BestConfig      Tuneful         BOCA     ROBOTune           DE 
+           5            5            5            5            6            7 
+HillClimbing           BO      ResTune 
+           8            9            9 

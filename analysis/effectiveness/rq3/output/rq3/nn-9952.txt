@@ -1,0 +1,88 @@
+Problem: nn-9952
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf_Hyperband
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES_DEHB
+ConEx → ConEx_irace
+DE → DE
+DEHB → CMAES_DEHB
+ES → ES
+FLASH → FLASH_HEBO_OtterTune_SMAC_Tuneful
+GA → GA
+GGA → GGA_SA
+HABO → HABO
+HEBO → FLASH_HEBO_OtterTune_SMAC_Tuneful
+HillClimbing → HillClimbing
+Hyperband → ATConf_Hyperband
+OtterTune → FLASH_HEBO_OtterTune_SMAC_Tuneful
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → GGA_SA
+SMAC → FLASH_HEBO_OtterTune_SMAC_Tuneful
+SWAY → SWAY
+Tuneful → FLASH_HEBO_OtterTune_SMAC_Tuneful
+UQGuided → UQGuided
+irace → ConEx_irace
+
+Statistics:
+                           optimizer_name    optimizer_name     mean      std      min      max
+0   FLASH_HEBO_OtterTune_SMAC_Tuneful         FLASH 0.000000 0.000000 0.000000 0.000000
+1                                BOHB          BOHB 0.000333 0.001826 0.000000 0.010000
+2                            ROBOTune      ROBOTune 0.000333 0.001826 0.000000 0.010000
+3                          CMAES_DEHB         CMAES 0.000667 0.002537 0.000000 0.010000
+4                                  ES            ES 0.000667 0.002537 0.000000 0.010000
+5                                  GA            GA 0.001333 0.003457 0.000000 0.010000
+6                         PromiseTune   PromiseTune 0.001667 0.003790 0.000000 0.010000
+7                    ATConf_Hyperband        ATConf 0.002000 0.004068 0.000000 0.010000
+8                         ConEx_irace         ConEx 0.002333 0.004302 0.000000 0.010000
+9                          BestConfig    BestConfig 0.003667 0.004901 0.000000 0.010000
+10                                PSO           PSO 0.004000 0.005632 0.000000 0.020000
+11                       RandomSearch  RandomSearch 0.004333 0.005040 0.000000 0.010000
+12                           UQGuided      UQGuided 0.004667 0.005074 0.000000 0.010000
+13                             GGA_SA           GGA 0.005000 0.005085 0.000000 0.010000
+14                           ParamILS      ParamILS 0.005000 0.005724 0.000000 0.020000
+15                                 DE            DE 0.005333 0.005074 0.000000 0.010000
+16                                ACO           ACO 0.005667 0.006789 0.000000 0.030000
+17                               BOCA          BOCA 0.006000 0.004983 0.000000 0.010000
+18                               SWAY          SWAY 0.006333 0.004901 0.000000 0.010000
+19                               HABO          HABO 0.006333 0.005561 0.000000 0.020000
+20                       HillClimbing  HillClimbing 0.008000 0.008469 0.000000 0.040000
+21                            ResTune       ResTune 0.016333 0.008503 0.000000 0.040000
+22                                 BO            BO 0.019667 0.012726 0.000000 0.050000
+
+Scott-Knott result:
+
+Groups:
+FLASH_HEBO_OtterTune_SMAC_Tuneful                              BOHB 
+                                1                                 1 
+                         ROBOTune                        CMAES_DEHB 
+                                1                                 1 
+                               ES                                GA 
+                                1                                 2 
+                      PromiseTune                  ATConf_Hyperband 
+                                2                                 2 
+                      ConEx_irace                        BestConfig 
+                                2                                 3 
+                              PSO                      RandomSearch 
+                                3                                 3 
+                         UQGuided                            GGA_SA 
+                                3                                 3 
+                         ParamILS                                DE 
+                                4                                 4 
+                              ACO                              BOCA 
+                                5                                 5 
+                             SWAY                              HABO 
+                                5                                 5 
+                     HillClimbing                           ResTune 
+                                6                                 7 
+                               BO 
+                                7 

@@ -1,0 +1,60 @@
+Problem: OpenVPN
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name     mean       std      min       max
+0   HillClimbing  HillClimbing 0.601926  1.113248 0.016667  4.500000
+1      OtterTune     OtterTune 0.825139  1.700207 0.024876  7.000000
+2         ATConf        ATConf 0.828581  1.645753 0.024876  8.000000
+3             SA            SA 1.165299  2.527087 0.019900 12.285714
+4            PSO           PSO 1.280237  2.590302 0.024876 12.000000
+5        ResTune       ResTune 1.339754  2.430185 0.015228 11.000000
+6    PromiseTune   PromiseTune 1.497998  2.971979 0.055556 12.000000
+7             ES            ES 1.505707  3.641192 0.024876 16.000000
+8     BestConfig    BestConfig 1.631688  3.509072 0.014925 15.500000
+9          CMAES         CMAES 1.691278  3.494306 0.022222 15.500000
+10         FLASH         FLASH 1.760673  4.141263 0.024876 18.000000
+11       Tuneful       Tuneful 1.787183  4.179326 0.011111 16.500000
+12            DE            DE 1.964086  4.589431 0.024876 22.500000
+13         ConEx         ConEx 2.213322  4.445219 0.024876 18.000000
+14  RandomSearch  RandomSearch 2.300359  4.569628 0.024876 18.000000
+15            GA            GA 2.825234  9.377562 0.024876 51.000000
+16           ACO           ACO 3.082747  8.921358 0.015038 47.000000
+17            BO            BO 3.216751 14.416159 0.024876 79.500000
+18          BOCA          BOCA 3.451539  8.002907 0.024876 36.500000
+19      ROBOTune      ROBOTune 4.207103 15.589005 0.011111 85.000000
+20          SWAY          SWAY 5.213052 14.382283 0.015625 62.000000
+
+Scott-Knott result:
+
+Groups:
+HillClimbing    OtterTune       ATConf           SA          PSO      ResTune 
+           1            1            1            1            1            2 
+ PromiseTune           ES   BestConfig        CMAES        FLASH      Tuneful 
+           2            2            2            2            2            2 
+          DE        ConEx RandomSearch           GA          ACO           BO 
+           2            2            2            3            3            3 
+        BOCA     ROBOTune         SWAY 
+           3            3            4 

@@ -1,0 +1,64 @@
+Problem: storm
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx
+DEHB → DEHB
+FLASH → FLASH_HEBO_PromiseTune
+GGA → GGA
+HABO → HABO
+HEBO → FLASH_HEBO_PromiseTune
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → FLASH_HEBO_PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                optimizer_name  optimizer_name         mean         std        min          max
+0   FLASH_HEBO_PromiseTune       FLASH     0.000000    0.000000   0.000000     0.000000
+1                    irace       irace   122.000000  248.171242   0.000000   610.000000
+2                     DEHB        DEHB   188.180555  293.628021   0.000000   765.416660
+3                    ConEx       ConEx   265.102777  333.708191   0.000000   776.833330
+4                 UQGuided    UQGuided   350.847222  313.305484   0.000000   765.416660
+5                   ATConf      ATConf   359.647221  373.926161   0.000000   920.750000
+6                 ParamILS    ParamILS   733.366665 1850.499129   0.000000 10359.166660
+7                     BOCA        BOCA  1141.744441 1211.922386   0.000000  5736.166660
+8                OtterTune   OtterTune  1260.724997 1511.359467   0.000000  8693.500000
+9                     BOHB        BOHB  1297.377776 1653.153819   0.000000  6400.250000
+10                     GGA         GGA  1662.047220 2298.588823   0.000000 11726.166660
+11              BestConfig  BestConfig  1718.036107 2051.014138   0.000000  8133.416660
+12                    HABO        HABO  1719.797219 2886.263714   0.000000 10458.666660
+13               Hyperband   Hyperband  1792.258331 2065.863461   0.000000  7834.500000
+14                    SMAC        SMAC  2265.619444 7647.835430   0.000000 40122.583330
+15                ROBOTune    ROBOTune  3256.255552 3116.353915   0.000000  8735.000000
+16                    SWAY        SWAY  3737.322218 4382.073101   0.000000 13553.250000
+17                 Tuneful     Tuneful  5202.077772 4057.625192 794.000000 14797.416660
+18                 ResTune     ResTune 15739.874996 8837.630305 610.000000 37768.500000
+
+Scott-Knott result:
+
+Groups:
+FLASH_HEBO_PromiseTune                  irace                   DEHB 
+                     1                      2                      3 
+                 ConEx               UQGuided                 ATConf 
+                     4                      5                      6 
+              ParamILS                   BOCA              OtterTune 
+                     6                      7                      8 
+                  BOHB                    GGA             BestConfig 
+                     8                      9                      9 
+                  HABO              Hyperband                   SMAC 
+                    10                     11                     11 
+              ROBOTune                   SWAY                Tuneful 
+                    11                     12                     13 
+               ResTune 
+                    14 

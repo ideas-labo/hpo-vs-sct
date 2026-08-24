@@ -1,0 +1,86 @@
+Problem: xgboost-PimaIndiansDiabetes
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf_ConEx
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ATConf_ConEx
+DE → DE
+DEHB → DEHB_ES
+ES → DEHB_ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO_PromiseTune
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → HEBO_PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                 optimizer_name    optimizer_name     mean      std      min      max
+0          HEBO_PromiseTune          HEBO 0.000000 0.000000 0.000000 0.000000
+1                   DEHB_ES          DEHB 0.052493 0.199770 0.000000 0.787402
+2                 OtterTune     OtterTune 0.104987 0.341868 0.000000 1.574803
+3                     FLASH         FLASH 0.157480 0.320345 0.000000 0.787402
+4              ATConf_ConEx        ATConf 0.183727 0.338727 0.000000 0.787402
+5                     irace         irace 0.262467 0.430451 0.000000 1.574803
+6                       PSO           PSO 0.314961 0.489335 0.000000 1.574803
+7                  UQGuided      UQGuided 0.328084 0.507388 0.000000 1.574803
+8                        GA            GA 0.341207 0.447497 0.000000 1.574803
+9                  ROBOTune      ROBOTune 0.380577 0.419764 0.000000 1.181102
+10                     HABO          HABO 0.459318 0.585628 0.000000 1.574803
+11                     BOHB          BOHB 0.472441 0.531232 0.000000 1.574803
+12                Hyperband     Hyperband 0.485564 0.543991 0.000000 1.574803
+13                       SA            SA 0.511811 0.538725 0.000000 1.574803
+14                      GGA           GGA 0.590551 0.423145 0.000000 1.574803
+15  BestConfig_RandomSearch    BestConfig 0.603675 0.524482 0.000000 1.574803
+16                    CMAES         CMAES 0.643045 0.734609 0.000000 2.362205
+17                 ParamILS      ParamILS 0.656168 0.718796 0.000000 2.362205
+18                      ACO           ACO 0.774278 0.719911 0.000000 2.362205
+19                       DE            DE 0.866142 0.615154 0.000000 1.968504
+20                     SMAC          SMAC 0.918635 0.688410 0.000000 2.362205
+21                     SWAY          SWAY 0.931759 0.719911 0.000000 1.968504
+22             HillClimbing  HillClimbing 1.246719 0.827665 0.000000 2.755906
+23                  Tuneful       Tuneful 1.587927 0.689574 0.000000 2.362205
+24                     BOCA          BOCA 1.850394 0.694722 0.000000 2.362205
+25                       BO            BO 2.099738 0.631729 0.787402 3.543307
+26                  ResTune       ResTune 2.112861 0.797407 0.000000 3.149606
+
+Scott-Knott result:
+
+Groups:
+       HEBO_PromiseTune                 DEHB_ES               OtterTune 
+                      1                       1                       2 
+                  FLASH            ATConf_ConEx                   irace 
+                      2                       2                       2 
+                    PSO                UQGuided                      GA 
+                      3                       3                       4 
+               ROBOTune                    HABO                    BOHB 
+                      4                       4                       5 
+              Hyperband                      SA                     GGA 
+                      5                       5                       6 
+BestConfig_RandomSearch                   CMAES                ParamILS 
+                      6                       6                       7 
+                    ACO                      DE                    SMAC 
+                      8                       8                       8 
+                   SWAY            HillClimbing                 Tuneful 
+                      8                       9                      10 
+                   BOCA                      BO                 ResTune 
+                     11                      11                      12 

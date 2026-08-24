@@ -1,0 +1,91 @@
+Problem: deeparch
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                 optimizer_name    optimizer_name     mean      std      min       max
+0                      HEBO          HEBO 1.045173 0.000000 1.045173  1.045173
+1                 OtterTune     OtterTune 1.045181 0.000045 1.045173  1.045420
+2                     FLASH         FLASH 1.045181 0.000045 1.045173  1.045420
+3               PromiseTune   PromiseTune 1.045190 0.000063 1.045173  1.045420
+4                      DEHB          DEHB 1.045198 0.000075 1.045173  1.045420
+5                        ES            ES 1.045222 0.000116 1.045173  1.045641
+6                     irace         irace 1.045259 0.000349 1.045173  1.047038
+7                  UQGuided      UQGuided 1.045339 0.000364 1.045173  1.047038
+8                       PSO           PSO 1.045529 0.001010 1.045173  1.050372
+9                     CMAES         CMAES 1.045737 0.001761 1.045173  1.052839
+10                   ATConf        ATConf 1.045754 0.001214 1.045173  1.050912
+11                    ConEx         ConEx 1.045944 0.002197 1.045173  1.057036
+12                       GA            GA 1.046508 0.002716 1.045173  1.057036
+13                 ROBOTune      ROBOTune 1.049250 0.009632 1.045173  1.090124
+14                     BOHB          BOHB 1.055916 0.013852 1.045173  1.105910
+15  BestConfig_RandomSearch    BestConfig 1.059657 0.013982 1.045173  1.095468
+16                       SA            SA 1.063738 0.048207 1.045173  1.239932
+17                      GGA           GGA 1.066867 0.043044 1.045173  1.223900
+18                     BOCA          BOCA 1.067261 0.014766 1.045173  1.088350
+19                Hyperband     Hyperband 1.068471 0.043698 1.045173  1.229181
+20                     HABO          HABO 1.069937 0.034386 1.045420  1.215103
+21                  Tuneful       Tuneful 1.088472 0.062841 1.045173  1.243744
+22                 ParamILS      ParamILS 1.165522 0.632371 1.045173  4.513350
+23                       DE            DE 1.187237 0.378226 1.045420  2.577795
+24                      ACO           ACO 1.384979 0.909175 1.045173  4.513350
+25                     SMAC          SMAC 1.487614 2.071504 1.045173 12.369332
+26                     SWAY          SWAY 1.641783 1.218397 1.045173  6.450737
+27             HillClimbing  HillClimbing 1.852647 3.574901 1.045173 20.532530
+28                  ResTune       ResTune 6.862470 7.935742 1.057036 28.599856
+29                       BO            BO 7.108131 7.403935 1.051484 26.699445
+
+Scott-Knott result:
+
+Groups:
+                   HEBO               OtterTune                   FLASH 
+                      1                       1                       1 
+            PromiseTune                    DEHB                      ES 
+                      2                       3                       3 
+                  irace                UQGuided                     PSO 
+                      3                       4                       4 
+                  CMAES                  ATConf                   ConEx 
+                      4                       4                       5 
+                     GA                ROBOTune                    BOHB 
+                      6                       7                       7 
+BestConfig_RandomSearch                      SA                     GGA 
+                      8                       8                       9 
+                   BOCA               Hyperband                    HABO 
+                     10                      10                      11 
+                Tuneful                ParamILS                      DE 
+                     12                      13                      14 
+                    ACO                    SMAC                    SWAY 
+                     15                      16                      17 
+           HillClimbing                 ResTune                      BO 
+                     18                      19                      19 

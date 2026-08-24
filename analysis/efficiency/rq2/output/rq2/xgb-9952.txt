@@ -1,0 +1,56 @@
+Problem: xgb-9952
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB_Hyperband
+CMAES → CMAES
+DE → DE_ES
+DEHB → DEHB
+ES → DE_ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → BOHB_Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+        optimizer_name    optimizer_name     mean      std      min       max
+0     HillClimbing  HillClimbing 0.961193 1.042514 0.025974  3.000000
+1            DE_ES            DE 1.008307 1.328560 0.028571  6.000000
+2               GA            GA 1.008805 1.328235 0.028571  6.000000
+3     RandomSearch  RandomSearch 1.009302 1.327917 0.028571  6.000000
+4         ParamILS      ParamILS 1.009800 1.327603 0.028571  6.000000
+5              PSO           PSO 1.010297 1.327296 0.028571  6.000000
+6               BO            BO 1.016268 1.324035 0.028571  6.000000
+7              GGA           GGA 1.086220 1.338540 0.025974  5.000000
+8             SMAC          SMAC 1.090833 1.437774 0.025974  5.000000
+9               SA            SA 1.250497 1.672866 0.025974  7.000000
+10        UQGuided      UQGuided 1.263816 1.761170 0.028571  9.000000
+11             ACO           ACO 1.306229 1.668846 0.025974  6.000000
+12           irace         irace 1.308081 1.667727 0.025974  6.000000
+13            HEBO          HEBO 1.337014 2.261784 0.028571 11.000000
+14  BOHB_Hyperband          BOHB 1.444853 1.763116 0.051909  3.997000
+15            DEHB          DEHB 1.447563 1.760449 0.051948  4.000000
+16           CMAES         CMAES 1.801649 3.100961 0.025974 16.000000
+17            HABO          HABO 3.688009 4.690051 0.025974 15.000000
+
+Scott-Knott result:
+
+Groups:
+  HillClimbing          DE_ES             GA   RandomSearch       ParamILS 
+             1              1              1              1              1 
+           PSO             BO            GGA           SMAC             SA 
+             1              1              1              1              1 
+      UQGuided            ACO          irace           HEBO BOHB_Hyperband 
+             1              1              1              1              1 
+          DEHB          CMAES           HABO 
+             1              1              2 

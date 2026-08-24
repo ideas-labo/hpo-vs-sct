@@ -1,0 +1,76 @@
+Problem: xgb-146822
+
+Optimizer merge mapping:
+ATConf → ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided
+BOCA → ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided
+DEHB → DEHB
+FLASH → ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided
+ParamILS → ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided
+irace → irace
+
+Statistics:
+                                             optimizer_name   optimizer_name     mean      std      min      max
+0                                           PromiseTune  PromiseTune 0.472765 0.080727 0.181818 0.500375
+1                                            BestConfig   BestConfig 0.497765 0.134368 0.181818 1.000000
+2                                              ROBOTune     ROBOTune 0.534128 0.179963 0.200000 1.250000
+3                                               Tuneful      Tuneful 0.535498 0.126773 0.200000 0.750563
+4   ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided       ATConf 0.539431 0.189336 0.181818 1.250000
+5                                                  HEBO         HEBO 0.539438 0.177615 0.181818 1.000000
+6                                                 irace        irace 0.539444 0.177641 0.181818 1.000000
+7                                                  SMAC         SMAC 0.545801 0.156910 0.200000 1.000000
+8                                                   GGA          GGA 0.547771 0.193030 0.181818 1.250000
+9                                               ResTune      ResTune 0.554438 0.167138 0.181818 1.000000
+10                                                 HABO         HABO 0.661704 0.286360 0.200000 1.250000
+11                                                 BOHB         BOHB 0.968570 0.218030 0.363364 1.748750
+12                                            Hyperband    Hyperband 0.969804 0.218098 0.363364 1.748750
+13                                                 DEHB         DEHB 0.970221 0.218217 0.363636 1.750000
+14                                                 SWAY         SWAY 1.869563 2.130408 0.181818 7.250000
+
+Scott-Knott result:
+
+Groups:
+                                        PromiseTune 
+                                                  1 
+                                         BestConfig 
+                                                  2 
+                                           ROBOTune 
+                                                  2 
+                                            Tuneful 
+                                                  2 
+ATConf_BOCA_ConEx_FLASH_OtterTune_ParamILS_UQGuided 
+                                                  2 
+                                               HEBO 
+                                                  2 
+                                              irace 
+                                                  2 
+                                               SMAC 
+                                                  2 
+                                                GGA 
+                                                  2 
+                                            ResTune 
+                                                  3 
+                                               HABO 
+                                                  3 
+                                               BOHB 
+                                                  4 
+                                          Hyperband 
+                                                  4 
+                                               DEHB 
+                                                  4 
+                                               SWAY 
+                                                  5 

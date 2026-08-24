@@ -1,0 +1,7 @@
+domain,optimizer_category,avg_rank,optimizer_count
+hpo_domain,a,3.13,10
+hpo_domain,s,2.67,11
+hpo_domain,g,,0
+sct_domain,a,2.81,10
+sct_domain,s,2.71,11
+sct_domain,g,,0

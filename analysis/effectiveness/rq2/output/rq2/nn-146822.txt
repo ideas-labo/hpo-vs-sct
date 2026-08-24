@@ -1,0 +1,54 @@
+Problem: nn-146822
+
+Optimizer merge mapping:
+ACO → ACO_GA_PSO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE_UQGuided
+DEHB → DEHB
+ES → ES
+GA → ACO_GA_PSO
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → ACO_GA_PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch_SA
+SA → RandomSearch_SA
+SMAC → SMAC
+UQGuided → DE_UQGuided
+irace → irace
+
+Statistics:
+         optimizer_name    optimizer_name     mean      std      min      max
+0              HEBO          HEBO 0.002000 0.004068 0.000000 0.010000
+1              DEHB          DEHB 0.002333 0.004302 0.000000 0.010000
+2                ES            ES 0.003333 0.004795 0.000000 0.010000
+3              SMAC          SMAC 0.003333 0.004795 0.000000 0.010000
+4              BOHB          BOHB 0.004667 0.005074 0.000000 0.010000
+5             CMAES         CMAES 0.005000 0.005085 0.000000 0.010000
+6             irace         irace 0.005333 0.005074 0.000000 0.010000
+7        ACO_GA_PSO           ACO 0.005667 0.005040 0.000000 0.010000
+8         Hyperband     Hyperband 0.006667 0.004795 0.000000 0.010000
+9       DE_UQGuided            DE 0.007333 0.004498 0.000000 0.010000
+10  RandomSearch_SA  RandomSearch 0.008000 0.004068 0.000000 0.010000
+11         ParamILS      ParamILS 0.008333 0.004611 0.000000 0.020000
+12             HABO          HABO 0.008667 0.005074 0.000000 0.020000
+13              GGA           GGA 0.009667 0.001826 0.000000 0.010000
+14     HillClimbing  HillClimbing 0.011333 0.005713 0.000000 0.020000
+15               BO            BO 0.013667 0.007649 0.000000 0.030000
+
+Scott-Knott result:
+
+Groups:
+           HEBO            DEHB              ES            SMAC            BOHB 
+              1               1               1               2               2 
+          CMAES           irace      ACO_GA_PSO       Hyperband     DE_UQGuided 
+              3               4               5               6               7 
+RandomSearch_SA        ParamILS            HABO             GGA    HillClimbing 
+              7               7               7               8               8 
+             BO 
+              8 

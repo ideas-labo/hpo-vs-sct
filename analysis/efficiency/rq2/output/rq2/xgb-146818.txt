@@ -1,0 +1,58 @@
+Problem: xgb-146818
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min       max
+0           HEBO          HEBO 0.705834 1.039669 0.021053  4.000000
+1            GGA           GGA 0.727254 0.826586 0.029851  3.000000
+2   HillClimbing  HillClimbing 0.742493 1.039310 0.029851  5.000000
+3             BO            BO 0.751669 1.116649 0.029851  4.000000
+4       ParamILS      ParamILS 0.805042 1.105761 0.029851  4.000000
+5       UQGuided      UQGuided 0.809245 1.102262 0.029851  4.000000
+6             GA            GA 0.812542 1.109552 0.029851  4.000000
+7   RandomSearch  RandomSearch 0.815141 1.106323 0.029851  4.000000
+8             DE            DE 0.817304 1.108576 0.029851  4.000000
+9            PSO           PSO 0.847304 1.138414 0.029851  4.000000
+10            ES            ES 0.857403 1.143220 0.029851  4.000000
+11          SMAC          SMAC 0.877628 1.146457 0.029851  4.000000
+12            SA            SA 0.877729 1.201542 0.029851  6.000000
+13         CMAES         CMAES 0.879146 1.232845 0.021053  5.000000
+14           ACO           ACO 0.999984 1.792760 0.029851  8.000000
+15         irace         irace 1.006228 1.790350 0.029851  8.000000
+16          DEHB          DEHB 1.051653 1.499048 0.042105  4.000000
+17     Hyperband     Hyperband 1.053435 1.427348 0.042074  3.997000
+18          BOHB          BOHB 1.082333 1.430424 0.042074  3.997000
+19          HABO          HABO 2.299122 3.953478 0.059701 17.000000
+
+Scott-Knott result:
+
+Groups:
+        HEBO          GGA HillClimbing           BO     ParamILS     UQGuided 
+           1            1            1            1            1            1 
+          GA RandomSearch           DE          PSO           ES         SMAC 
+           1            1            1            2            2            2 
+          SA        CMAES          ACO        irace         DEHB    Hyperband 
+           2            2            2            2            2            2 
+        BOHB         HABO 
+           2            3 

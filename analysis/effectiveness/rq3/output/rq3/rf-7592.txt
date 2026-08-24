@@ -1,0 +1,80 @@
+Problem: rf-7592
+
+Optimizer merge mapping:
+ACO → ACO_SA
+ATConf → ATConf_GA
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_ParamILS
+CMAES → CMAES_ConEx
+ConEx → CMAES_ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → ATConf_GA
+GGA → GGA_HABO
+HABO → GGA_HABO
+HEBO → HEBO_SMAC
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → BestConfig_ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → ACO_SA
+SMAC → HEBO_SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+             optimizer_name    optimizer_name     mean      std      min      max
+0             OtterTune     OtterTune 0.000333 0.001826 0.000000 0.010000
+1               Tuneful       Tuneful 0.000667 0.002537 0.000000 0.010000
+2                 FLASH         FLASH 0.002333 0.004302 0.000000 0.010000
+3              ROBOTune      ROBOTune 0.002667 0.004498 0.000000 0.010000
+4             HEBO_SMAC          HEBO 0.002667 0.004498 0.000000 0.010000
+5                  DEHB          DEHB 0.003000 0.004661 0.000000 0.010000
+6                    ES            ES 0.003333 0.004795 0.000000 0.010000
+7             ATConf_GA        ATConf 0.003667 0.004901 0.000000 0.010000
+8             Hyperband     Hyperband 0.004667 0.005074 0.000000 0.010000
+9           CMAES_ConEx         CMAES 0.005000 0.005085 0.000000 0.010000
+10             UQGuided      UQGuided 0.005667 0.005040 0.000000 0.010000
+11                 BOHB          BOHB 0.005667 0.005040 0.000000 0.010000
+12          PromiseTune   PromiseTune 0.005667 0.005040 0.000000 0.010000
+13                irace         irace 0.006000 0.004983 0.000000 0.010000
+14                  PSO           PSO 0.006667 0.004795 0.000000 0.010000
+15  BestConfig_ParamILS    BestConfig 0.007000 0.004661 0.000000 0.010000
+16                   DE            DE 0.007333 0.004498 0.000000 0.010000
+17         HillClimbing  HillClimbing 0.007333 0.004498 0.000000 0.010000
+18         RandomSearch  RandomSearch 0.007667 0.004302 0.000000 0.010000
+19             GGA_HABO           GGA 0.008000 0.004068 0.000000 0.010000
+20               ACO_SA           ACO 0.008333 0.003790 0.000000 0.010000
+21              ResTune       ResTune 0.012333 0.004302 0.010000 0.020000
+22                   BO            BO 0.013000 0.005960 0.010000 0.030000
+23                 BOCA          BOCA 0.015000 0.012247 0.000000 0.070000
+24                 SWAY          SWAY 0.026000 0.031139 0.000000 0.110000
+
+Scott-Knott result:
+
+Groups:
+          OtterTune             Tuneful               FLASH            ROBOTune 
+                  1                   1                   2                   2 
+          HEBO_SMAC                DEHB                  ES           ATConf_GA 
+                  2                   2                   2                   3 
+          Hyperband         CMAES_ConEx            UQGuided                BOHB 
+                  3                   4                   5                   5 
+        PromiseTune               irace                 PSO BestConfig_ParamILS 
+                  5                   5                   6                   6 
+                 DE        HillClimbing        RandomSearch            GGA_HABO 
+                  6                   6                   6                   6 
+             ACO_SA             ResTune                  BO                BOCA 
+                  7                   7                   7                   7 
+               SWAY 
+                  7 

@@ -1,0 +1,60 @@
+Problem: spark
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name        mean        std         min         max
+0          FLASH         FLASH 1177.233333  36.142136 1130.000000 1258.000000
+1    PromiseTune   PromiseTune 1180.266667  28.420407 1130.000000 1205.000000
+2          CMAES         CMAES 1182.333333  28.497227 1130.000000 1226.000000
+3             ES            ES 1194.433333  36.060948 1130.000000 1267.000000
+4         ATConf        ATConf 1204.066667  26.661264 1130.000000 1274.000000
+5          ConEx         ConEx 1212.533333  38.504575 1130.000000 1277.000000
+6           SWAY          SWAY 1214.333333  66.653160 1130.000000 1352.000000
+7             GA            GA 1219.300000  31.538865 1178.000000 1282.000000
+8            ACO           ACO 1219.500000  37.855214 1130.000000 1306.000000
+9            PSO           PSO 1219.966667  45.992116 1130.000000 1274.000000
+10            DE            DE 1227.166667  36.614566 1191.000000 1309.000000
+11     OtterTune     OtterTune 1229.366667  32.421240 1191.000000 1277.000000
+12      ROBOTune      ROBOTune 1231.566667  33.526812 1198.000000 1279.000000
+13            BO            BO 1233.000000  38.125926 1178.000000 1282.000000
+14  RandomSearch  RandomSearch 1233.500000  40.454103 1130.000000 1319.000000
+15    BestConfig    BestConfig 1234.500000  40.678513 1130.000000 1319.000000
+16          BOCA          BOCA 1236.733333  41.464512 1130.000000 1282.000000
+17       Tuneful       Tuneful 1238.400000  96.015301 1130.000000 1388.000000
+18       ResTune       ResTune 1289.633333  49.050631 1198.000000 1379.000000
+19            SA            SA 1366.166667 255.157975 1130.000000 2285.000000
+20  HillClimbing  HillClimbing 1386.300000 254.585417 1130.000000 2285.000000
+
+Scott-Knott result:
+
+Groups:
+       FLASH  PromiseTune        CMAES           ES       ATConf        ConEx 
+           1            2            2            2            3            4 
+        SWAY           GA          ACO          PSO           DE    OtterTune 
+           4            5            5            5            5            5 
+    ROBOTune           BO RandomSearch   BestConfig         BOCA      Tuneful 
+           6            6            6            6            6            7 
+     ResTune           SA HillClimbing 
+           8            9           10 

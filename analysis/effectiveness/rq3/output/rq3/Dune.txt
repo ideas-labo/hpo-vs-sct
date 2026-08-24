@@ -1,0 +1,87 @@
+Problem: Dune
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH_PromiseTune
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → FLASH_PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+           optimizer_name    optimizer_name         mean          std          min          max
+0   FLASH_PromiseTune         FLASH     0.000000     0.000000     0.000000     0.000000
+1                HEBO          HEBO   196.656905  1077.134228     0.000000  5899.707143
+2              ATConf        ATConf  1307.511548  2737.705905     0.000000  9726.810714
+3                 PSO           PSO  1439.158929  4877.036722     0.000000 23721.146429
+4               irace         irace  1502.677024  4149.270222     0.000000 16112.114286
+5                SMAC          SMAC  1541.963214  8445.680353     0.000000 46258.896429
+6                  ES            ES  1676.072857  3764.399229     0.000000 13341.678571
+7                DEHB          DEHB  1960.042857  5139.699549     0.000000 23721.146429
+8            UQGuided      UQGuided  4063.821310  8347.770606     0.000000 23721.146429
+9               CMAES         CMAES  4115.106667  6814.573535     0.000000 21470.892857
+10          OtterTune     OtterTune  5727.893571  4247.916793     0.000000 17300.639286
+11           ParamILS      ParamILS  5804.382857  9181.034535     0.000000 33805.767857
+12              ConEx         ConEx  6071.226548  8783.218034     0.000000 26768.110714
+13               HABO          HABO 13242.381548 10295.804514     0.000000 35056.092857
+14                 DE            DE 13274.773095  7447.801107     0.000000 29626.028571
+15            Tuneful       Tuneful 13337.325833 11284.323332     0.000000 30705.253571
+16       HillClimbing  HillClimbing 14918.207024 13658.735158     0.000000 36354.835714
+17           ROBOTune      ROBOTune 15512.954643  8786.435154     0.000000 26027.725000
+18                 SA            SA 15859.621071 13761.626509     0.000000 42119.553571
+19       RandomSearch  RandomSearch 16355.221667 10504.362190     0.000000 33073.478571
+20               BOHB          BOHB 17478.897619 11458.345408     0.000000 36935.467857
+21         BestConfig    BestConfig 17641.185833  9748.631048     0.000000 33073.478571
+22                 GA            GA 17644.109524  9043.904491     0.000000 35683.814286
+23                ACO           ACO 17697.634643 13613.840789     0.000000 39706.203571
+24                GGA           GGA 18039.878333  9602.893745     0.000000 34842.953571
+25          Hyperband     Hyperband 18157.077381 10023.042990     0.000000 30705.253571
+26               BOCA          BOCA 18797.709405 10007.883975     0.000000 34063.242857
+27               SWAY          SWAY 22877.226310 19515.410010     0.000000 47483.885714
+28                 BO            BO 28080.323095  9556.104361 13341.678571 41233.435714
+29            ResTune       ResTune 28162.837024  8703.676586  9726.810714 39530.850000
+
+Scott-Knott result:
+
+Groups:
+FLASH_PromiseTune              HEBO            ATConf               PSO 
+                1                 1                 2                 2 
+            irace              SMAC                ES              DEHB 
+                3                 3                 4                 5 
+         UQGuided             CMAES         OtterTune          ParamILS 
+                5                 5                 6                 6 
+            ConEx              HABO                DE           Tuneful 
+                7                 8                 8                 8 
+     HillClimbing          ROBOTune                SA      RandomSearch 
+                8                 8                 9                 9 
+             BOHB        BestConfig                GA               ACO 
+               10                11                11                11 
+              GGA         Hyperband              BOCA              SWAY 
+               11                12                13                14 
+               BO           ResTune 
+               15                15 

@@ -1,0 +1,110 @@
+Problem: rf-146212
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+DE → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+DEHB → DEHB
+ES → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+FLASH → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+GA → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+ParamILS → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                                           optimizer_name    optimizer_name     mean       std      min        max
+0                                                BOCA          BOCA 1.077739  2.090280 0.014493  11.000000
+1                                                BOHB          BOHB 1.165186  1.510542 0.028069   3.929688
+2                                           Hyperband     Hyperband 1.171944  1.505679 0.028069   3.929688
+3                                         PromiseTune   PromiseTune 1.174657  2.338852 0.014286  11.000000
+4                                                DEHB          DEHB 1.177393  1.533560 0.028571   4.000000
+5   BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch            BO 1.350994  1.973151 0.014493   7.000000
+6                                           OtterTune     OtterTune 1.419249  2.154792 0.014493   7.000000
+7                                             ResTune       ResTune 1.481251  2.395639 0.014493  10.000000
+8                                              ATConf        ATConf 1.540849  2.600334 0.014493  11.000000
+9                                             Tuneful       Tuneful 1.551089  1.983044 0.014493   7.333333
+10                                               HABO          HABO 1.573781  2.803739 0.014493  12.500000
+11                                               SMAC          SMAC 1.735796  2.722147 0.015385  10.000000
+12                                           ROBOTune      ROBOTune 1.814306  3.581994 0.014493  19.000000
+13                                               HEBO          HEBO 2.029603  3.554536 0.014493  17.000000
+14                                                GGA           GGA 2.081971  4.323324 0.015385  20.000000
+15                                       HillClimbing  HillClimbing 2.198472  5.114863 0.015385  27.000000
+16                                         BestConfig    BestConfig 2.212505  3.456840 0.015385  12.000000
+17                                           UQGuided      UQGuided 2.213030  4.145249 0.014493  15.000000
+18                                              irace         irace 2.551475  7.614161 0.015385  42.000000
+19                                                ACO           ACO 2.721105  8.508987 0.015385  47.000000
+20                                              CMAES         CMAES 2.879758  9.577975 0.014493  53.000000
+21                                                 SA            SA 4.275380 10.358773 0.015385  49.000000
+22                                               SWAY          SWAY 7.734709 24.397559 0.250000 131.000000
+
+Scott-Knott result:
+
+Groups:
+                                             BOCA 
+                                                1 
+                                             BOHB 
+                                                2 
+                                        Hyperband 
+                                                2 
+                                      PromiseTune 
+                                                2 
+                                             DEHB 
+                                                2 
+BO_ConEx_DE_ES_FLASH_GA_PSO_ParamILS_RandomSearch 
+                                                2 
+                                        OtterTune 
+                                                2 
+                                          ResTune 
+                                                2 
+                                           ATConf 
+                                                2 
+                                          Tuneful 
+                                                2 
+                                             HABO 
+                                                2 
+                                             SMAC 
+                                                2 
+                                         ROBOTune 
+                                                3 
+                                             HEBO 
+                                                3 
+                                              GGA 
+                                                3 
+                                     HillClimbing 
+                                                4 
+                                       BestConfig 
+                                                4 
+                                         UQGuided 
+                                                4 
+                                            irace 
+                                                4 
+                                              ACO 
+                                                4 
+                                            CMAES 
+                                                4 
+                                               SA 
+                                                4 
+                                             SWAY 
+                                                5 

@@ -1,0 +1,55 @@
+Problem: rf-10101
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE_PSO
+DEHB → DEHB
+ES → ES_GA_ParamILS
+GA → ES_GA_ParamILS
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → DE_PSO
+ParamILS → ES_GA_ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+        optimizer_name    optimizer_name     mean      std      min       max
+0            CMAES         CMAES 0.982370 1.040963 0.015385  4.000000
+1               BO            BO 1.096453 1.305129 0.015385  5.000000
+2            irace         irace 1.213120 1.569699 0.015385  6.000000
+3              GGA           GGA 1.271551 1.424352 0.015385  5.000000
+4              ACO           ACO 1.291047 1.787352 0.015385  7.000000
+5             BOHB          BOHB 1.291445 1.476378 0.030228  3.929688
+6        Hyperband     Hyperband 1.291706 1.476460 0.030228  3.929688
+7             DEHB          DEHB 1.314323 1.502519 0.030484  4.000000
+8             HEBO          HEBO 1.317654 2.077184 0.015385  8.000000
+9             SMAC          SMAC 1.429171 1.833427 0.015385  8.000000
+10          DE_PSO            DE 1.429786 2.229389 0.015385 11.000000
+11        UQGuided      UQGuided 1.430721 1.816859 0.015385  8.000000
+12  ES_GA_ParamILS            ES 1.463120 2.379816 0.015385 12.000000
+13    RandomSearch  RandomSearch 1.563120 2.853694 0.015385 15.000000
+14    HillClimbing  HillClimbing 1.608929 2.978402 0.015385 16.000000
+15              SA            SA 2.267157 3.801527 0.015385 15.000000
+16            HABO          HABO 4.202882 7.444324 0.015385 35.000000
+
+Scott-Knott result:
+
+Groups:
+         CMAES             BO          irace            GGA            ACO 
+             1              1              1              1              1 
+          BOHB      Hyperband           DEHB           HEBO           SMAC 
+             1              1              1              2              2 
+        DE_PSO       UQGuided ES_GA_ParamILS   RandomSearch   HillClimbing 
+             3              3              4              4              4 
+            SA           HABO 
+             4              4 

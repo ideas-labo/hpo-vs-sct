@@ -1,0 +1,57 @@
+Problem: xgboost-PimaIndiansDiabetes
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB_ES
+ES → DEHB_ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0           HEBO          HEBO 0.000000 0.000000 0.000000 0.000000
+1        DEHB_ES          DEHB 0.052493 0.199770 0.000000 0.787402
+2          irace         irace 0.262467 0.430451 0.000000 1.574803
+3            PSO           PSO 0.314961 0.489335 0.000000 1.574803
+4       UQGuided      UQGuided 0.328084 0.507388 0.000000 1.574803
+5             GA            GA 0.341207 0.447497 0.000000 1.574803
+6           HABO          HABO 0.459318 0.585628 0.000000 1.574803
+7           BOHB          BOHB 0.472441 0.531232 0.000000 1.574803
+8      Hyperband     Hyperband 0.485564 0.543991 0.000000 1.574803
+9             SA            SA 0.511811 0.538725 0.000000 1.574803
+10           GGA           GGA 0.590551 0.423145 0.000000 1.574803
+11  RandomSearch  RandomSearch 0.603675 0.524482 0.000000 1.574803
+12         CMAES         CMAES 0.643045 0.734609 0.000000 2.362205
+13      ParamILS      ParamILS 0.656168 0.718796 0.000000 2.362205
+14           ACO           ACO 0.774278 0.719911 0.000000 2.362205
+15            DE            DE 0.866142 0.615154 0.000000 1.968504
+16          SMAC          SMAC 0.918635 0.688410 0.000000 2.362205
+17  HillClimbing  HillClimbing 1.246719 0.827665 0.000000 2.755906
+18            BO            BO 2.099738 0.631729 0.787402 3.543307
+
+Scott-Knott result:
+
+Groups:
+        HEBO      DEHB_ES        irace          PSO     UQGuided           GA 
+           1            2            2            2            2            3 
+        HABO         BOHB    Hyperband           SA          GGA RandomSearch 
+           3            4            4            4            5            5 
+       CMAES     ParamILS          ACO           DE         SMAC HillClimbing 
+           5            6            6            6            6            7 
+          BO 
+           8 

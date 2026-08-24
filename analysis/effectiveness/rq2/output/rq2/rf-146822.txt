@@ -1,0 +1,42 @@
+Problem: rf-146822
+
+Optimizer merge mapping:
+ACO → ACO_HillClimbing
+BO → BO
+BOHB → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+CMAES → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+DE → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+DEHB → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+ES → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+GA → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+GGA → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+HABO → HABO
+HEBO → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+HillClimbing → ACO_HillClimbing
+Hyperband → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+PSO → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+ParamILS → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+RandomSearch → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+SA → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+SMAC → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+UQGuided → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+irace → BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace
+
+Statistics:
+                                                                                     optimizer_name optimizer_name     mean      std      min      max
+0  BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace       BOHB 0.010000 0.000000 0.010000 0.010000
+1                                                                              ACO_HillClimbing        ACO 0.010333 0.001826 0.010000 0.020000
+2                                                                                          HABO       HABO 0.011333 0.003457 0.010000 0.020000
+3                                                                                            BO         BO 0.013333 0.005467 0.010000 0.030000
+
+Scott-Knott result:
+
+Groups:
+BOHB_CMAES_DE_DEHB_ES_GA_GGA_HEBO_Hyperband_PSO_ParamILS_RandomSearch_SA_SMAC_UQGuided_irace 
+                                                                                           1 
+                                                                            ACO_HillClimbing 
+                                                                                           2 
+                                                                                        HABO 
+                                                                                           2 
+                                                                                          BO 
+                                                                                           2 

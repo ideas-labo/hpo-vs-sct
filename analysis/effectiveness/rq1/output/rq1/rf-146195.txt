@@ -1,0 +1,73 @@
+Problem: rf-146195
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx
+DEHB → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+FLASH → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+GGA → GGA
+HABO → HABO
+HEBO → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+Hyperband → Hyperband
+OtterTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ParamILS → ParamILS
+PromiseTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ROBOTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ResTune → ResTune
+SMAC → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+SWAY → SWAY
+Tuneful → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                                                     optimizer_name  optimizer_name     mean      std      min      max
+0   DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful        DEHB 0.000000 0.000000 0.000000 0.000000
+1                                                         irace       irace 0.002000 0.005509 0.000000 0.020000
+2                                                        ATConf      ATConf 0.003000 0.004661 0.000000 0.010000
+3                                                      ParamILS    ParamILS 0.004667 0.008604 0.000000 0.030000
+4                                                         ConEx       ConEx 0.006000 0.007240 0.000000 0.020000
+5                                                          BOHB        BOHB 0.008333 0.007466 0.000000 0.030000
+6                                                      UQGuided    UQGuided 0.010667 0.008277 0.000000 0.030000
+7                                                     Hyperband   Hyperband 0.011000 0.007120 0.000000 0.020000
+8                                                           GGA         GGA 0.014333 0.010400 0.000000 0.040000
+9                                                          HABO        HABO 0.014333 0.011351 0.000000 0.050000
+10                                                   BestConfig  BestConfig 0.015000 0.009377 0.000000 0.030000
+11                                                      ResTune     ResTune 0.067000 0.032816 0.020000 0.170000
+12                                                         BOCA        BOCA 0.072000 0.039688 0.000000 0.190000
+13                                                         SWAY        SWAY 0.143000 0.099487 0.020000 0.290000
+
+Scott-Knott result:
+
+Groups:
+DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful 
+                                                          1 
+                                                      irace 
+                                                          2 
+                                                     ATConf 
+                                                          2 
+                                                   ParamILS 
+                                                          3 
+                                                      ConEx 
+                                                          3 
+                                                       BOHB 
+                                                          4 
+                                                   UQGuided 
+                                                          4 
+                                                  Hyperband 
+                                                          5 
+                                                        GGA 
+                                                          5 
+                                                       HABO 
+                                                          6 
+                                                 BestConfig 
+                                                          7 
+                                                    ResTune 
+                                                          8 
+                                                       BOCA 
+                                                          8 
+                                                       SWAY 
+                                                          9 

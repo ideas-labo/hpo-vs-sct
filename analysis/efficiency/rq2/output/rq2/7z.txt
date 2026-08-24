@@ -1,0 +1,61 @@
+Problem: 7z
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_RandomSearch
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → ConEx_RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+            optimizer_name    optimizer_name     mean       std      min       max
+0                 SWAY          SWAY 0.316597  0.401424 0.007634  2.000000
+1                   BO            BO 0.632731  0.442492 0.025316  1.285714
+2           BestConfig    BestConfig 0.890920  1.305009 0.011450  6.000000
+3              Tuneful       Tuneful 0.929560  1.601765 0.016461  9.000000
+4                   GA            GA 0.936864  2.136428 0.025316 12.000000
+5               ATConf        ATConf 0.965382  1.216639 0.022901  6.000000
+6                   DE            DE 0.975958  2.313222 0.025316 13.000000
+7         HillClimbing  HillClimbing 0.976296  0.766422 0.011450  3.000000
+8                   ES            ES 1.036315  2.674761 0.025316 15.000000
+9                CMAES         CMAES 1.095899  2.173325 0.019084 11.000000
+10                 ACO           ACO 1.185426  1.923336 0.016878  9.571429
+11  ConEx_RandomSearch         ConEx 1.207566  3.576631 0.025316 20.000000
+12               FLASH         FLASH 1.208800  3.576267 0.025316 20.000000
+13                 PSO           PSO 1.270746  3.940313 0.025316 22.000000
+14           OtterTune     OtterTune 1.278860  2.536078 0.025641 14.000000
+15                  SA            SA 1.312773  1.722294 0.011450  6.400000
+16         PromiseTune   PromiseTune 1.353157  4.318719 0.007634 23.000000
+17                BOCA          BOCA 1.704215  4.171339 0.025641 23.000000
+18             ResTune       ResTune 1.748863  3.479960 0.007634 17.857143
+19            ROBOTune      ROBOTune 2.940165 11.440262 0.030534 63.000000
+
+Scott-Knott result:
+
+Groups:
+              SWAY                 BO         BestConfig            Tuneful 
+                 1                  1                  2                  2 
+                GA             ATConf                 DE       HillClimbing 
+                 2                  2                  2                  2 
+                ES              CMAES                ACO ConEx_RandomSearch 
+                 2                  2                  2                  2 
+             FLASH                PSO          OtterTune                 SA 
+                 2                  3                  3                  3 
+       PromiseTune               BOCA            ResTune           ROBOTune 
+                 3                  3                  4                  5 

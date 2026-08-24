@@ -1,0 +1,97 @@
+Problem: xgboost-Covtype
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_ConEx_FLASH_RandomSearch
+CMAES → CMAES
+ConEx → BestConfig_ConEx_FLASH_RandomSearch
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → BestConfig_ConEx_FLASH_RandomSearch
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_ConEx_FLASH_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                             optimizer_name    optimizer_name     mean       std      min       max
+0                                  BOCA          BOCA 1.012471  0.642625 0.047619  3.000000
+1                                    BO            BO 1.406411  1.638241 0.047619  8.000000
+2                                ATConf        ATConf 1.504138  1.645721 0.047619  6.000000
+3                             OtterTune     OtterTune 1.564138  1.790691 0.047619  7.000000
+4                               ResTune       ResTune 1.595032  1.906695 0.060606 10.000000
+5                              ParamILS      ParamILS 1.770552  2.529858 0.047619 12.000000
+6                                    ES            ES 1.777623  2.526259 0.047619 12.000000
+7                                    DE            DE 1.792623  2.520047 0.047619 12.000000
+8   BestConfig_ConEx_FLASH_RandomSearch    BestConfig 1.808885  2.669602 0.047619 13.000000
+9                                 CMAES         CMAES 1.932226  2.173789 0.090909 11.000000
+10                                   GA            GA 1.940855  3.114673 0.047619 16.000000
+11                             UQGuided      UQGuided 2.172572  3.304667 0.047619 14.000000
+12                                 HEBO          HEBO 2.189448  2.020819 0.035714  8.000000
+13                                 DEHB          DEHB 2.217774  2.182086 0.060606  8.500000
+14                                  PSO           PSO 2.217976  4.599706 0.047619 25.000000
+15                                 SMAC          SMAC 2.310942  2.149911 0.071429  8.000000
+16                            Hyperband     Hyperband 2.334834  2.549690 0.060606 10.500000
+17                                 BOHB          BOHB 2.349084  2.544800 0.060606 10.500000
+18                          PromiseTune   PromiseTune 2.386898  1.984076 0.181818  7.000000
+19                                  GGA           GGA 3.161880  3.682111 0.060606 13.000000
+20                              Tuneful       Tuneful 3.337457  4.189157 0.060606 20.000000
+21                             ROBOTune      ROBOTune 3.511970  3.557149 0.181818 15.250000
+22                         HillClimbing  HillClimbing 3.749408  3.997279 0.200000 16.000000
+23                                irace         irace 4.133698  5.106905 0.060606 23.000000
+24                                  ACO           ACO 4.989531  8.769804 0.060606 44.500000
+25                                   SA            SA 8.324877 11.017157 0.212121 51.500000
+26                                 HABO          HABO 8.847330 12.098921 0.060606 52.000000
+27                                 SWAY          SWAY 8.937399 11.267279 0.100000 46.000000
+
+Scott-Knott result:
+
+Groups:
+                               BOCA                                  BO 
+                                  1                                   1 
+                             ATConf                           OtterTune 
+                                  1                                   1 
+                            ResTune                            ParamILS 
+                                  1                                   1 
+                                 ES                                  DE 
+                                  1                                   1 
+BestConfig_ConEx_FLASH_RandomSearch                               CMAES 
+                                  2                                   2 
+                                 GA                            UQGuided 
+                                  2                                   2 
+                               HEBO                                DEHB 
+                                  3                                   4 
+                                PSO                                SMAC 
+                                  4                                   4 
+                          Hyperband                                BOHB 
+                                  5                                   5 
+                        PromiseTune                                 GGA 
+                                  5                                   5 
+                            Tuneful                            ROBOTune 
+                                  5                                   6 
+                       HillClimbing                               irace 
+                                  6                                   6 
+                                ACO                                  SA 
+                                  6                                   7 
+                               HABO                                SWAY 
+                                  7                                   7 

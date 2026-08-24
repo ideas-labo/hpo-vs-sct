@@ -1,0 +1,57 @@
+Problem: nn-146821
+
+Optimizer merge mapping:
+ACO → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+BO → BO
+BOHB → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+CMAES → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+DE → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+DEHB → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+ES → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+GA → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+GGA → GGA
+HABO → HABO
+HEBO → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+HillClimbing → HillClimbing
+Hyperband → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+PSO → PSO_RandomSearch
+ParamILS → ParamILS
+RandomSearch → PSO_RandomSearch
+SA → SA
+SMAC → ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC
+UQGuided → UQGuided_irace
+irace → UQGuided_irace
+
+Statistics:
+                                         optimizer_name    optimizer_name     mean      std      min      max
+0  ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC           ACO 0.000000 0.000000 0.000000 0.000000
+1                                    UQGuided_irace      UQGuided 0.000333 0.001826 0.000000 0.010000
+2                                  PSO_RandomSearch           PSO 0.000333 0.001826 0.000000 0.010000
+3                                              HABO          HABO 0.000667 0.002537 0.000000 0.010000
+4                                               GGA           GGA 0.000667 0.002537 0.000000 0.010000
+5                                                SA            SA 0.001333 0.003457 0.000000 0.010000
+6                                          ParamILS      ParamILS 0.002000 0.004068 0.000000 0.010000
+7                                      HillClimbing  HillClimbing 0.002000 0.004068 0.000000 0.010000
+8                                                BO            BO 0.009000 0.005477 0.000000 0.020000
+
+Scott-Knott result:
+
+Groups:
+ACO_BOHB_CMAES_DE_DEHB_ES_GA_HEBO_Hyperband_SMAC 
+                                               1 
+                                  UQGuided_irace 
+                                               1 
+                                PSO_RandomSearch 
+                                               1 
+                                            HABO 
+                                               2 
+                                             GGA 
+                                               2 
+                                              SA 
+                                               2 
+                                        ParamILS 
+                                               2 
+                                    HillClimbing 
+                                               2 
+                                              BO 
+                                               3 

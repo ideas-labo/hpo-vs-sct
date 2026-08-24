@@ -1,0 +1,67 @@
+Problem: x264
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig_ConEx_FLASH_RandomSearch
+CMAES → CMAES
+ConEx → BestConfig_ConEx_FLASH_RandomSearch
+DE → DE
+ES → ES
+FLASH → BestConfig_ConEx_FLASH_RandomSearch
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_ConEx_FLASH_RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+                             optimizer_name    optimizer_name     mean      std      min       max
+0                               Tuneful       Tuneful 0.912353 0.821079 0.012500  2.888889
+1                                    BO            BO 1.035000 0.779233 0.009524  3.000000
+2                           PromiseTune   PromiseTune 1.194100 1.503563 0.010471  6.000000
+3                               ResTune       ResTune 1.238204 1.485518 0.022124  6.363636
+4                                    SA            SA 1.407865 2.517914 0.010471 12.833333
+5                          HillClimbing  HillClimbing 1.478452 3.030971 0.010471 15.000000
+6                                   PSO           PSO 1.577718 2.636234 0.017699 14.000000
+7                                    DE            DE 1.644311 2.681979 0.017699 14.000000
+8                                ATConf        ATConf 1.678045 2.555459 0.017699 12.000000
+9                             OtterTune     OtterTune 1.732684 3.131953 0.017699 16.250000
+10                                 BOCA          BOCA 1.746722 2.202144 0.017699  8.750000
+11                                CMAES         CMAES 1.888790 2.669378 0.010471  9.000000
+12                                   ES            ES 2.032777 4.568347 0.017699 25.000000
+13  BestConfig_ConEx_FLASH_RandomSearch    BestConfig 2.077059 4.362175 0.017699 23.000000
+14                                  ACO           ACO 2.126135 4.418314 0.010471 24.500000
+15                                   GA            GA 2.251865 5.333709 0.017699 29.000000
+16                             ROBOTune      ROBOTune 2.933669 4.365593 0.012500 16.166667
+17                                 SWAY          SWAY 6.026825 8.872922 0.095238 37.666667
+
+Scott-Knott result:
+
+Groups:
+                            Tuneful                                  BO 
+                                  1                                   1 
+                        PromiseTune                             ResTune 
+                                  1                                   1 
+                                 SA                        HillClimbing 
+                                  2                                   2 
+                                PSO                                  DE 
+                                  2                                   2 
+                             ATConf                           OtterTune 
+                                  2                                   2 
+                               BOCA                               CMAES 
+                                  2                                   2 
+                                 ES BestConfig_ConEx_FLASH_RandomSearch 
+                                  2                                   3 
+                                ACO                                  GA 
+                                  3                                   3 
+                           ROBOTune                                SWAY 
+                                  4                                   5 

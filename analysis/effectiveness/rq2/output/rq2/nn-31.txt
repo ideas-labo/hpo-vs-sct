@@ -1,0 +1,57 @@
+Problem: nn-31
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA_UQGuided
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → GA_UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0           HEBO          HEBO 0.018000 0.004842 0.010000 0.030000
+1      Hyperband     Hyperband 0.018667 0.006814 0.010000 0.030000
+2           DEHB          DEHB 0.020333 0.006687 0.010000 0.030000
+3           BOHB          BOHB 0.021333 0.005713 0.010000 0.030000
+4             ES            ES 0.022000 0.005509 0.010000 0.030000
+5           SMAC          SMAC 0.022333 0.007739 0.010000 0.040000
+6          irace         irace 0.023000 0.007497 0.010000 0.030000
+7            PSO           PSO 0.023667 0.006149 0.010000 0.030000
+8    GA_UQGuided            GA 0.024333 0.005683 0.010000 0.030000
+9            ACO           ACO 0.024333 0.007279 0.010000 0.040000
+10            DE            DE 0.024667 0.006814 0.010000 0.030000
+11          HABO          HABO 0.024667 0.006814 0.010000 0.040000
+12            SA            SA 0.025000 0.006297 0.010000 0.030000
+13  RandomSearch  RandomSearch 0.025667 0.006261 0.010000 0.040000
+14         CMAES         CMAES 0.026000 0.006747 0.010000 0.040000
+15      ParamILS      ParamILS 0.026667 0.007581 0.010000 0.040000
+16           GGA           GGA 0.027000 0.005350 0.010000 0.030000
+17  HillClimbing  HillClimbing 0.030667 0.008683 0.010000 0.040000
+18            BO            BO 0.037667 0.007739 0.020000 0.050000
+
+Scott-Knott result:
+
+Groups:
+        HEBO    Hyperband         DEHB         BOHB           ES         SMAC 
+           1            1            1            2            2            2 
+       irace          PSO  GA_UQGuided          ACO           DE         HABO 
+           3            4            4            5            5            6 
+          SA RandomSearch        CMAES     ParamILS          GGA HillClimbing 
+           7            7            8            8            8            8 
+          BO 
+           9 

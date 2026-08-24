@@ -1,0 +1,87 @@
+Problem: 7z
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_RandomSearch
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → ConEx_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+            optimizer_name    optimizer_name     mean       std      min       max
+0                 SWAY          SWAY 0.316597  0.401424 0.007634  2.000000
+1                   BO            BO 0.632731  0.442492 0.025316  1.285714
+2                  GGA           GGA 0.819478  0.962162 0.012346  3.333333
+3           BestConfig    BestConfig 0.890920  1.305009 0.011450  6.000000
+4              Tuneful       Tuneful 0.929560  1.601765 0.016461  9.000000
+5                   GA            GA 0.936864  2.136428 0.025316 12.000000
+6                irace         irace 0.941673  1.080366 0.016878  4.000000
+7               ATConf        ATConf 0.965382  1.216639 0.022901  6.000000
+8                   DE            DE 0.975958  2.313222 0.025316 13.000000
+9         HillClimbing  HillClimbing 0.976296  0.766422 0.011450  3.000000
+10                SMAC          SMAC 1.026874  1.909186 0.011450 10.000000
+11                  ES            ES 1.036315  2.674761 0.025316 15.000000
+12            ParamILS      ParamILS 1.042360  2.672696 0.025316 15.000000
+13                DEHB          DEHB 1.073561  1.533674 0.022901  6.000000
+14               CMAES         CMAES 1.095899  2.173325 0.019084 11.000000
+15                 ACO           ACO 1.185426  1.923336 0.016878  9.571429
+16  ConEx_RandomSearch         ConEx 1.207566  3.576631 0.025316 20.000000
+17               FLASH         FLASH 1.208800  3.576267 0.025316 20.000000
+18                 PSO           PSO 1.270746  3.940313 0.025316 22.000000
+19           OtterTune     OtterTune 1.278860  2.536078 0.025641 14.000000
+20                  SA            SA 1.312773  1.722294 0.011450  6.400000
+21         PromiseTune   PromiseTune 1.353157  4.318719 0.007634 23.000000
+22                BOHB          BOHB 1.544446  3.794274 0.019084 20.000000
+23                HABO          HABO 1.582133  3.517958 0.007634 14.000000
+24                HEBO          HEBO 1.687189  3.921699 0.016461 21.000000
+25                BOCA          BOCA 1.704215  4.171339 0.025641 23.000000
+26           Hyperband     Hyperband 1.733937  4.138944 0.019084 20.000000
+27             ResTune       ResTune 1.748863  3.479960 0.007634 17.857143
+28            UQGuided      UQGuided 1.912526  3.511295 0.022901 15.428571
+29            ROBOTune      ROBOTune 2.940165 11.440262 0.030534 63.000000
+
+Scott-Knott result:
+
+Groups:
+              SWAY                 BO                GGA         BestConfig 
+                 1                  1                  2                  2 
+           Tuneful                 GA              irace             ATConf 
+                 2                  2                  2                  2 
+                DE       HillClimbing               SMAC                 ES 
+                 2                  2                  2                  2 
+          ParamILS               DEHB              CMAES                ACO 
+                 2                  2                  2                  2 
+ConEx_RandomSearch              FLASH                PSO          OtterTune 
+                 2                  2                  2                  2 
+                SA        PromiseTune               BOHB               HABO 
+                 2                  2                  3                  3 
+              HEBO               BOCA          Hyperband            ResTune 
+                 3                  3                  3                  3 
+          UQGuided           ROBOTune 
+                 4                  5 

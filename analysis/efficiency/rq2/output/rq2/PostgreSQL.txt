@@ -1,0 +1,64 @@
+Problem: PostgreSQL
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_FLASH_RandomSearch
+DE → DE
+ES → ES
+FLASH → ConEx_FLASH_RandomSearch
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → ConEx_FLASH_RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+                  optimizer_name    optimizer_name     mean      std      min       max
+0                    ResTune       ResTune 0.977540 0.639340 0.116667  3.000000
+1                PromiseTune   PromiseTune 1.232520 1.360696 0.066667  6.000000
+2                         ES            ES 1.344191 1.940145 0.181818 11.000000
+3                        PSO           PSO 1.427947 2.323749 0.181818 13.000000
+4                         GA            GA 1.438818 1.982425 0.181818 11.000000
+5                         BO            BO 1.640384 2.935716 0.090909 16.000000
+6                  OtterTune     OtterTune 1.675636 2.411964 0.181818 13.000000
+7                     ATConf        ATConf 1.761786 2.266044 0.181818 11.000000
+8               HillClimbing  HillClimbing 1.795297 2.025568 0.033333 10.000000
+9                       BOCA          BOCA 1.811223 2.640425 0.181818 11.000000
+10                        DE            DE 1.887890 3.329169 0.181818 18.000000
+11  ConEx_FLASH_RandomSearch         ConEx 1.980217 5.148328 0.181818 29.000000
+12                     CMAES         CMAES 2.361784 3.026662 0.181818 13.200000
+13                BestConfig    BestConfig 2.684741 5.695016 0.181818 29.000000
+14                   Tuneful       Tuneful 2.812555 2.567715 0.033333 10.000000
+15                      SWAY          SWAY 2.868377 4.244522 0.042553 21.000000
+16                        SA            SA 2.944834 4.251748 0.033333 22.000000
+17                       ACO           ACO 3.088510 4.051802 0.133333 18.500000
+18                  ROBOTune      ROBOTune 3.376004 5.123399 0.214286 17.000000
+
+Scott-Knott result:
+
+Groups:
+                 ResTune              PromiseTune                       ES 
+                       1                        2                        2 
+                     PSO                       GA                       BO 
+                       2                        2                        2 
+               OtterTune                   ATConf             HillClimbing 
+                       2                        2                        2 
+                    BOCA                       DE ConEx_FLASH_RandomSearch 
+                       3                        3                        3 
+                   CMAES               BestConfig                  Tuneful 
+                       3                        3                        4 
+                    SWAY                       SA                      ACO 
+                       4                        4                        5 
+                ROBOTune 
+                       5 

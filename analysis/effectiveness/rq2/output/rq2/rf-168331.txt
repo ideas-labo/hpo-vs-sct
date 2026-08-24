@@ -1,0 +1,58 @@
+Problem: rf-168331
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES_DEHB_ES_HEBO_SMAC
+DE → DE
+DEHB → CMAES_DEHB_ES_HEBO_SMAC
+ES → CMAES_DEHB_ES_HEBO_SMAC
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → CMAES_DEHB_ES_HEBO_SMAC
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → CMAES_DEHB_ES_HEBO_SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                 optimizer_name    optimizer_name     mean      std      min      max
+0   CMAES_DEHB_ES_HEBO_SMAC         CMAES 0.000000 0.000000 0.000000 0.000000
+1                     irace         irace 0.000667 0.002537 0.000000 0.010000
+2              HillClimbing  HillClimbing 0.000667 0.002537 0.000000 0.010000
+3                       PSO           PSO 0.001667 0.003790 0.000000 0.010000
+4                  ParamILS      ParamILS 0.002333 0.004302 0.000000 0.010000
+5                        GA            GA 0.002667 0.004498 0.000000 0.010000
+6                 Hyperband     Hyperband 0.002667 0.004498 0.000000 0.010000
+7                      BOHB          BOHB 0.003333 0.004795 0.000000 0.010000
+8                        DE            DE 0.004000 0.005632 0.000000 0.020000
+9                       GGA           GGA 0.005667 0.006789 0.000000 0.020000
+10                 UQGuided      UQGuided 0.005667 0.007279 0.000000 0.020000
+11             RandomSearch  RandomSearch 0.007000 0.006513 0.000000 0.020000
+12                       SA            SA 0.008333 0.009855 0.000000 0.040000
+13                      ACO           ACO 0.011667 0.014404 0.000000 0.050000
+14                     HABO          HABO 0.012333 0.011943 0.000000 0.050000
+15                       BO            BO 0.054000 0.025542 0.020000 0.140000
+
+Scott-Knott result:
+
+Groups:
+CMAES_DEHB_ES_HEBO_SMAC                   irace            HillClimbing 
+                      1                       1                       1 
+                    PSO                ParamILS                      GA 
+                      2                       2                       2 
+              Hyperband                    BOHB                      DE 
+                      2                       3                       4 
+                    GGA                UQGuided            RandomSearch 
+                      4                       4                       5 
+                     SA                     ACO                    HABO 
+                      6                       6                       6 
+                     BO 
+                      7 

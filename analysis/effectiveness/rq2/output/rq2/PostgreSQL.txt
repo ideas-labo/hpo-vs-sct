@@ -1,0 +1,60 @@
+Problem: PostgreSQL
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name         mean        std          min          max
+0    PromiseTune   PromiseTune 50669.000000   0.000000 50669.000000 50669.000000
+1          FLASH         FLASH 50672.553333   8.150258 50669.000000 50692.400000
+2             ES            ES 50674.033333  11.011728 50669.000000 50713.400000
+3           SWAY          SWAY 50681.806667  13.669345 50669.000000 50713.400000
+4            PSO           PSO 50681.900000  16.307455 50669.000000 50731.200000
+5         ATConf        ATConf 50687.700000  15.436343 50669.000000 50713.400000
+6            ACO           ACO 50689.520000  19.712947 50669.000000 50739.600000
+7          ConEx         ConEx 50690.320000  18.869907 50669.000000 50735.400000
+8      OtterTune     OtterTune 50690.673333  20.491444 50669.000000 50735.400000
+9           BOCA          BOCA 50691.386667  21.640889 50669.000000 50739.600000
+10            GA            GA 50692.793333  20.017198 50669.000000 50744.200000
+11      ROBOTune      ROBOTune 50694.080000   9.878797 50669.000000 50713.400000
+12         CMAES         CMAES 50695.233333  35.205332 50669.000000 50800.400000
+13    BestConfig    BestConfig 50696.020000  26.036439 50669.000000 50779.800000
+14  RandomSearch  RandomSearch 50696.540000  26.297930 50669.000000 50779.800000
+15            SA            SA 50697.406667  44.740708 50669.000000 50902.400000
+16            DE            DE 50724.306667  37.224787 50669.000000 50827.400000
+17       Tuneful       Tuneful 50743.366667  41.965670 50669.000000 50843.400000
+18  HillClimbing  HillClimbing 50760.300000  84.414409 50669.000000 50987.800000
+19            BO            BO 50869.166667 117.624629 50692.400000 51264.200000
+20       ResTune       ResTune 50874.826667  87.218912 50713.400000 51041.200000
+
+Scott-Knott result:
+
+Groups:
+ PromiseTune        FLASH           ES         SWAY          PSO       ATConf 
+           1            2            2            3            4            4 
+         ACO        ConEx    OtterTune         BOCA           GA     ROBOTune 
+           4            4            5            6            7            7 
+       CMAES   BestConfig RandomSearch           SA           DE      Tuneful 
+           7            7            8            8            9           10 
+HillClimbing           BO      ResTune 
+          10           11           11 

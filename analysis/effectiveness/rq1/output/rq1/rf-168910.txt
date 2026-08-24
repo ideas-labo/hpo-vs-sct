@@ -1,0 +1,70 @@
+Problem: rf-168910
+
+Optimizer merge mapping:
+ATConf → ATConf_BOHB
+BOCA → BOCA
+BOHB → ATConf_BOHB
+BestConfig → BestConfig
+ConEx → ConEx
+DEHB → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+FLASH → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+GGA → GGA
+HABO → HABO
+HEBO → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+Hyperband → Hyperband
+OtterTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ParamILS → ParamILS
+PromiseTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ROBOTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ResTune → ResTune
+SMAC → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+SWAY → SWAY
+Tuneful → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                                                     optimizer_name  optimizer_name     mean      std      min      max
+0   DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful        DEHB 0.000000 0.000000 0.000000 0.000000
+1                                                   ATConf_BOHB      ATConf 0.001333 0.003457 0.000000 0.010000
+2                                                         irace       irace 0.001667 0.003790 0.000000 0.010000
+3                                                         ConEx       ConEx 0.002333 0.005683 0.000000 0.020000
+4                                                      ParamILS    ParamILS 0.003000 0.005960 0.000000 0.020000
+5                                                     Hyperband   Hyperband 0.007333 0.006397 0.000000 0.020000
+6                                                      UQGuided    UQGuided 0.011000 0.010289 0.000000 0.040000
+7                                                           GGA         GGA 0.013667 0.008503 0.000000 0.030000
+8                                                    BestConfig  BestConfig 0.016667 0.009223 0.000000 0.030000
+9                                                          HABO        HABO 0.032333 0.036264 0.000000 0.150000
+10                                                         BOCA        BOCA 0.080000 0.072493 0.010000 0.280000
+11                                                      ResTune     ResTune 0.092667 0.037594 0.040000 0.180000
+12                                                         SWAY        SWAY 0.143333 0.130340 0.010000 0.280000
+
+Scott-Knott result:
+
+Groups:
+DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful 
+                                                          1 
+                                                ATConf_BOHB 
+                                                          1 
+                                                      irace 
+                                                          1 
+                                                      ConEx 
+                                                          1 
+                                                   ParamILS 
+                                                          2 
+                                                  Hyperband 
+                                                          3 
+                                                   UQGuided 
+                                                          4 
+                                                        GGA 
+                                                          5 
+                                                 BestConfig 
+                                                          6 
+                                                       HABO 
+                                                          7 
+                                                       BOCA 
+                                                          8 
+                                                    ResTune 
+                                                          9 
+                                                       SWAY 
+                                                         10 

@@ -1,0 +1,66 @@
+Problem: xgboost-Covtype
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+ES → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+GA → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+GGA → GGA
+HABO → HABO
+HEBO → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+HillClimbing → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+Hyperband → Hyperband
+PSO → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+ParamILS → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+RandomSearch → RandomSearch
+SA → SA
+SMAC → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+UQGuided → UQGuided
+irace → DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace
+
+Statistics:
+                                              optimizer_name    optimizer_name     mean      std      min      max
+0   DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace          DEHB 0.000000 0.000000 0.000000 0.000000
+1                                               UQGuided      UQGuided 0.004172 0.015878 0.000000 0.062585
+2                                                  CMAES         CMAES 0.015472 0.043235 0.000000 0.213831
+3                                              Hyperband     Hyperband 0.015994 0.045733 0.000000 0.229477
+4                                                   BOHB          BOHB 0.022426 0.068470 0.000000 0.229477
+5                                                     SA            SA 0.030945 0.056950 0.000000 0.213831
+6                                           RandomSearch  RandomSearch 0.042245 0.065073 0.000000 0.213831
+7                                                    GGA           GGA 0.086228 0.228895 0.000000 1.027433
+8                                                    ACO           ACO 0.146900 0.369793 0.000000 1.585480
+9                                                   HABO          HABO 0.158722 0.279172 0.000000 1.017002
+10                                                    DE            DE 0.496158 0.528842 0.000000 1.585480
+11                                                    BO            BO 2.810403 2.445895 0.000000 9.132158
+
+Scott-Knott result:
+
+Groups:
+DEHB_ES_GA_HEBO_HillClimbing_PSO_ParamILS_SMAC_irace 
+                                                   1 
+                                            UQGuided 
+                                                   1 
+                                               CMAES 
+                                                   1 
+                                           Hyperband 
+                                                   1 
+                                                BOHB 
+                                                   2 
+                                                  SA 
+                                                   2 
+                                        RandomSearch 
+                                                   2 
+                                                 GGA 
+                                                   3 
+                                                 ACO 
+                                                   3 
+                                                HABO 
+                                                   4 
+                                                  DE 
+                                                   5 
+                                                  BO 
+                                                   6 

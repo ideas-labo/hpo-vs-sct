@@ -1,0 +1,54 @@
+Problem: xgb-9952
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE_HEBO
+DEHB → DEHB_ES_Hyperband_SMAC
+ES → DEHB_ES_Hyperband_SMAC
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → DE_HEBO
+HillClimbing → HillClimbing
+Hyperband → DEHB_ES_Hyperband_SMAC
+PSO → PSO_UQGuided
+ParamILS → ParamILS_irace
+RandomSearch → RandomSearch
+SA → SA
+SMAC → DEHB_ES_Hyperband_SMAC
+UQGuided → PSO_UQGuided
+irace → ParamILS_irace
+
+Statistics:
+                optimizer_name    optimizer_name     mean      std      min      max
+0   DEHB_ES_Hyperband_SMAC          DEHB 0.000000 0.000000 0.000000 0.000000
+1                  DE_HEBO            DE 0.000333 0.001826 0.000000 0.010000
+2                       GA            GA 0.000333 0.001826 0.000000 0.010000
+3           ParamILS_irace      ParamILS 0.000667 0.002537 0.000000 0.010000
+4             RandomSearch  RandomSearch 0.000667 0.002537 0.000000 0.010000
+5                     BOHB          BOHB 0.001000 0.003051 0.000000 0.010000
+6                    CMAES         CMAES 0.001000 0.003051 0.000000 0.010000
+7             PSO_UQGuided           PSO 0.001000 0.003051 0.000000 0.010000
+8                     HABO          HABO 0.002333 0.004302 0.000000 0.010000
+9                      GGA           GGA 0.002667 0.004498 0.000000 0.010000
+10                      SA            SA 0.003667 0.004901 0.000000 0.010000
+11                     ACO           ACO 0.004000 0.004983 0.000000 0.010000
+12                      BO            BO 0.006333 0.006149 0.000000 0.020000
+13            HillClimbing  HillClimbing 0.013000 0.033130 0.000000 0.110000
+
+Scott-Knott result:
+
+Groups:
+DEHB_ES_Hyperband_SMAC                DE_HEBO                     GA 
+                     1                      1                      1 
+        ParamILS_irace           RandomSearch                   BOHB 
+                     2                      2                      3 
+                 CMAES           PSO_UQGuided                   HABO 
+                     3                      3                      3 
+                   GGA                     SA                    ACO 
+                     3                      3                      3 
+                    BO           HillClimbing 
+                     3                      4 

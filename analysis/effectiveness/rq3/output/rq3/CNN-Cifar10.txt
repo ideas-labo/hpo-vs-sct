@@ -1,0 +1,84 @@
+Problem: CNN-Cifar10
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0             ES            ES 0.479160 0.031740 0.446112 0.546136
+1           SMAC          SMAC 0.479468 0.032203 0.447198 0.538261
+2           DEHB          DEHB 0.480947 0.039622 0.446112 0.554206
+3            PSO           PSO 0.484024 0.032492 0.446112 0.537773
+4          ConEx         ConEx 0.493989 0.030076 0.447198 0.538261
+5         ATConf        ATConf 0.499608 0.034792 0.446112 0.550325
+6       UQGuided      UQGuided 0.501972 0.039323 0.448185 0.555299
+7             GA            GA 0.502151 0.039035 0.446473 0.561591
+8   RandomSearch  RandomSearch 0.503571 0.035616 0.448859 0.562292
+9          irace         irace 0.504770 0.038590 0.447814 0.562328
+10            DE            DE 0.507043 0.033267 0.448859 0.551803
+11         CMAES         CMAES 0.510027 0.036305 0.448859 0.548226
+12     OtterTune     OtterTune 0.510147 0.029282 0.448859 0.548853
+13           GGA           GGA 0.510404 0.036214 0.448326 0.566762
+14         FLASH         FLASH 0.512161 0.027725 0.448185 0.550325
+15      ROBOTune      ROBOTune 0.512286 0.033173 0.447198 0.549190
+16     Hyperband     Hyperband 0.514299 0.034329 0.448859 0.560737
+17            BO            BO 0.515300 0.030735 0.448859 0.550047
+18          BOCA          BOCA 0.515334 0.035803 0.447198 0.555299
+19   PromiseTune   PromiseTune 0.516283 0.037613 0.448859 0.549190
+20    BestConfig    BestConfig 0.517871 0.031683 0.448859 0.550047
+21          HEBO          HEBO 0.518045 0.031799 0.448859 0.555246
+22          BOHB          BOHB 0.522165 0.030786 0.448859 0.559837
+23          SWAY          SWAY 0.522929 0.026200 0.475928 0.583099
+24          HABO          HABO 0.524370 0.034058 0.448859 0.565635
+25           ACO           ACO 0.528711 0.033282 0.448859 0.576705
+26            SA            SA 0.538557 0.025537 0.448859 0.585301
+27       ResTune       ResTune 0.553001 0.118577 0.476397 1.131974
+28  HillClimbing  HillClimbing 0.575766 0.039343 0.525770 0.655944
+29       Tuneful       Tuneful 0.623546 0.070996 0.476825 0.835411
+30      ParamILS      ParamILS 0.659725 0.123625 0.510892 0.995919
+
+Scott-Knott result:
+
+Groups:
+          ES         SMAC         DEHB          PSO        ConEx       ATConf 
+           1            1            1            1            2            3 
+    UQGuided           GA RandomSearch        irace           DE        CMAES 
+           4            5            5            6            6            6 
+   OtterTune          GGA        FLASH     ROBOTune    Hyperband           BO 
+           6            6            6            7            7            7 
+        BOCA  PromiseTune   BestConfig         HEBO         BOHB         SWAY 
+           7            7            8            9            9            9 
+        HABO          ACO           SA      ResTune HillClimbing      Tuneful 
+           9           10           10           11           12           13 
+    ParamILS 
+          13 

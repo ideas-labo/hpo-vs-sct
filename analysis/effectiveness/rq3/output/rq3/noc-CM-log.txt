@@ -1,0 +1,86 @@
+Problem: noc-CM-log
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+DE → DE
+DEHB → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+ES → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+FLASH → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+GA → GA
+GGA → GGA
+HABO → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+HEBO → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+HillClimbing → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+Hyperband → Hyperband_SA
+OtterTune → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+PSO → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+ParamILS → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+PromiseTune → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+ROBOTune → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → Hyperband_SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+UQGuided → UQGuided
+irace → ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace
+
+Statistics:
+                                                                                                     optimizer_name  optimizer_name     mean      std      min      max
+0   ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace      ATConf 4.309194 0.000000 4.309194 4.309194
+1                                                                                                          BOCA        BOCA 4.310199 0.005508 4.309194 4.339361
+2                                                                                                           GGA         GGA 4.311205 0.007654 4.309194 4.339361
+3                                                                                                            DE          DE 4.312210 0.009205 4.309194 4.339361
+4                                                                                       BestConfig_RandomSearch  BestConfig 4.313216 0.010430 4.309194 4.339361
+5                                                                                                  Hyperband_SA   Hyperband 4.313216 0.010430 4.309194 4.339361
+6                                                                                                            GA          GA 4.314284 0.018173 4.309194 4.401581
+7                                                                                                      UQGuided    UQGuided 4.316233 0.012977 4.309194 4.339361
+8                                                                                                         CMAES       CMAES 4.316296 0.019175 4.309194 4.401581
+9                                                                                                          BOHB        BOHB 4.319249 0.014464 4.309194 4.339361
+10                                                                                                         SWAY        SWAY 4.325899 0.070567 4.309194 4.687796
+11                                                                                                         SMAC        SMAC 4.353339 0.159854 4.309194 5.059484
+12                                                                                                          ACO         ACO 4.483834 0.219508 4.309194 5.007693
+13                                                                                                           BO          BO 4.682263 0.190982 4.339361 4.983722
+14                                                                                                      ResTune     ResTune 4.747210 0.174022 4.339361 4.953555
+
+Scott-Knott result:
+
+Groups:
+ATConf_ConEx_DEHB_ES_FLASH_HABO_HEBO_HillClimbing_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_Tuneful_irace 
+                                                                                                          1 
+                                                                                                       BOCA 
+                                                                                                          1 
+                                                                                                        GGA 
+                                                                                                          2 
+                                                                                                         DE 
+                                                                                                          3 
+                                                                                    BestConfig_RandomSearch 
+                                                                                                          3 
+                                                                                               Hyperband_SA 
+                                                                                                          4 
+                                                                                                         GA 
+                                                                                                          4 
+                                                                                                   UQGuided 
+                                                                                                          4 
+                                                                                                      CMAES 
+                                                                                                          4 
+                                                                                                       BOHB 
+                                                                                                          4 
+                                                                                                       SWAY 
+                                                                                                          4 
+                                                                                                       SMAC 
+                                                                                                          4 
+                                                                                                        ACO 
+                                                                                                          5 
+                                                                                                         BO 
+                                                                                                          6 
+                                                                                                    ResTune 
+                                                                                                          7 

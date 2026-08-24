@@ -1,0 +1,60 @@
+Problem: redis
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name        mean         std         min          max
+0             BO            BO 1888.117667  754.722535 1454.580000  5873.110000
+1          ConEx         ConEx 2365.896444 1208.638918    0.000000  5378.746667
+2           SWAY          SWAY 2491.884333 1383.470337    0.000000  3759.913333
+3             ES            ES 2601.798556 1681.985772    0.000000  5707.040000
+4       ROBOTune      ROBOTune 2666.324667 1408.531591    0.000000  5383.480000
+5        ResTune       ResTune 2688.574222 1413.770512 1454.580000  6083.930000
+6      OtterTune     OtterTune 2762.413444 1419.822348    0.000000  5383.480000
+7             GA            GA 2768.875444 1195.369672  773.093333  5974.643333
+8           BOCA          BOCA 2779.167000 1402.936309  773.093333  6083.930000
+9        Tuneful       Tuneful 2829.178111 1718.177000  773.093333  5367.383333
+10         CMAES         CMAES 2947.218778 1505.423821  773.093333  4992.963333
+11           PSO           PSO 3038.656444 1262.574824 1454.580000  5550.596667
+12            DE            DE 3045.262333 1249.261880  773.093333  5383.480000
+13         FLASH         FLASH 3052.934778 1615.413114    0.000000  5997.556667
+14  RandomSearch  RandomSearch 3061.287556 1568.344176    0.000000  5873.110000
+15        ATConf        ATConf 3155.155889 1235.180072  773.093333  5814.880000
+16   PromiseTune   PromiseTune 3262.062667 1293.764601    0.000000  4992.963333
+17           ACO           ACO 3308.528222 1382.009664  773.093333  6546.276667
+18    BestConfig    BestConfig 3311.491667 1682.442107    0.000000  6613.983333
+19  HillClimbing  HillClimbing 6139.157444 2248.424731 1761.280000 11471.063333
+20            SA            SA 6202.749444 2184.681573 2622.353333 11471.063333
+
+Scott-Knott result:
+
+Groups:
+          BO        ConEx         SWAY           ES     ROBOTune      ResTune 
+           1            2            3            3            4            4 
+   OtterTune           GA         BOCA      Tuneful        CMAES          PSO 
+           4            4            5            5            5            5 
+          DE        FLASH RandomSearch       ATConf  PromiseTune          ACO 
+           5            6            6            7            8            8 
+  BestConfig HillClimbing           SA 
+           8            9            9 

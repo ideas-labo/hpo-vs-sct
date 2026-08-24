@@ -1,0 +1,58 @@
+Problem: CNN-ColorectalHistology
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean       std      min        max
+0       ParamILS      ParamILS 0.997650  1.927346 0.025641  11.000000
+1             GA            GA 1.130657  2.647258 0.025641  15.000000
+2             BO            BO 1.263990  3.371548 0.025641  19.000000
+3            PSO           PSO 1.297323  3.553004 0.025641  20.000000
+4           SMAC          SMAC 1.611903  1.470367 0.055556   7.555556
+5           HEBO          HEBO 1.869844  4.992303 0.025641  28.000000
+6           HABO          HABO 1.911274  2.641357 0.095238  12.400000
+7       UQGuided      UQGuided 2.050114  5.025850 0.025641  28.000000
+8   HillClimbing  HillClimbing 2.053900  3.589956 0.025641  17.000000
+9             SA            SA 2.098434  3.340054 0.025641  18.500000
+10           ACO           ACO 2.118152  3.444447 0.142857  16.500000
+11  RandomSearch  RandomSearch 2.130657  8.105749 0.025641  45.000000
+12            DE            DE 2.330657  9.200120 0.025641  51.000000
+13            ES            ES 2.530657 10.294719 0.025641  57.000000
+14          DEHB          DEHB 2.935807  4.973194 0.092593  17.000000
+15         CMAES         CMAES 3.377826  8.196906 0.019608  45.000000
+16           GGA           GGA 3.784128  8.428888 0.128205  42.000000
+17     Hyperband     Hyperband 3.799693 11.121293 0.092593  61.000000
+18          BOHB          BOHB 4.396360 14.875959 0.092593  82.000000
+19         irace         irace 5.185439 19.308352 0.142857 107.000000
+
+Scott-Knott result:
+
+Groups:
+    ParamILS           GA           BO          PSO         SMAC         HEBO 
+           1            1            1            2            2            2 
+        HABO     UQGuided HillClimbing           SA          ACO RandomSearch 
+           2            2            3            3            3            4 
+          DE           ES         DEHB        CMAES          GGA    Hyperband 
+           4            4            5            5            5            5 
+        BOHB        irace 
+           6            6 

@@ -1,0 +1,58 @@
+Problem: FCNet-ParkinsonsTelemonitoring
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean       std      min       max
+0       ParamILS      ParamILS 0.416968  0.506001 0.019608  1.875000
+1           SMAC          SMAC 0.436430  0.677965 0.010363  2.454545
+2             GA            GA 0.519687  0.683388 0.019608  2.818182
+3            ACO           ACO 0.544400  0.796788 0.042553  3.000000
+4            PSO           PSO 0.601074  0.761672 0.019608  2.500000
+5             ES            ES 0.618074  0.838041 0.019608  3.545455
+6           HEBO          HEBO 0.658481  1.248965 0.055319  6.200000
+7           DEHB          DEHB 0.659606  1.429425 0.007435  7.636364
+8   HillClimbing  HillClimbing 0.704549  1.668430 0.007435  9.200000
+9          irace         irace 0.727366  1.467554 0.040892  7.800000
+10  RandomSearch  RandomSearch 0.930231  1.420626 0.019608  6.818182
+11            DE            DE 1.061225  2.175408 0.019608 11.352941
+12         CMAES         CMAES 1.271354  3.039420 0.014706 15.000000
+13            BO            BO 1.371179  1.400799 0.019608  6.677419
+14           GGA           GGA 1.511416  3.088903 0.028807 15.200000
+15          BOHB          BOHB 1.558651  2.281963 0.018587  8.888889
+16      UQGuided      UQGuided 1.870838  3.877965 0.019608 19.888889
+17     Hyperband     Hyperband 2.053203  4.435743 0.018587 21.400000
+18            SA            SA 2.106254  4.245351 0.007435 18.600000
+19          HABO          HABO 3.253926 10.104188 0.029412 55.000000
+
+Scott-Knott result:
+
+Groups:
+    ParamILS         SMAC           GA          ACO          PSO           ES 
+           1            1            1            1            1            2 
+        HEBO         DEHB HillClimbing        irace RandomSearch           DE 
+           2            2            2            2            2            3 
+       CMAES           BO          GGA         BOHB     UQGuided    Hyperband 
+           3            3            4            4            4            4 
+          SA         HABO 
+           5            5 

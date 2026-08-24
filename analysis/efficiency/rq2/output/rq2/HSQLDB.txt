@@ -1,0 +1,60 @@
+Problem: HSQLDB
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min       max
+0          CMAES         CMAES 0.574764 0.604656 0.062500  2.263158
+1           SWAY          SWAY 0.574935 0.537161 0.016529  2.000000
+2        ResTune       ResTune 0.578736 0.607712 0.016260  2.000000
+3        Tuneful       Tuneful 0.611001 1.246452 0.016260  7.000000
+4         ATConf        ATConf 0.614824 0.935601 0.028986  5.000000
+5            ACO           ACO 0.618522 0.677986 0.069444  3.222222
+6             ES            ES 0.643021 0.992837 0.028986  5.000000
+7      OtterTune     OtterTune 0.661218 1.011826 0.028986  5.000000
+8             SA            SA 0.665855 0.533270 0.047619  2.235294
+9       ROBOTune      ROBOTune 0.673664 0.861085 0.024390  3.052632
+10           PSO           PSO 0.682529 0.952543 0.028986  5.000000
+11         FLASH         FLASH 0.728658 1.061676 0.028986  5.000000
+12            BO            BO 0.785795 1.042565 0.028986  5.000000
+13            DE            DE 0.850920 1.173475 0.028986  5.000000
+14          BOCA          BOCA 0.881194 1.259508 0.028986  5.166667
+15            GA            GA 0.906547 1.402215 0.028986  6.111111
+16  HillClimbing  HillClimbing 0.968362 2.494588 0.047619 14.000000
+17         ConEx         ConEx 0.982751 1.313334 0.028986  5.000000
+18    BestConfig    BestConfig 0.983442 1.191372 0.057143  5.000000
+19  RandomSearch  RandomSearch 1.012197 1.323363 0.028986  5.000000
+20   PromiseTune   PromiseTune 1.141761 1.799163 0.133333  9.157895
+
+Scott-Knott result:
+
+Groups:
+       CMAES         SWAY      ResTune      Tuneful       ATConf          ACO 
+           1            1            1            2            2            2 
+          ES    OtterTune           SA     ROBOTune          PSO        FLASH 
+           2            2            2            2            2            2 
+          BO           DE         BOCA           GA HillClimbing        ConEx 
+           3            3            3            3            4            4 
+  BestConfig RandomSearch  PromiseTune 
+           5            6            6 

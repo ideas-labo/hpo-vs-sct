@@ -1,0 +1,51 @@
+Problem: xgb-31
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES_PSO
+DE → DE
+DEHB → DEHB
+ES → ES_GGA_SA
+GA → GA_RandomSearch
+GGA → ES_GGA_SA
+HABO → HABO
+HEBO → HEBO_UQGuided
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → CMAES_PSO
+ParamILS → ParamILS
+RandomSearch → GA_RandomSearch
+SA → ES_GGA_SA
+SMAC → SMAC
+UQGuided → HEBO_UQGuided
+irace → irace
+
+Statistics:
+         optimizer_name    optimizer_name     mean      std      min      max
+0         Hyperband     Hyperband 0.004333 0.005040 0.000000 0.010000
+1                DE            DE 0.005000 0.005085 0.000000 0.010000
+2              BOHB          BOHB 0.005667 0.005040 0.000000 0.010000
+3              SMAC          SMAC 0.006000 0.004983 0.000000 0.010000
+4              DEHB          DEHB 0.006000 0.004983 0.000000 0.010000
+5   GA_RandomSearch            GA 0.006333 0.004901 0.000000 0.010000
+6         CMAES_PSO         CMAES 0.006667 0.004795 0.000000 0.010000
+7     HEBO_UQGuided          HEBO 0.007000 0.004661 0.000000 0.010000
+8         ES_GGA_SA            ES 0.007667 0.004302 0.000000 0.010000
+9             irace         irace 0.008667 0.003457 0.000000 0.010000
+10             HABO          HABO 0.008667 0.003457 0.000000 0.010000
+11         ParamILS      ParamILS 0.008667 0.004342 0.000000 0.020000
+12              ACO           ACO 0.009333 0.003651 0.000000 0.020000
+13               BO            BO 0.010333 0.005561 0.000000 0.020000
+14     HillClimbing  HillClimbing 0.012667 0.007849 0.000000 0.030000
+
+Scott-Knott result:
+
+Groups:
+      Hyperband              DE            BOHB            SMAC            DEHB 
+              1               1               2               3               4 
+GA_RandomSearch       CMAES_PSO   HEBO_UQGuided       ES_GGA_SA           irace 
+              4               4               4               5               5 
+           HABO        ParamILS             ACO              BO    HillClimbing 
+              5               6               6               6               6 

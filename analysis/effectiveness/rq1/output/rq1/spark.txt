@@ -1,0 +1,60 @@
+Problem: spark
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx
+DEHB → DEHB
+FLASH → FLASH
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+     optimizer_name   optimizer_name        mean       std         min         max
+0         FLASH        FLASH 1177.233333 36.142136 1130.000000 1258.000000
+1   PromiseTune  PromiseTune 1180.266667 28.420407 1130.000000 1205.000000
+2          SMAC         SMAC 1187.133333 38.700203 1130.000000 1269.000000
+3          DEHB         DEHB 1199.266667 40.186576 1130.000000 1271.000000
+4        ATConf       ATConf 1204.066667 26.661264 1130.000000 1274.000000
+5         irace        irace 1210.500000 39.786283 1130.000000 1277.000000
+6         ConEx        ConEx 1212.533333 38.504575 1130.000000 1277.000000
+7          SWAY         SWAY 1214.333333 66.653160 1130.000000 1352.000000
+8          BOHB         BOHB 1215.800000 34.653357 1130.000000 1274.000000
+9          HABO         HABO 1216.200000 44.246488 1130.000000 1306.000000
+10         HEBO         HEBO 1221.666667 39.572137 1130.000000 1296.000000
+11          GGA          GGA 1224.366667 40.812002 1130.000000 1306.000000
+12    OtterTune    OtterTune 1229.366667 32.421240 1191.000000 1277.000000
+13     ROBOTune     ROBOTune 1231.566667 33.526812 1198.000000 1279.000000
+14   BestConfig   BestConfig 1234.500000 40.678513 1130.000000 1319.000000
+15    Hyperband    Hyperband 1236.133333 33.361896 1198.000000 1282.000000
+16         BOCA         BOCA 1236.733333 41.464512 1130.000000 1282.000000
+17      Tuneful      Tuneful 1238.400000 96.015301 1130.000000 1388.000000
+18     UQGuided     UQGuided 1256.266667 61.915367 1178.000000 1401.000000
+19      ResTune      ResTune 1289.633333 49.050631 1198.000000 1379.000000
+20     ParamILS     ParamILS 1382.266667 85.344306 1254.000000 1641.000000
+
+Scott-Knott result:
+
+Groups:
+      FLASH PromiseTune        SMAC        DEHB      ATConf       irace 
+          1           2           3           3           4           4 
+      ConEx        SWAY        BOHB        HABO        HEBO         GGA 
+          5           5           6           6           6           6 
+  OtterTune    ROBOTune  BestConfig   Hyperband        BOCA     Tuneful 
+          6           7           7           7           7           8 
+   UQGuided     ResTune    ParamILS 
+          8           9          10 

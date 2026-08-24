@@ -1,0 +1,107 @@
+Problem: rf-168910
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf_BOHB
+BO → BO
+BOCA → BOCA
+BOHB → ATConf_BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ES → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+FLASH → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ROBOTune → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+SWAY → SWAY
+Tuneful → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                                                        optimizer_name    optimizer_name     mean      std      min      max
+0   DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful          DEHB 0.000000 0.000000 0.000000 0.000000
+1                                                      ATConf_BOHB        ATConf 0.001333 0.003457 0.000000 0.010000
+2                                                              PSO           PSO 0.001333 0.003457 0.000000 0.010000
+3                                                            irace         irace 0.001667 0.003790 0.000000 0.010000
+4                                                            ConEx         ConEx 0.002333 0.005683 0.000000 0.020000
+5                                                         ParamILS      ParamILS 0.003000 0.005960 0.000000 0.020000
+6                                                     HillClimbing  HillClimbing 0.003333 0.006609 0.000000 0.020000
+7                                                               GA            GA 0.003667 0.005561 0.000000 0.020000
+8                                                            CMAES         CMAES 0.006667 0.008023 0.000000 0.030000
+9                                                        Hyperband     Hyperband 0.007333 0.006397 0.000000 0.020000
+10                                                        UQGuided      UQGuided 0.011000 0.010289 0.000000 0.040000
+11                                                              DE            DE 0.011333 0.006288 0.000000 0.020000
+12                                                             GGA           GGA 0.013667 0.008503 0.000000 0.030000
+13                                                              SA            SA 0.016000 0.011626 0.000000 0.040000
+14                                                    RandomSearch  RandomSearch 0.016667 0.009223 0.000000 0.030000
+15                                                      BestConfig    BestConfig 0.016667 0.009223 0.000000 0.030000
+16                                                            HABO          HABO 0.032333 0.036264 0.000000 0.150000
+17                                                             ACO           ACO 0.065667 0.058232 0.000000 0.180000
+18                                                              BO            BO 0.070333 0.053529 0.010000 0.220000
+19                                                            BOCA          BOCA 0.080000 0.072493 0.010000 0.280000
+20                                                         ResTune       ResTune 0.092667 0.037594 0.040000 0.180000
+21                                                            SWAY          SWAY 0.143333 0.130340 0.010000 0.280000
+
+Scott-Knott result:
+
+Groups:
+DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful 
+                                                             1 
+                                                   ATConf_BOHB 
+                                                             1 
+                                                           PSO 
+                                                             1 
+                                                         irace 
+                                                             2 
+                                                         ConEx 
+                                                             3 
+                                                      ParamILS 
+                                                             3 
+                                                  HillClimbing 
+                                                             3 
+                                                            GA 
+                                                             4 
+                                                         CMAES 
+                                                             5 
+                                                     Hyperband 
+                                                             6 
+                                                      UQGuided 
+                                                             6 
+                                                            DE 
+                                                             7 
+                                                           GGA 
+                                                             8 
+                                                            SA 
+                                                             9 
+                                                  RandomSearch 
+                                                            10 
+                                                    BestConfig 
+                                                            11 
+                                                          HABO 
+                                                            11 
+                                                           ACO 
+                                                            12 
+                                                            BO 
+                                                            12 
+                                                          BOCA 
+                                                            13 
+                                                       ResTune 
+                                                            14 
+                                                          SWAY 
+                                                            14 

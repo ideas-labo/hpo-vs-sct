@@ -1,0 +1,98 @@
+Problem: xgb-9952
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_ParamILS_irace
+DE → DE_HEBO
+DEHB → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+ES → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+FLASH → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → DE_HEBO
+HillClimbing → HillClimbing
+Hyperband → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+OtterTune → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+PSO → PSO_UQGuided
+ParamILS → ConEx_ParamILS_irace
+PromiseTune → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+SWAY → SWAY
+Tuneful → ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful
+UQGuided → PSO_UQGuided
+irace → ConEx_ParamILS_irace
+
+Statistics:
+                                                           optimizer_name    optimizer_name     mean      std      min      max
+0   ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful        ATConf 0.000000 0.000000 0.000000 0.000000
+1                                                             DE_HEBO            DE 0.000333 0.001826 0.000000 0.010000
+2                                                                  GA            GA 0.000333 0.001826 0.000000 0.010000
+3                                                ConEx_ParamILS_irace         ConEx 0.000667 0.002537 0.000000 0.010000
+4                                                        RandomSearch  RandomSearch 0.000667 0.002537 0.000000 0.010000
+5                                                                BOHB          BOHB 0.001000 0.003051 0.000000 0.010000
+6                                                               CMAES         CMAES 0.001000 0.003051 0.000000 0.010000
+7                                                        PSO_UQGuided           PSO 0.001000 0.003051 0.000000 0.010000
+8                                                            ROBOTune      ROBOTune 0.001333 0.003457 0.000000 0.010000
+9                                                          BestConfig    BestConfig 0.001333 0.003457 0.000000 0.010000
+10                                                               HABO          HABO 0.002333 0.004302 0.000000 0.010000
+11                                                                GGA           GGA 0.002667 0.004498 0.000000 0.010000
+12                                                                 SA            SA 0.003667 0.004901 0.000000 0.010000
+13                                                                ACO           ACO 0.004000 0.004983 0.000000 0.010000
+14                                                                 BO            BO 0.006333 0.006149 0.000000 0.020000
+15                                                            ResTune       ResTune 0.007333 0.004498 0.000000 0.010000
+16                                                               BOCA          BOCA 0.009000 0.011250 0.000000 0.050000
+17                                                       HillClimbing  HillClimbing 0.013000 0.033130 0.000000 0.110000
+18                                                               SWAY          SWAY 0.022333 0.015466 0.000000 0.050000
+
+Scott-Knott result:
+
+Groups:
+ATConf_DEHB_ES_FLASH_Hyperband_OtterTune_PromiseTune_SMAC_Tuneful 
+                                                                1 
+                                                          DE_HEBO 
+                                                                1 
+                                                               GA 
+                                                                1 
+                                             ConEx_ParamILS_irace 
+                                                                2 
+                                                     RandomSearch 
+                                                                2 
+                                                             BOHB 
+                                                                3 
+                                                            CMAES 
+                                                                3 
+                                                     PSO_UQGuided 
+                                                                3 
+                                                         ROBOTune 
+                                                                3 
+                                                       BestConfig 
+                                                                3 
+                                                             HABO 
+                                                                3 
+                                                              GGA 
+                                                                3 
+                                                               SA 
+                                                                3 
+                                                              ACO 
+                                                                3 
+                                                               BO 
+                                                                3 
+                                                          ResTune 
+                                                                4 
+                                                             BOCA 
+                                                                4 
+                                                     HillClimbing 
+                                                                4 
+                                                             SWAY 
+                                                                5 

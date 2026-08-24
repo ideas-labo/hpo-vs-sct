@@ -1,0 +1,56 @@
+Problem: xgb-146822
+
+Optimizer merge mapping:
+ATConf → ATConf_ConEx_FLASH
+BOCA → BOCA_ROBOTune
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ATConf_ConEx_FLASH
+DEHB → DEHB
+FLASH → ATConf_ConEx_FLASH
+GGA → GGA_SMAC
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS_PromiseTune
+PromiseTune → ParamILS_PromiseTune
+ROBOTune → BOCA_ROBOTune
+ResTune → ResTune
+SMAC → GGA_SMAC
+SWAY → SWAY_irace
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → SWAY_irace
+
+Statistics:
+              optimizer_name  optimizer_name     mean      std      min      max
+0              Hyperband   Hyperband 0.006333 0.004901 0.000000 0.010000
+1                   HEBO        HEBO 0.006333 0.004901 0.000000 0.010000
+2                   BOHB        BOHB 0.007000 0.004661 0.000000 0.010000
+3                Tuneful     Tuneful 0.008000 0.004068 0.000000 0.010000
+4               GGA_SMAC         GGA 0.008000 0.004068 0.000000 0.010000
+5               UQGuided    UQGuided 0.008000 0.004068 0.000000 0.010000
+6              OtterTune   OtterTune 0.008333 0.003790 0.000000 0.010000
+7     ATConf_ConEx_FLASH      ATConf 0.008333 0.003790 0.000000 0.010000
+8                   DEHB        DEHB 0.008667 0.003457 0.000000 0.010000
+9          BOCA_ROBOTune        BOCA 0.009000 0.003051 0.000000 0.010000
+10  ParamILS_PromiseTune    ParamILS 0.009333 0.002537 0.000000 0.010000
+11            BestConfig  BestConfig 0.009333 0.002537 0.000000 0.010000
+12                  HABO        HABO 0.009667 0.001826 0.000000 0.010000
+13               ResTune     ResTune 0.009667 0.001826 0.000000 0.010000
+14            SWAY_irace        SWAY 0.010000 0.000000 0.010000 0.010000
+
+Scott-Knott result:
+
+Groups:
+           Hyperband                 HEBO                 BOHB 
+                   1                    1                    1 
+             Tuneful             GGA_SMAC             UQGuided 
+                   1                    1                    1 
+           OtterTune   ATConf_ConEx_FLASH                 DEHB 
+                   2                    2                    2 
+       BOCA_ROBOTune ParamILS_PromiseTune           BestConfig 
+                   2                    2                    2 
+                HABO              ResTune           SWAY_irace 
+                   3                    3                    3 

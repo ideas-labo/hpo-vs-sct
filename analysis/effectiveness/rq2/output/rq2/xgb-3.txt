@@ -1,0 +1,50 @@
+Problem: xgb-3
+
+Optimizer merge mapping:
+ACO → ACO_GA_SA
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE_ES_UQGuided
+DEHB → DEHB_irace
+ES → DE_ES_UQGuided
+GA → ACO_GA_SA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband_PSO
+PSO → Hyperband_PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → ACO_GA_SA
+SMAC → SMAC
+UQGuided → DE_ES_UQGuided
+irace → DEHB_irace
+
+Statistics:
+        optimizer_name    optimizer_name     mean      std      min      max
+0             SMAC          SMAC 0.004000 0.004983 0.000000 0.010000
+1     RandomSearch  RandomSearch 0.006000 0.004983 0.000000 0.010000
+2              GGA           GGA 0.006667 0.004795 0.000000 0.010000
+3   DE_ES_UQGuided            DE 0.007333 0.004498 0.000000 0.010000
+4             HEBO          HEBO 0.007667 0.004302 0.000000 0.010000
+5        ACO_GA_SA           ACO 0.008000 0.004068 0.000000 0.010000
+6            CMAES         CMAES 0.008333 0.003790 0.000000 0.010000
+7             BOHB          BOHB 0.008333 0.003790 0.000000 0.010000
+8       DEHB_irace          DEHB 0.008667 0.003457 0.000000 0.010000
+9    Hyperband_PSO     Hyperband 0.009000 0.003051 0.000000 0.010000
+10    HillClimbing  HillClimbing 0.009000 0.003051 0.000000 0.010000
+11            HABO          HABO 0.009667 0.001826 0.000000 0.010000
+12        ParamILS      ParamILS 0.009667 0.001826 0.000000 0.010000
+13              BO            BO 0.010000 0.000000 0.010000 0.010000
+
+Scott-Knott result:
+
+Groups:
+          SMAC   RandomSearch            GGA DE_ES_UQGuided           HEBO 
+             1              2              2              2              3 
+     ACO_GA_SA          CMAES           BOHB     DEHB_irace  Hyperband_PSO 
+             3              3              3              3              4 
+  HillClimbing           HABO       ParamILS             BO 
+             4              4              5              5 

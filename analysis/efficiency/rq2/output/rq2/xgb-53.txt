@@ -1,0 +1,58 @@
+Problem: xgb-53
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min       max
+0   HillClimbing  HillClimbing 0.626670 0.703187 0.019608  3.000000
+1          CMAES         CMAES 0.716369 0.876747 0.013986  4.000000
+2           SMAC          SMAC 0.730851 0.881146 0.016529  3.333333
+3            GGA           GGA 0.737301 0.842733 0.019608  4.000000
+4            PSO           PSO 0.741807 0.979013 0.027972  4.000000
+5       ParamILS      ParamILS 0.747412 0.962189 0.027972  4.000000
+6   RandomSearch  RandomSearch 0.756845 1.003748 0.027972  4.000000
+7             SA            SA 0.776686 1.054539 0.019608  4.333333
+8             ES            ES 0.783184 1.068609 0.027972  4.000000
+9             GA            GA 0.788575 1.088051 0.027972  4.000000
+10            DE            DE 0.789425 1.065088 0.027972  4.000000
+11           ACO           ACO 0.796821 1.133319 0.017094  5.000000
+12         irace         irace 0.800984 1.166353 0.017094  5.000000
+13     Hyperband     Hyperband 0.812299 1.065045 0.027951  3.997000
+14          DEHB          DEHB 0.821504 1.079122 0.027972  4.000000
+15          BOHB          BOHB 0.840086 1.090612 0.033033  3.997000
+16          HEBO          HEBO 0.978531 1.341302 0.017094  6.000000
+17      UQGuided      UQGuided 1.058149 1.684922 0.027972  6.333333
+18          HABO          HABO 1.401853 2.449798 0.017094 10.000000
+19            BO            BO 1.439229 4.064825 0.027972 22.400000
+
+Scott-Knott result:
+
+Groups:
+HillClimbing        CMAES         SMAC          GGA          PSO     ParamILS 
+           1            1            1            1            1            1 
+RandomSearch           SA           ES           GA           DE          ACO 
+           1            1            1            1            2            2 
+       irace    Hyperband         DEHB         BOHB         HEBO     UQGuided 
+           2            2            2            2            2            2 
+        HABO           BO 
+           2            2 

@@ -1,0 +1,84 @@
+Problem: PostgreSQL
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name         mean        std          min          max
+0    PromiseTune   PromiseTune 50669.000000   0.000000 50669.000000 50669.000000
+1          FLASH         FLASH 50672.553333   8.150258 50669.000000 50692.400000
+2             ES            ES 50674.033333  11.011728 50669.000000 50713.400000
+3           DEHB          DEHB 50675.673333  10.437662 50669.000000 50692.400000
+4           HEBO          HEBO 50676.280000   9.068566 50669.000000 50687.200000
+5           SWAY          SWAY 50681.806667  13.669345 50669.000000 50713.400000
+6            PSO           PSO 50681.900000  16.307455 50669.000000 50731.200000
+7          irace         irace 50682.900000  17.285892 50669.000000 50713.400000
+8           HABO          HABO 50685.986667  16.914710 50669.000000 50723.800000
+9         ATConf        ATConf 50687.700000  15.436343 50669.000000 50713.400000
+10           ACO           ACO 50689.520000  19.712947 50669.000000 50739.600000
+11         ConEx         ConEx 50690.320000  18.869907 50669.000000 50735.400000
+12     OtterTune     OtterTune 50690.673333  20.491444 50669.000000 50735.400000
+13          BOCA          BOCA 50691.386667  21.640889 50669.000000 50739.600000
+14          BOHB          BOHB 50692.460000  19.241919 50669.000000 50735.400000
+15            GA            GA 50692.793333  20.017198 50669.000000 50744.200000
+16      ROBOTune      ROBOTune 50694.080000   9.878797 50669.000000 50713.400000
+17         CMAES         CMAES 50695.233333  35.205332 50669.000000 50800.400000
+18           GGA           GGA 50695.420000  24.013752 50669.000000 50744.200000
+19    BestConfig    BestConfig 50696.020000  26.036439 50669.000000 50779.800000
+20  RandomSearch  RandomSearch 50696.540000  26.297930 50669.000000 50779.800000
+21            SA            SA 50697.406667  44.740708 50669.000000 50902.400000
+22     Hyperband     Hyperband 50698.426667  20.749590 50669.000000 50755.200000
+23      UQGuided      UQGuided 50706.493333  49.667077 50669.000000 50843.400000
+24      ParamILS      ParamILS 50709.553333  36.237442 50669.000000 50831.400000
+25            DE            DE 50724.306667  37.224787 50669.000000 50827.400000
+26          SMAC          SMAC 50741.786667  61.205745 50669.000000 50906.000000
+27       Tuneful       Tuneful 50743.366667  41.965670 50669.000000 50843.400000
+28  HillClimbing  HillClimbing 50760.300000  84.414409 50669.000000 50987.800000
+29            BO            BO 50869.166667 117.624629 50692.400000 51264.200000
+30       ResTune       ResTune 50874.826667  87.218912 50713.400000 51041.200000
+
+Scott-Knott result:
+
+Groups:
+ PromiseTune        FLASH           ES         DEHB         HEBO         SWAY 
+           1            1            2            2            3            3 
+         PSO        irace         HABO       ATConf          ACO        ConEx 
+           4            5            5            5            5            5 
+   OtterTune         BOCA         BOHB           GA     ROBOTune        CMAES 
+           6            6            7            8            9            9 
+         GGA   BestConfig RandomSearch           SA    Hyperband     UQGuided 
+          10           10           10           11           12           12 
+    ParamILS           DE         SMAC      Tuneful HillClimbing           BO 
+          12           13           14           14           14           15 
+     ResTune 
+          15 

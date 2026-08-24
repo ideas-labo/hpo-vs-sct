@@ -1,0 +1,101 @@
+Problem: xgboost-CNAE9
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace
+BO → BO
+BOCA → BOCA
+BOHB → BOHB_Hyperband
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES_FLASH_HABO
+ConEx → ConEx_UQGuided
+DE → DE
+DEHB → ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace
+ES → ES
+FLASH → CMAES_FLASH_HABO
+GA → ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace
+GGA → GGA
+HABO → CMAES_FLASH_HABO
+HEBO → ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace
+HillClimbing → HillClimbing
+Hyperband → BOHB_Hyperband
+OtterTune → ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → ConEx_UQGuided
+irace → ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace
+
+Statistics:
+                                         optimizer_name    optimizer_name     mean      std      min      max
+0   ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace        ATConf 0.000000 0.000000 0.000000 0.000000
+1                                           Tuneful       Tuneful 0.009337 0.051141 0.000000 0.280112
+2                                  CMAES_FLASH_HABO         CMAES 0.009337 0.051141 0.000000 0.280112
+3                                    ConEx_UQGuided         ConEx 0.018674 0.071067 0.000000 0.280112
+4                                                ES            ES 0.018674 0.071067 0.000000 0.280112
+5                                          ParamILS      ParamILS 0.018674 0.071067 0.000000 0.280112
+6                                              BOCA          BOCA 0.028011 0.153424 0.000000 0.840336
+7                                    BOHB_Hyperband          BOHB 0.037348 0.121617 0.000000 0.560224
+8                                               PSO           PSO 0.037348 0.160041 0.000000 0.840336
+9                                          ROBOTune      ROBOTune 0.065359 0.203903 0.000000 0.840336
+10                                              GGA           GGA 0.065359 0.141178 0.000000 0.560224
+11                                               SA            SA 0.065359 0.175368 0.000000 0.840336
+12                          BestConfig_RandomSearch    BestConfig 0.112045 0.157771 0.000000 0.560224
+13                                             SMAC          SMAC 0.112045 0.139572 0.000000 0.280112
+14                                              ACO           ACO 0.158730 0.326360 0.000000 1.400560
+15                                               DE            DE 0.214753 0.291318 0.000000 0.840336
+16                                     HillClimbing  HillClimbing 0.326797 0.337767 0.000000 1.120448
+17                                             SWAY          SWAY 0.373483 0.484238 0.000000 1.680672
+18                                          ResTune       ResTune 1.101774 0.653549 0.000000 3.361345
+19                                               BO            BO 1.437908 1.254282 0.000000 5.602241
+
+Scott-Knott result:
+
+Groups:
+ATConf_DEHB_GA_HEBO_OtterTune_PromiseTune_irace 
+                                              1 
+                                        Tuneful 
+                                              1 
+                               CMAES_FLASH_HABO 
+                                              2 
+                                 ConEx_UQGuided 
+                                              2 
+                                             ES 
+                                              2 
+                                       ParamILS 
+                                              3 
+                                           BOCA 
+                                              3 
+                                 BOHB_Hyperband 
+                                              3 
+                                            PSO 
+                                              4 
+                                       ROBOTune 
+                                              4 
+                                            GGA 
+                                              4 
+                                             SA 
+                                              4 
+                        BestConfig_RandomSearch 
+                                              4 
+                                           SMAC 
+                                              4 
+                                            ACO 
+                                              4 
+                                             DE 
+                                              4 
+                                   HillClimbing 
+                                              4 
+                                           SWAY 
+                                              5 
+                                        ResTune 
+                                              6 
+                                             BO 
+                                              6 

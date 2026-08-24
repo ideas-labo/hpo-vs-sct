@@ -1,0 +1,58 @@
+Problem: nn-53
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0           HEBO          HEBO 0.003667 0.004901 0.000000 0.010000
+1             ES            ES 0.006333 0.007649 0.000000 0.020000
+2           SMAC          SMAC 0.010000 0.012034 0.000000 0.040000
+3           DEHB          DEHB 0.010333 0.008087 0.000000 0.020000
+4          irace         irace 0.010667 0.008277 0.000000 0.030000
+5             GA            GA 0.011333 0.007761 0.000000 0.020000
+6            PSO           PSO 0.012333 0.008976 0.000000 0.030000
+7          CMAES         CMAES 0.013000 0.008367 0.000000 0.030000
+8             SA            SA 0.015000 0.008200 0.000000 0.030000
+9           BOHB          BOHB 0.015333 0.008193 0.000000 0.030000
+10      ParamILS      ParamILS 0.015333 0.010743 0.000000 0.030000
+11           GGA           GGA 0.015667 0.007279 0.000000 0.030000
+12            DE            DE 0.016333 0.007649 0.000000 0.030000
+13      UQGuided      UQGuided 0.017000 0.008367 0.000000 0.030000
+14           ACO           ACO 0.019000 0.010289 0.000000 0.040000
+15  RandomSearch  RandomSearch 0.019333 0.006915 0.010000 0.040000
+16  HillClimbing  HillClimbing 0.020333 0.015421 0.000000 0.060000
+17     Hyperband     Hyperband 0.021000 0.009229 0.000000 0.030000
+18          HABO          HABO 0.021333 0.008604 0.000000 0.030000
+19            BO            BO 0.040000 0.007878 0.020000 0.050000
+
+Scott-Knott result:
+
+Groups:
+        HEBO           ES         SMAC         DEHB        irace           GA 
+           1            2            3            4            4            5 
+         PSO        CMAES           SA     ParamILS         BOHB          GGA 
+           5            5            6            7            8            8 
+          DE     UQGuided          ACO RandomSearch HillClimbing    Hyperband 
+           9            9            9           10           10           10 
+        HABO           BO 
+          10           11 

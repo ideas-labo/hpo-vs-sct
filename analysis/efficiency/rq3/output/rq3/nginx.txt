@@ -1,0 +1,87 @@
+Problem: nginx
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_RandomSearch
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → ConEx_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+            optimizer_name    optimizer_name     mean      std      min       max
+0                   BO            BO 0.427739 0.382719 0.009479  1.000000
+1              Tuneful       Tuneful 0.544555 0.735373 0.013699  3.000000
+2               ATConf        ATConf 0.606320 1.269868 0.009479  7.000000
+3          PromiseTune   PromiseTune 0.608619 0.999834 0.009479  4.000000
+4                 BOCA          BOCA 0.656721 1.130407 0.009479  6.000000
+5            OtterTune     OtterTune 0.691447 1.206464 0.009479  6.000000
+6                irace         irace 0.742050 1.107417 0.009479  4.333333
+7                   GA            GA 0.746290 1.973722 0.009479 11.000000
+8             ParamILS      ParamILS 0.820176 2.334988 0.009479 13.000000
+9                  ACO           ACO 0.892555 1.292095 0.009479  5.666667
+10                 PSO           PSO 0.898450 2.877399 0.009479 16.000000
+11               FLASH         FLASH 0.956110 3.055156 0.009479 17.000000
+12  ConEx_RandomSearch         ConEx 0.962822 3.053679 0.009479 17.000000
+13                  ES            ES 0.967117 3.057869 0.009479 17.000000
+14                 GGA           GGA 0.983880 1.652225 0.015625  6.666667
+15                HEBO          HEBO 1.038263 1.685453 0.010101  6.400000
+16                DEHB          DEHB 1.070377 1.540749 0.010582  5.800000
+17        HillClimbing  HillClimbing 1.078678 1.634432 0.014218  6.666667
+18             ResTune       ResTune 1.095060 1.711223 0.005025  6.142857
+19                BOHB          BOHB 1.155975 2.861804 0.014218 15.000000
+20           Hyperband     Hyperband 1.179504 2.876848 0.014218 15.000000
+21                  DE            DE 1.236363 4.691865 0.009479 26.000000
+22                SMAC          SMAC 1.265582 4.003821 0.009804 22.000000
+23                  SA            SA 1.305405 1.948396 0.014218  7.333333
+24            UQGuided      UQGuided 1.373091 4.093637 0.009479 22.000000
+25          BestConfig    BestConfig 1.439029 3.265491 0.009479 17.000000
+26                HABO          HABO 1.659226 4.771577 0.010101 26.000000
+27               CMAES         CMAES 1.681514 3.305800 0.014218 16.000000
+28                SWAY          SWAY 1.919028 3.501782 0.020202 14.545455
+29            ROBOTune      ROBOTune 2.201656 5.075524 0.009804 21.000000
+
+Scott-Knott result:
+
+Groups:
+                BO            Tuneful             ATConf        PromiseTune 
+                 1                  2                  2                  2 
+              BOCA          OtterTune              irace                 GA 
+                 2                  2                  2                  2 
+          ParamILS                ACO                PSO              FLASH 
+                 2                  2                  2                  2 
+ConEx_RandomSearch                 ES                GGA               HEBO 
+                 2                  2                  2                  2 
+              DEHB       HillClimbing            ResTune               BOHB 
+                 2                  2                  2                  3 
+         Hyperband                 DE               SMAC                 SA 
+                 3                  3                  3                  3 
+          UQGuided         BestConfig               HABO              CMAES 
+                 4                  4                  4                  5 
+              SWAY           ROBOTune 
+                 5                  6 

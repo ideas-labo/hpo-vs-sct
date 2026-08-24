@@ -1,0 +1,53 @@
+Problem: nn-9952
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES_DEHB
+DE → DE
+DEHB → CMAES_DEHB
+ES → ES
+GA → GA
+GGA → GGA_SA
+HABO → HABO
+HEBO → HEBO_SMAC
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → GGA_SA
+SMAC → HEBO_SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0      HEBO_SMAC          HEBO 0.000000 0.000000 0.000000 0.000000
+1           BOHB          BOHB 0.000333 0.001826 0.000000 0.010000
+2     CMAES_DEHB         CMAES 0.000667 0.002537 0.000000 0.010000
+3             ES            ES 0.000667 0.002537 0.000000 0.010000
+4             GA            GA 0.001333 0.003457 0.000000 0.010000
+5      Hyperband     Hyperband 0.002000 0.004068 0.000000 0.010000
+6          irace         irace 0.002333 0.004302 0.000000 0.010000
+7            PSO           PSO 0.004000 0.005632 0.000000 0.020000
+8   RandomSearch  RandomSearch 0.004333 0.005040 0.000000 0.010000
+9       UQGuided      UQGuided 0.004667 0.005074 0.000000 0.010000
+10        GGA_SA           GGA 0.005000 0.005085 0.000000 0.010000
+11      ParamILS      ParamILS 0.005000 0.005724 0.000000 0.020000
+12            DE            DE 0.005333 0.005074 0.000000 0.010000
+13           ACO           ACO 0.005667 0.006789 0.000000 0.030000
+14          HABO          HABO 0.006333 0.005561 0.000000 0.020000
+15  HillClimbing  HillClimbing 0.008000 0.008469 0.000000 0.040000
+16            BO            BO 0.019667 0.012726 0.000000 0.050000
+
+Scott-Knott result:
+
+Groups:
+   HEBO_SMAC         BOHB   CMAES_DEHB           ES           GA    Hyperband 
+           1            1            1            1            2            2 
+       irace          PSO RandomSearch     UQGuided       GGA_SA     ParamILS 
+           2            3            3            3            3            4 
+          DE          ACO         HABO HillClimbing           BO 
+           4            5            5            6            7 

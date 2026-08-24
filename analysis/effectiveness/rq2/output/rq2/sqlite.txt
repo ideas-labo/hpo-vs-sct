@@ -1,0 +1,65 @@
+Problem: sqlite
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+                 optimizer_name    optimizer_name      mean      std       min       max
+0                  ROBOTune      ROBOTune 13.368000 7.553563  0.000000 24.110000
+1                       PSO           PSO 15.071000 8.906180  0.000000 24.700000
+2               PromiseTune   PromiseTune 15.238333 7.665518  0.000000 25.350000
+3                     FLASH         FLASH 15.860333 7.749274  0.000000 26.980000
+4                     ConEx         ConEx 16.166000 6.857452  0.000000 26.570000
+5                      BOCA          BOCA 16.285667 8.910783  0.000000 29.130000
+6                     CMAES         CMAES 16.800000 7.509008  0.000000 26.820000
+7                       ACO           ACO 17.122000 8.213154  0.000000 28.710000
+8                        GA            GA 17.279333 7.476918  0.000000 26.820000
+9                 OtterTune     OtterTune 17.371333 6.233503  0.000000 25.290000
+10                       SA            SA 17.483000 6.680761  0.000000 27.200000
+11                       ES            ES 17.580000 6.623599  0.000000 23.650000
+12                       DE            DE 18.235667 7.995362  0.000000 30.070000
+13                   ATConf        ATConf 18.521667 6.151497  0.000000 25.960000
+14  BestConfig_RandomSearch    BestConfig 18.788000 5.900397  0.000000 26.900000
+15                       BO            BO 19.281667 7.145649  0.000000 28.710000
+16                  ResTune       ResTune 20.233667 7.177149  0.000000 30.900000
+17                     SWAY          SWAY 20.642667 7.696815  0.000000 32.300000
+18                  Tuneful       Tuneful 26.196000 5.830198 11.610000 33.970000
+19             HillClimbing  HillClimbing 29.827333 6.185607 11.610000 38.500000
+
+Scott-Knott result:
+
+Groups:
+               ROBOTune                     PSO             PromiseTune 
+                      1                       2                       2 
+                  FLASH                   ConEx                    BOCA 
+                      2                       3                       3 
+                  CMAES                     ACO                      GA 
+                      4                       4                       4 
+              OtterTune                      SA                      ES 
+                      5                       5                       5 
+                     DE                  ATConf BestConfig_RandomSearch 
+                      5                       6                       6 
+                     BO                 ResTune                    SWAY 
+                      6                       7                       7 
+                Tuneful            HillClimbing 
+                      8                       9 

@@ -1,0 +1,53 @@
+Problem: rf-7592
+
+Optimizer merge mapping:
+ACO → ACO_SA
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA_HABO
+HABO → GGA_HABO
+HEBO → HEBO_SMAC
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → ACO_SA
+SMAC → HEBO_SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0      HEBO_SMAC          HEBO 0.002667 0.004498 0.000000 0.010000
+1           DEHB          DEHB 0.003000 0.004661 0.000000 0.010000
+2             ES            ES 0.003333 0.004795 0.000000 0.010000
+3             GA            GA 0.003667 0.004901 0.000000 0.010000
+4      Hyperband     Hyperband 0.004667 0.005074 0.000000 0.010000
+5          CMAES         CMAES 0.005000 0.005085 0.000000 0.010000
+6       UQGuided      UQGuided 0.005667 0.005040 0.000000 0.010000
+7           BOHB          BOHB 0.005667 0.005040 0.000000 0.010000
+8          irace         irace 0.006000 0.004983 0.000000 0.010000
+9            PSO           PSO 0.006667 0.004795 0.000000 0.010000
+10      ParamILS      ParamILS 0.007000 0.004661 0.000000 0.010000
+11            DE            DE 0.007333 0.004498 0.000000 0.010000
+12  HillClimbing  HillClimbing 0.007333 0.004498 0.000000 0.010000
+13  RandomSearch  RandomSearch 0.007667 0.004302 0.000000 0.010000
+14      GGA_HABO           GGA 0.008000 0.004068 0.000000 0.010000
+15        ACO_SA           ACO 0.008333 0.003790 0.000000 0.010000
+16            BO            BO 0.013000 0.005960 0.010000 0.030000
+
+Scott-Knott result:
+
+Groups:
+   HEBO_SMAC         DEHB           ES           GA    Hyperband        CMAES 
+           1            2            2            2            2            3 
+    UQGuided         BOHB        irace          PSO     ParamILS           DE 
+           4            5            5            5            5            5 
+HillClimbing RandomSearch     GGA_HABO       ACO_SA           BO 
+           5            6            6            6            6 

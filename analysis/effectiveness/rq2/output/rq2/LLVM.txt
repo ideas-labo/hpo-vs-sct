@@ -1,0 +1,66 @@
+Problem: LLVM
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing_PromiseTune_SA_Tuneful
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → HillClimbing_PromiseTune_SA_Tuneful
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → HillClimbing_PromiseTune_SA_Tuneful
+SWAY → SWAY
+Tuneful → HillClimbing_PromiseTune_SA_Tuneful
+
+Statistics:
+                             optimizer_name    optimizer_name         mean         std          min          max
+0   HillClimbing_PromiseTune_SA_Tuneful  HillClimbing 52285.400000    0.000000 52285.400000 52285.400000
+1                                    ES            ES 52290.653333   13.622389 52285.400000 52324.800000
+2                                  BOCA          BOCA 52488.333333  444.699078 52285.400000 53756.200000
+3                                 CMAES         CMAES 52536.380000  870.949844 52285.400000 56619.200000
+4                                   PSO           PSO 52583.020000  493.135794 52285.400000 53429.400000
+5                                 ConEx         ConEx 52758.213333 1011.241904 52285.400000 56515.800000
+6                                 FLASH         FLASH 52844.880000  688.467966 52285.400000 53919.800000
+7                             OtterTune     OtterTune 53234.240000  828.698924 52285.400000 55081.400000
+8                                ATConf        ATConf 53445.153333 1133.856849 52285.400000 55795.400000
+9                                  SWAY          SWAY 56075.546667 1449.563480 53429.400000 58645.600000
+10                             ROBOTune      ROBOTune 56205.673333 1448.221762 53380.600000 59321.400000
+11                                  ACO           ACO 56549.553333 1768.114451 52324.800000 59527.400000
+12                                   GA            GA 56606.840000 1486.537730 53839.400000 60820.400000
+13              BestConfig_RandomSearch    BestConfig 56827.606667 1601.348151 52324.800000 59133.600000
+14                                   DE            DE 58999.646667 1799.769348 55382.400000 61889.200000
+15                              ResTune       ResTune 59498.186667 2052.676912 54172.600000 62915.800000
+16                                   BO            BO 59529.986667 2063.777331 55382.400000 63488.800000
+
+Scott-Knott result:
+
+Groups:
+HillClimbing_PromiseTune_SA_Tuneful                                  ES 
+                                  1                                   1 
+                               BOCA                               CMAES 
+                                  2                                   3 
+                                PSO                               ConEx 
+                                  4                                   4 
+                              FLASH                           OtterTune 
+                                  5                                   6 
+                             ATConf                                SWAY 
+                                  6                                   7 
+                           ROBOTune                                 ACO 
+                                  7                                   8 
+                                 GA             BestConfig_RandomSearch 
+                                  8                                   9 
+                                 DE                             ResTune 
+                                 10                                  10 
+                                 BO 
+                                 11 

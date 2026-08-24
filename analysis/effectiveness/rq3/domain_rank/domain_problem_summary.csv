@@ -1,0 +1,13 @@
+﻿domain,problems
+Code tools,"sac, LLVM, polly, exastencils"
+Compression,"kanzi, brotli, 7z"
+Data analytics,"rs-6d-c3, storm, spark, wc-5d-c5"
+Database,"SQL, MariaDB, HSQLDB, MySQL, BDBC, sqlite, noc-CM-log, PostgreSQL, redis"
+Gradient boosting,"xgboost-CNAE9, xgboost-Covtype, xgboost-PimaIndiansDiabetes, xgb-10101, xgb-146818, xgb-146821, xgb-146822, xgb-167119, xgb-3, xgb-31, xgb-3917, xgb-53, xgb-9952"
+Image processing,"hipacc, dconvert"
+Media encoding,"jump3r, VP8, Opus, x264, vp9"
+Neural networks,"FCNet-ProteinStructure, FCNet-NavalPropulsion, FCNet-SliceLocalization, moe, FCNet-ParkinsonsTelemonitoring, CNN-ColorectalHistology, CNN-Cifar10, nn-10101, nn-146818, nn-146821, nn-146822, nn-31, nn-3917, nn-53, nn-9952"
+Other software,"OpenVPN, deeparch, javagc"
+Random forest,"rf-10101, rf-146195, rf-146212, rf-146818, rf-146821, rf-146822, rf-14965, rf-167119, rf-168329, rf-168330, rf-168331, rf-168335, rf-168868, rf-168908, rf-168910, rf-7592, rf-9952, rf-9977, rf-9981"
+Solver,"Dune, FastDownward, spear, HSMGP"
+Web server,"nginx, tomcat"

@@ -1,0 +1,60 @@
+Problem: HSQLDB
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx
+DEHB → DEHB
+FLASH → FLASH
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+     optimizer_name   optimizer_name         mean        std          min          max
+0          SMAC         SMAC 53522.360000  74.936449 53462.400000 53674.600000
+1        ATConf       ATConf 53576.900000  88.938875 53462.400000 53678.400000
+2          DEHB         DEHB 53585.826667 105.049515 53462.400000 53742.200000
+3         FLASH        FLASH 53586.666667  93.280997 53462.400000 53705.000000
+4         irace        irace 53587.746667  96.203046 53462.400000 53705.000000
+5         ConEx        ConEx 53598.740000 111.196492 53462.400000 53832.800000
+6          HEBO         HEBO 53599.940000 104.853844 53462.400000 53832.800000
+7      UQGuided     UQGuided 53615.133333 121.144819 53462.400000 53861.600000
+8     OtterTune    OtterTune 53665.873333  49.571947 53568.200000 53847.800000
+9       Tuneful      Tuneful 53672.960000 164.914376 53462.400000 54043.600000
+10     ParamILS     ParamILS 53688.160000 125.609295 53462.400000 53961.400000
+11    Hyperband    Hyperband 53704.966667 103.073915 53462.400000 53944.600000
+12      ResTune      ResTune 53705.813333 131.394084 53462.400000 53979.800000
+13          GGA          GGA 53724.980000 127.513962 53462.400000 53995.200000
+14         BOHB         BOHB 53742.200000 112.073769 53462.400000 53918.000000
+15         BOCA         BOCA 53744.646667 110.338185 53462.400000 53934.000000
+16     ROBOTune     ROBOTune 53753.426667 114.612375 53568.200000 53961.600000
+17   BestConfig   BestConfig 53757.713333 116.649214 53462.400000 53947.000000
+18  PromiseTune  PromiseTune 53803.293333 157.119965 53568.200000 54149.800000
+19         HABO         HABO 53899.940000 186.628890 53462.400000 54169.600000
+20         SWAY         SWAY 54101.353333 357.671063 53667.000000 54466.600000
+
+Scott-Knott result:
+
+Groups:
+       SMAC      ATConf        DEHB       FLASH       irace       ConEx 
+          1           2           2           2           2           2 
+       HEBO    UQGuided   OtterTune     Tuneful    ParamILS   Hyperband 
+          2           3           4           5           6           6 
+    ResTune         GGA        BOHB        BOCA    ROBOTune  BestConfig 
+          6           7           8           8           8           9 
+PromiseTune        HABO        SWAY 
+         10          11          12 

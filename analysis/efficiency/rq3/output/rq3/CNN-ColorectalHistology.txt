@@ -1,0 +1,87 @@
+Problem: CNN-ColorectalHistology
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_RandomSearch
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → ConEx_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+            optimizer_name    optimizer_name     mean       std      min        max
+0                 SWAY          SWAY 0.474625  0.764234 0.037037   4.000000
+1             ParamILS      ParamILS 0.997650  1.927346 0.025641  11.000000
+2                   GA            GA 1.130657  2.647258 0.025641  15.000000
+3                   BO            BO 1.263990  3.371548 0.025641  19.000000
+4                  PSO           PSO 1.297323  3.553004 0.025641  20.000000
+5              Tuneful       Tuneful 1.377006  1.615007 0.205882   6.666667
+6                 SMAC          SMAC 1.611903  1.470367 0.055556   7.555556
+7                 BOCA          BOCA 1.832925  4.477901 0.025641  25.000000
+8                 HEBO          HEBO 1.869844  4.992303 0.025641  28.000000
+9                 HABO          HABO 1.911274  2.641357 0.095238  12.400000
+10               FLASH         FLASH 1.963990  7.194023 0.025641  40.000000
+11            UQGuided      UQGuided 2.050114  5.025850 0.025641  28.000000
+12        HillClimbing  HillClimbing 2.053900  3.589956 0.025641  17.000000
+13              ATConf        ATConf 2.081421  5.036890 0.025641  28.000000
+14                  SA            SA 2.098434  3.340054 0.025641  18.500000
+15                 ACO           ACO 2.118152  3.444447 0.142857  16.500000
+16  ConEx_RandomSearch         ConEx 2.130657  8.105749 0.025641  45.000000
+17                  DE            DE 2.330657  9.200120 0.025641  51.000000
+18             ResTune       ResTune 2.446109  3.383262 0.148148  15.400000
+19                  ES            ES 2.530657 10.294719 0.025641  57.000000
+20                DEHB          DEHB 2.935807  4.973194 0.092593  17.000000
+21         PromiseTune   PromiseTune 2.989940  3.747915 0.274510  14.500000
+22               CMAES         CMAES 3.377826  8.196906 0.019608  45.000000
+23                 GGA           GGA 3.784128  8.428888 0.128205  42.000000
+24           Hyperband     Hyperband 3.799693 11.121293 0.092593  61.000000
+25            ROBOTune      ROBOTune 3.937515  9.817036 0.055556  40.000000
+26          BestConfig    BestConfig 4.120395 15.706337 0.185185  87.000000
+27           OtterTune     OtterTune 4.200369 15.262066 0.025641  84.000000
+28                BOHB          BOHB 4.396360 14.875959 0.092593  82.000000
+29               irace         irace 5.185439 19.308352 0.142857 107.000000
+
+Scott-Knott result:
+
+Groups:
+              SWAY           ParamILS                 GA                 BO 
+                 1                  2                  2                  2 
+               PSO            Tuneful               SMAC               BOCA 
+                 2                  2                  2                  2 
+              HEBO               HABO              FLASH           UQGuided 
+                 3                  3                  3                  3 
+      HillClimbing             ATConf                 SA                ACO 
+                 3                  3                  4                  4 
+ConEx_RandomSearch                 DE            ResTune                 ES 
+                 4                  5                  6                  6 
+              DEHB        PromiseTune              CMAES                GGA 
+                 6                  7                  7                  7 
+         Hyperband           ROBOTune         BestConfig          OtterTune 
+                 7                  7                  8                  8 
+              BOHB              irace 
+                 8                  9 

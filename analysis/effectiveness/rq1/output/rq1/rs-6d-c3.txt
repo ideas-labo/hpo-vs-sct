@@ -1,0 +1,60 @@
+Problem: rs-6d-c3
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx
+DEHB → DEHB
+FLASH → FLASH
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+     optimizer_name   optimizer_name         mean          std          min           max
+0   PromiseTune  PromiseTune     0.000000     0.000000     0.000000      0.000000
+1         FLASH        FLASH   233.333333  1278.019301     0.000000   7000.000000
+2          HEBO         HEBO  1533.333333  3148.435116     0.000000   9000.000000
+3        ATConf       ATConf  6166.666667  4842.935369     0.000000  14000.000000
+4          SMAC         SMAC  6466.666667  5775.891233     0.000000  16000.000000
+5          DEHB         DEHB  7100.000000  3594.536083     0.000000  12000.000000
+6         ConEx        ConEx  7100.000000  4678.269648     0.000000  14000.000000
+7         irace        irace  7400.000000  4492.138727     0.000000  13000.000000
+8          HABO         HABO  7600.000000  4590.845463     0.000000  13000.000000
+9      UQGuided     UQGuided  7600.000000  4702.163845     0.000000  14000.000000
+10     ROBOTune     ROBOTune  9000.000000  5105.777660     0.000000  17000.000000
+11    OtterTune    OtterTune  9300.000000  4892.992879     0.000000  17000.000000
+12     ParamILS     ParamILS  9366.666667  5189.401223     0.000000  18000.000000
+13          GGA          GGA  9700.000000  4387.678673     0.000000  18000.000000
+14   BestConfig   BestConfig 11033.333333  3326.832742     0.000000  18000.000000
+15    Hyperband    Hyperband 11366.666667  3960.871842     0.000000  17000.000000
+16         BOHB         BOHB 12333.333333  5175.095090     0.000000  20000.000000
+17         SWAY         SWAY 13933.333333  2242.740524 10000.000000  21000.000000
+18         BOCA         BOCA 15600.000000 12877.673810     0.000000  58000.000000
+19      Tuneful      Tuneful 28166.666667 16540.615286  9000.000000  62000.000000
+20      ResTune      ResTune 51233.333333 31495.684798  9000.000000 100000.000000
+
+Scott-Knott result:
+
+Groups:
+PromiseTune       FLASH        HEBO      ATConf        SMAC        DEHB 
+          1           2           2           3           3           3 
+      ConEx       irace        HABO    UQGuided    ROBOTune   OtterTune 
+          4           4           4           4           5           5 
+   ParamILS         GGA  BestConfig   Hyperband        BOHB        SWAY 
+          5           6           6           7           8           9 
+       BOCA     Tuneful     ResTune 
+         10          11          12 

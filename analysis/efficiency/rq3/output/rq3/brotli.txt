@@ -1,0 +1,87 @@
+Problem: brotli
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_RandomSearch
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → ConEx_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+            optimizer_name    optimizer_name     mean      std      min       max
+0         HillClimbing  HillClimbing 0.592673 0.597169 0.007547  2.076923
+1              ResTune       ResTune 0.595961 0.761786 0.022556  3.136364
+2                  ACO           ACO 0.615969 0.935436 0.013216  4.000000
+3                   GA            GA 0.675517 0.927515 0.013216  3.666667
+4              Tuneful       Tuneful 0.685028 1.222848 0.007519  5.333333
+5               ATConf        ATConf 0.685719 0.908918 0.013216  3.000000
+6                 SMAC          SMAC 0.696400 1.012360 0.021739  4.823529
+7           BestConfig    BestConfig 0.704649 1.188304 0.007547  5.666667
+8                 HEBO          HEBO 0.725107 0.963413 0.021739  3.230769
+9                  PSO           PSO 0.748895 1.083299 0.013216  3.846154
+10            ROBOTune      ROBOTune 0.773585 1.051113 0.030303  4.000000
+11               CMAES         CMAES 0.773937 1.120603 0.011321  4.470588
+12                DEHB          DEHB 0.775848 1.190128 0.024793  5.000000
+13                BOCA          BOCA 0.802337 1.010560 0.013216  3.058824
+14                  ES            ES 0.823169 1.435368 0.013216  6.666667
+15               irace         irace 0.829987 1.171102 0.013216  4.461538
+16  ConEx_RandomSearch         ConEx 0.928393 1.566673 0.013216  6.352941
+17               FLASH         FLASH 0.944944 1.745099 0.013216  7.954545
+18            ParamILS      ParamILS 0.975782 2.005477 0.013216 10.000000
+19         PromiseTune   PromiseTune 0.993697 1.344492 0.048872  5.909091
+20                 GGA           GGA 0.999846 1.494911 0.012397  6.333333
+21                  DE            DE 0.999986 1.841666 0.013216  7.333333
+22                  SA            SA 1.002752 1.666887 0.007547  7.866667
+23                BOHB          BOHB 1.022610 1.653438 0.007547  6.800000
+24           Hyperband     Hyperband 1.066170 1.759714 0.007547  7.200000
+25                  BO            BO 1.166404 2.185062 0.013216 11.000000
+26            UQGuided      UQGuided 1.175213 2.264431 0.013216 10.733333
+27           OtterTune     OtterTune 1.256785 2.417702 0.013216 11.000000
+28                HABO          HABO 1.261843 1.621914 0.018868  6.000000
+29                SWAY          SWAY 2.528148 3.577963 0.027132 13.750000
+
+Scott-Knott result:
+
+Groups:
+      HillClimbing            ResTune                ACO                 GA 
+                 1                  1                  1                  1 
+           Tuneful             ATConf               SMAC         BestConfig 
+                 1                  1                  1                  2 
+              HEBO                PSO           ROBOTune              CMAES 
+                 2                  2                  2                  2 
+              DEHB               BOCA                 ES              irace 
+                 2                  2                  2                  2 
+ConEx_RandomSearch              FLASH           ParamILS        PromiseTune 
+                 2                  2                  2                  2 
+               GGA                 DE                 SA               BOHB 
+                 2                  2                  2                  2 
+         Hyperband                 BO           UQGuided          OtterTune 
+                 2                  3                  3                  4 
+              HABO               SWAY 
+                 4                  5 

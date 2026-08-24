@@ -1,0 +1,58 @@
+Problem: moe
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min       max
+0             ES            ES 0.443514 0.559277 0.025000  3.000000
+1            PSO           PSO 0.465444 0.547444 0.025000  2.714286
+2   HillClimbing  HillClimbing 0.467299 0.678943 0.029586  3.285714
+3             GA            GA 0.583451 0.882422 0.025000  4.142857
+4   RandomSearch  RandomSearch 0.624556 0.776367 0.025000  3.428571
+5       ParamILS      ParamILS 0.640709 0.889200 0.025000  4.142857
+6           HEBO          HEBO 0.658395 0.753322 0.025316  3.000000
+7           SMAC          SMAC 0.702226 1.154417 0.005181  5.714286
+8          CMAES         CMAES 0.715869 1.022069 0.045455  5.428571
+9             DE            DE 0.804406 1.536024 0.025000  8.571429
+10          DEHB          DEHB 0.882790 1.971354 0.017751 10.666667
+11         irace         irace 0.933970 1.309552 0.024590  5.714286
+12            BO            BO 0.942921 1.534899 0.025000  7.142857
+13          HABO          HABO 1.059980 1.311039 0.024590  5.285714
+14            SA            SA 1.181508 1.516011 0.040000  6.428571
+15      UQGuided      UQGuided 1.288479 3.788958 0.025000 21.142857
+16     Hyperband     Hyperband 1.481076 2.598871 0.024590 13.571429
+17           ACO           ACO 1.577924 3.145228 0.024590 16.333333
+18          BOHB          BOHB 1.638757 3.976482 0.024590 22.000000
+19           GGA           GGA 1.780881 2.857551 0.068182 12.428571
+
+Scott-Knott result:
+
+Groups:
+          ES          PSO HillClimbing           GA RandomSearch     ParamILS 
+           1            2            2            2            2            2 
+        HEBO         SMAC        CMAES           DE         DEHB        irace 
+           3            3            3            3            3            3 
+          BO         HABO           SA     UQGuided    Hyperband          ACO 
+           3            4            4            4            4            4 
+        BOHB          GGA 
+           5            5 

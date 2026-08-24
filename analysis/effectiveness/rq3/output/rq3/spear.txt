@@ -1,0 +1,91 @@
+Problem: spear
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                 optimizer_name    optimizer_name     mean      std      min      max
+0                   Tuneful       Tuneful 0.000000 0.000000 0.000000 0.000000
+1                      HEBO          HEBO 0.004500 0.005309 0.000000 0.015000
+2                      HABO          HABO 0.004667 0.008087 0.000000 0.030000
+3                      DEHB          DEHB 0.005333 0.007420 0.000000 0.025000
+4                  ROBOTune      ROBOTune 0.005667 0.006915 0.000000 0.020000
+5                     FLASH         FLASH 0.006167 0.010313 0.000000 0.050000
+6                     irace         irace 0.007000 0.006772 0.000000 0.020000
+7                     CMAES         CMAES 0.007333 0.009260 0.000000 0.030000
+8                       PSO           PSO 0.008000 0.006242 0.000000 0.015000
+9                    ATConf        ATConf 0.008167 0.008251 0.000000 0.020000
+10                     SMAC          SMAC 0.008333 0.010854 0.000000 0.045000
+11                OtterTune     OtterTune 0.008500 0.010760 0.000000 0.040000
+12              PromiseTune   PromiseTune 0.009167 0.008416 0.000000 0.020000
+13                       ES            ES 0.009333 0.006121 0.000000 0.020000
+14                     SWAY          SWAY 0.010333 0.005403 0.000000 0.025000
+15                       GA            GA 0.012167 0.006783 0.000000 0.020000
+16                     BOCA          BOCA 0.012667 0.013309 0.000000 0.050000
+17                 UQGuided      UQGuided 0.014000 0.008346 0.000000 0.025000
+18                     BOHB          BOHB 0.014333 0.006397 0.000000 0.030000
+19                    ConEx         ConEx 0.015167 0.007250 0.000000 0.025000
+20                 ParamILS      ParamILS 0.016500 0.008725 0.000000 0.030000
+21                      ACO           ACO 0.017667 0.023807 0.000000 0.100000
+22                Hyperband     Hyperband 0.018000 0.007611 0.005000 0.030000
+23  BestConfig_RandomSearch    BestConfig 0.018000 0.008670 0.000000 0.030000
+24                      GGA           GGA 0.018333 0.009679 0.000000 0.030000
+25                       SA            SA 0.019833 0.013676 0.000000 0.060000
+26                       DE            DE 0.024000 0.006998 0.000000 0.035000
+27             HillClimbing  HillClimbing 0.072667 0.105043 0.015000 0.375000
+28                  ResTune       ResTune 0.074500 0.071261 0.010000 0.380000
+29                       BO            BO 0.084000 0.102557 0.000000 0.410000
+
+Scott-Knott result:
+
+Groups:
+                Tuneful                    HEBO                    HABO 
+                      1                       2                       2 
+                   DEHB                ROBOTune                   FLASH 
+                      2                       2                       3 
+                  irace                   CMAES                     PSO 
+                      4                       5                       5 
+                 ATConf                    SMAC               OtterTune 
+                      5                       6                       6 
+            PromiseTune                      ES                    SWAY 
+                      7                       7                       7 
+                     GA                    BOCA                UQGuided 
+                      7                       8                       9 
+                   BOHB                   ConEx                ParamILS 
+                      9                      10                      11 
+                    ACO               Hyperband BestConfig_RandomSearch 
+                     11                      11                      11 
+                    GGA                      SA                      DE 
+                     12                      12                      13 
+           HillClimbing                 ResTune                      BO 
+                     14                      15                      15 

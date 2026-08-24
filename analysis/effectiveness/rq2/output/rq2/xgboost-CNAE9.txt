@@ -1,0 +1,53 @@
+Problem: xgboost-CNAE9
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB_Hyperband
+CMAES → CMAES_HABO
+DE → DE
+DEHB → DEHB_GA_HEBO_irace
+ES → ES
+GA → DEHB_GA_HEBO_irace
+GGA → GGA
+HABO → CMAES_HABO
+HEBO → DEHB_GA_HEBO_irace
+HillClimbing → HillClimbing
+Hyperband → BOHB_Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → DEHB_GA_HEBO_irace
+
+Statistics:
+            optimizer_name    optimizer_name     mean      std      min      max
+0   DEHB_GA_HEBO_irace          DEHB 0.000000 0.000000 0.000000 0.000000
+1           CMAES_HABO         CMAES 0.009337 0.051141 0.000000 0.280112
+2             UQGuided      UQGuided 0.018674 0.071067 0.000000 0.280112
+3                   ES            ES 0.018674 0.071067 0.000000 0.280112
+4             ParamILS      ParamILS 0.018674 0.071067 0.000000 0.280112
+5       BOHB_Hyperband          BOHB 0.037348 0.121617 0.000000 0.560224
+6                  PSO           PSO 0.037348 0.160041 0.000000 0.840336
+7                  GGA           GGA 0.065359 0.141178 0.000000 0.560224
+8                   SA            SA 0.065359 0.175368 0.000000 0.840336
+9         RandomSearch  RandomSearch 0.112045 0.157771 0.000000 0.560224
+10                SMAC          SMAC 0.112045 0.139572 0.000000 0.280112
+11                 ACO           ACO 0.158730 0.326360 0.000000 1.400560
+12                  DE            DE 0.214753 0.291318 0.000000 0.840336
+13        HillClimbing  HillClimbing 0.326797 0.337767 0.000000 1.120448
+14                  BO            BO 1.437908 1.254282 0.000000 5.602241
+
+Scott-Knott result:
+
+Groups:
+DEHB_GA_HEBO_irace         CMAES_HABO           UQGuided                 ES 
+                 1                  2                  2                  2 
+          ParamILS     BOHB_Hyperband                PSO                GGA 
+                 3                  3                  4                  4 
+                SA       RandomSearch               SMAC                ACO 
+                 4                  4                  4                  4 
+                DE       HillClimbing                 BO 
+                 4                  5                  6 

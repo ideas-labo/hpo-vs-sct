@@ -1,0 +1,59 @@
+Problem: noc-CM-log
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_ES
+DE → DE
+ES → ConEx_ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name      mean       std      min        max
+0        ResTune       ResTune  0.993445  0.689707 0.062500   4.000000
+1             BO            BO  1.188215  1.614868 0.230769   9.000000
+2      OtterTune     OtterTune  1.249407  1.455563 0.153846   6.000000
+3         ATConf        ATConf  1.260579  1.451633 0.179487   6.000000
+4    PromiseTune   PromiseTune  1.468778  1.106053 0.200000   4.333333
+5            ACO           ACO  1.588929  1.707573 0.200000   9.000000
+6            PSO           PSO  1.621548  2.418316 0.230769  11.000000
+7       ConEx_ES         ConEx  1.721548  2.723271 0.230769  13.000000
+8   HillClimbing  HillClimbing  1.760064  2.038678 0.076923  11.000000
+9             GA            GA  1.771548  3.142206 0.230769  16.000000
+10         CMAES         CMAES  1.784918  1.381122 0.179487   5.000000
+11         FLASH         FLASH  1.838215  2.904282 0.230769  13.000000
+12          BOCA          BOCA  1.892183  2.456092 0.230769  11.000000
+13            DE            DE  2.021548  3.500651 0.230769  16.000000
+14  RandomSearch  RandomSearch  2.079881  3.625304 0.230769  15.000000
+15       Tuneful       Tuneful  2.313391  3.064645 0.200000  17.000000
+16            SA            SA  2.587491  2.141008 0.076923  11.333333
+17      ROBOTune      ROBOTune  2.634764  4.225888 0.187500  22.000000
+18    BestConfig    BestConfig  3.348617  4.037182 0.102564  15.000000
+19          SWAY          SWAY 16.661087 24.929411 0.666667 131.000000
+
+Scott-Knott result:
+
+Groups:
+     ResTune           BO    OtterTune       ATConf  PromiseTune          ACO 
+           1            1            2            2            2            2 
+         PSO     ConEx_ES HillClimbing           GA        CMAES        FLASH 
+           2            2            2            2            3            3 
+        BOCA           DE RandomSearch      Tuneful           SA     ROBOTune 
+           4            5            5            5            5            6 
+  BestConfig         SWAY 
+           7            8 

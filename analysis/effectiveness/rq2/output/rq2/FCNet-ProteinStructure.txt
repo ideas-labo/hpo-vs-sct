@@ -1,0 +1,58 @@
+Problem: FCNet-ProteinStructure
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0           HEBO          HEBO 0.215368 0.000000 0.215368 0.215368
+1             ES            ES 0.215864 0.001017 0.215368 0.219484
+2            PSO           PSO 0.216825 0.002153 0.215368 0.223358
+3           DEHB          DEHB 0.216870 0.002028 0.215368 0.222175
+4          irace         irace 0.217270 0.002742 0.215368 0.227107
+5           SMAC          SMAC 0.217646 0.008904 0.215368 0.264133
+6   HillClimbing  HillClimbing 0.219330 0.008434 0.215368 0.251412
+7       ParamILS      ParamILS 0.220404 0.009004 0.215368 0.251412
+8          CMAES         CMAES 0.221063 0.006674 0.215368 0.243843
+9       UQGuided      UQGuided 0.229910 0.011405 0.215834 0.262476
+10          BOHB          BOHB 0.231265 0.009945 0.215834 0.261936
+11            GA            GA 0.232474 0.007902 0.219289 0.247800
+12     Hyperband     Hyperband 0.232915 0.007827 0.215368 0.247450
+13           ACO           ACO 0.234204 0.019925 0.215368 0.293961
+14  RandomSearch  RandomSearch 0.235316 0.008814 0.219484 0.256088
+15            SA            SA 0.236575 0.013720 0.219289 0.272737
+16            DE            DE 0.238295 0.011500 0.220537 0.264761
+17           GGA           GGA 0.238889 0.012773 0.215958 0.267944
+18          HABO          HABO 0.239087 0.014119 0.219242 0.266647
+19            BO            BO 0.268592 0.026198 0.219455 0.308557
+
+Scott-Knott result:
+
+Groups:
+        HEBO           ES          PSO         DEHB        irace         SMAC 
+           1            2            3            4            5            5 
+HillClimbing     ParamILS        CMAES     UQGuided         BOHB           GA 
+           5            6            6            7            7            7 
+   Hyperband          ACO RandomSearch           SA           DE          GGA 
+           8            8            9            9           10           10 
+        HABO           BO 
+          10           11 

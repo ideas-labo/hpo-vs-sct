@@ -1,0 +1,58 @@
+Problem: CNN-ColorectalHistology
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0       UQGuided      UQGuided 0.231498 0.014961 0.206719 0.259991
+1           SMAC          SMAC 0.232687 0.017476 0.207114 0.270820
+2            PSO           PSO 0.233252 0.017753 0.206719 0.268595
+3           DEHB          DEHB 0.233686 0.016345 0.207114 0.268223
+4             ES            ES 0.234080 0.019242 0.210710 0.276837
+5             BO            BO 0.234531 0.018652 0.209369 0.265962
+6             SA            SA 0.240103 0.018536 0.216217 0.277526
+7          irace         irace 0.240187 0.022404 0.206719 0.291148
+8      Hyperband     Hyperband 0.240446 0.015455 0.216217 0.268223
+9           HEBO          HEBO 0.240502 0.017611 0.210710 0.265962
+10            GA            GA 0.240563 0.016857 0.209756 0.268577
+11            DE            DE 0.240671 0.017213 0.207044 0.275303
+12          HABO          HABO 0.241267 0.014601 0.215825 0.265962
+13  RandomSearch  RandomSearch 0.241999 0.016698 0.207114 0.275602
+14          BOHB          BOHB 0.242094 0.015675 0.207115 0.261252
+15           GGA           GGA 0.242887 0.012582 0.215747 0.265962
+16         CMAES         CMAES 0.245402 0.015115 0.213166 0.271090
+17           ACO           ACO 0.251573 0.019115 0.216217 0.305369
+18  HillClimbing  HillClimbing 0.275286 0.032341 0.214355 0.349319
+19      ParamILS      ParamILS 0.330233 0.073840 0.216217 0.540204
+
+Scott-Knott result:
+
+Groups:
+    UQGuided         SMAC          PSO         DEHB           ES           BO 
+           1            1            1            1            1            1 
+          SA        irace    Hyperband         HEBO           GA           DE 
+           2            2            2            3            3            3 
+        HABO RandomSearch         BOHB          GGA        CMAES          ACO 
+           3            3            3            3            3            4 
+HillClimbing     ParamILS 
+           5            6 

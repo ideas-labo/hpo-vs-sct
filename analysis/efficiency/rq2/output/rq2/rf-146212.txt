@@ -1,0 +1,58 @@
+Problem: rf-146212
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+BOHB → BOHB
+CMAES → CMAES
+DE → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+DEHB → DEHB
+ES → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+GA → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+ParamILS → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+RandomSearch → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                               optimizer_name    optimizer_name     mean       std      min       max
+0                                    BOHB          BOHB 1.165186  1.510542 0.028069  3.929688
+1                               Hyperband     Hyperband 1.171944  1.505679 0.028069  3.929688
+2                                    DEHB          DEHB 1.177393  1.533560 0.028571  4.000000
+3   BO_DE_ES_GA_PSO_ParamILS_RandomSearch            BO 1.350994  1.973151 0.014493  7.000000
+4                                    HABO          HABO 1.573781  2.803739 0.014493 12.500000
+5                                    SMAC          SMAC 1.735796  2.722147 0.015385 10.000000
+6                                    HEBO          HEBO 2.029603  3.554536 0.014493 17.000000
+7                                     GGA           GGA 2.081971  4.323324 0.015385 20.000000
+8                            HillClimbing  HillClimbing 2.198472  5.114863 0.015385 27.000000
+9                                UQGuided      UQGuided 2.213030  4.145249 0.014493 15.000000
+10                                  irace         irace 2.551475  7.614161 0.015385 42.000000
+11                                    ACO           ACO 2.721105  8.508987 0.015385 47.000000
+12                                  CMAES         CMAES 2.879758  9.577975 0.014493 53.000000
+13                                     SA            SA 4.275380 10.358773 0.015385 49.000000
+
+Scott-Knott result:
+
+Groups:
+                                 BOHB                             Hyperband 
+                                    1                                     1 
+                                 DEHB BO_DE_ES_GA_PSO_ParamILS_RandomSearch 
+                                    1                                     1 
+                                 HABO                                  SMAC 
+                                    1                                     1 
+                                 HEBO                                   GGA 
+                                    1                                     1 
+                         HillClimbing                              UQGuided 
+                                    1                                     1 
+                                irace                                   ACO 
+                                    1                                     1 
+                                CMAES                                    SA 
+                                    1                                     1 

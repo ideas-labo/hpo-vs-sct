@@ -1,0 +1,95 @@
+Problem: xgb-3
+
+Optimizer merge mapping:
+ACO → ACO_irace
+ATConf → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+BO → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+BOCA → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+DE → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+DEHB → DEHB
+ES → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+FLASH → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+GA → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+PSO → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+ParamILS → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided
+irace → ACO_irace
+
+Statistics:
+                                                                          optimizer_name    optimizer_name     mean      std      min       max
+0                                                                        PromiseTune   PromiseTune 0.428848 0.112453 0.142857  0.500375
+1                                                                               SMAC          SMAC 0.448293 0.115934 0.142857  0.750000
+2   ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided        ATConf 0.465793 0.131191 0.142857  0.750000
+3                                                                            Tuneful       Tuneful 0.468848 0.172656 0.142857  1.000000
+4                                                                           ROBOTune      ROBOTune 0.481626 0.233774 0.142857  1.500000
+5                                                                            ResTune       ResTune 0.485515 0.198034 0.142857  1.000000
+6                                                                          ACO_irace           ACO 0.498862 0.156212 0.166667  1.000000
+7                                                                       HillClimbing  HillClimbing 0.503108 0.186034 0.142857  1.000000
+8                                                                               HEBO          HEBO 0.505886 0.225004 0.142857  1.250000
+9                                                                                GGA           GGA 0.519404 0.203591 0.142857  1.000000
+10                                                                                SA            SA 0.527182 0.214322 0.142857  1.000000
+11                                                                        BestConfig    BestConfig 0.527182 0.248370 0.142857  1.000000
+12                                                                             CMAES         CMAES 0.535515 0.269467 0.142857  1.250000
+13                                                                              HABO          HABO 0.846679 0.594353 0.500000  3.750000
+14                                                                              DEHB          DEHB 0.852975 0.223463 0.285714  1.000000
+15                                                                              BOHB          BOHB 0.855820 0.224030 0.285500  1.000000
+16                                                                         Hyperband     Hyperband 0.857054 0.224737 0.285500  1.000000
+17                                                                              SWAY          SWAY 4.601018 6.106128 0.166667 16.750000
+
+Scott-Knott result:
+
+Groups:
+                                                                     PromiseTune 
+                                                                               1 
+                                                                            SMAC 
+                                                                               1 
+ATConf_BO_BOCA_ConEx_DE_ES_FLASH_GA_OtterTune_PSO_ParamILS_RandomSearch_UQGuided 
+                                                                               1 
+                                                                         Tuneful 
+                                                                               1 
+                                                                        ROBOTune 
+                                                                               1 
+                                                                         ResTune 
+                                                                               1 
+                                                                       ACO_irace 
+                                                                               1 
+                                                                    HillClimbing 
+                                                                               2 
+                                                                            HEBO 
+                                                                               2 
+                                                                             GGA 
+                                                                               2 
+                                                                              SA 
+                                                                               2 
+                                                                      BestConfig 
+                                                                               3 
+                                                                           CMAES 
+                                                                               3 
+                                                                            HABO 
+                                                                               4 
+                                                                            DEHB 
+                                                                               4 
+                                                                            BOHB 
+                                                                               4 
+                                                                       Hyperband 
+                                                                               5 
+                                                                            SWAY 
+                                                                               6 

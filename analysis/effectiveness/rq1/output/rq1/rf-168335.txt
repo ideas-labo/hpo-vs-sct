@@ -1,0 +1,43 @@
+Problem: rf-168335
+
+Optimizer merge mapping:
+ATConf → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+BOCA → BOCA
+BOHB → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+BestConfig → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+ConEx → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+DEHB → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+FLASH → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+GGA → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+HABO → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+HEBO → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+Hyperband → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+OtterTune → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+ParamILS → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+PromiseTune → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+ROBOTune → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+ResTune → ResTune
+SMAC → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+SWAY → SWAY
+Tuneful → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+UQGuided → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+irace → ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace
+
+Statistics:
+                                                                                                                            optimizer_name optimizer_name     mean      std      min      max
+0  ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace     ATConf 0.000000 0.000000 0.000000 0.000000
+1                                                                                                                              ResTune    ResTune 0.002333 0.004302 0.000000 0.010000
+2                                                                                                                                 BOCA       BOCA 0.005000 0.006823 0.000000 0.020000
+3                                                                                                                                 SWAY       SWAY 0.023000 0.027184 0.000000 0.080000
+
+Scott-Knott result:
+
+Groups:
+ATConf_BOHB_BestConfig_ConEx_DEHB_FLASH_GGA_HABO_HEBO_Hyperband_OtterTune_ParamILS_PromiseTune_ROBOTune_SMAC_Tuneful_UQGuided_irace 
+                                                                                                                                  1 
+                                                                                                                            ResTune 
+                                                                                                                                  2 
+                                                                                                                               BOCA 
+                                                                                                                                  3 
+                                                                                                                               SWAY 
+                                                                                                                                  4 

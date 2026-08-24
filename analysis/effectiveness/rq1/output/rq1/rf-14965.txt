@@ -1,0 +1,64 @@
+Problem: rf-14965
+
+Optimizer merge mapping:
+ATConf → ATConf_BOHB
+BOCA → BOCA
+BOHB → ATConf_BOHB
+BestConfig → BestConfig_ParamILS
+ConEx → ConEx
+DEHB → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+FLASH → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+GGA → GGA_HABO
+HABO → GGA_HABO
+HEBO → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+Hyperband → Hyperband
+OtterTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ParamILS → BestConfig_ParamILS
+PromiseTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ROBOTune → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+ResTune → ResTune
+SMAC → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+SWAY → SWAY
+Tuneful → DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                                                     optimizer_name  optimizer_name     mean      std      min      max
+0   DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful        DEHB 0.000000 0.000000 0.000000 0.000000
+1                                                         irace       irace 0.000667 0.002537 0.000000 0.010000
+2                                                   ATConf_BOHB      ATConf 0.000667 0.002537 0.000000 0.010000
+3                                                     Hyperband   Hyperband 0.001333 0.003457 0.000000 0.010000
+4                                                      UQGuided    UQGuided 0.001667 0.003790 0.000000 0.010000
+5                                                         ConEx       ConEx 0.002333 0.004302 0.000000 0.010000
+6                                                      GGA_HABO         GGA 0.003000 0.004661 0.000000 0.010000
+7                                           BestConfig_ParamILS  BestConfig 0.005333 0.005074 0.000000 0.010000
+8                                                       ResTune     ResTune 0.017000 0.010222 0.000000 0.040000
+9                                                          BOCA        BOCA 0.017000 0.025617 0.000000 0.130000
+10                                                         SWAY        SWAY 0.048667 0.053738 0.000000 0.160000
+
+Scott-Knott result:
+
+Groups:
+DEHB_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_SMAC_Tuneful 
+                                                          1 
+                                                      irace 
+                                                          1 
+                                                ATConf_BOHB 
+                                                          1 
+                                                  Hyperband 
+                                                          2 
+                                                   UQGuided 
+                                                          2 
+                                                      ConEx 
+                                                          2 
+                                                   GGA_HABO 
+                                                          2 
+                                        BestConfig_ParamILS 
+                                                          3 
+                                                    ResTune 
+                                                          4 
+                                                       BOCA 
+                                                          5 
+                                                       SWAY 
+                                                          6 

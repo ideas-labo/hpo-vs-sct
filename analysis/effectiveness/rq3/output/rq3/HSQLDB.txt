@@ -1,0 +1,84 @@
+Problem: HSQLDB
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name         mean         std          min          max
+0           SMAC          SMAC 53522.360000   74.936449 53462.400000 53674.600000
+1            PSO           PSO 53537.940000  101.432432 53462.400000 53678.400000
+2             ES            ES 53546.380000   99.774647 53462.400000 53678.400000
+3         ATConf        ATConf 53576.900000   88.938875 53462.400000 53678.400000
+4           DEHB          DEHB 53585.826667  105.049515 53462.400000 53742.200000
+5          FLASH         FLASH 53586.666667   93.280997 53462.400000 53705.000000
+6          irace         irace 53587.746667   96.203046 53462.400000 53705.000000
+7          ConEx         ConEx 53598.740000  111.196492 53462.400000 53832.800000
+8           HEBO          HEBO 53599.940000  104.853844 53462.400000 53832.800000
+9       UQGuided      UQGuided 53615.133333  121.144819 53462.400000 53861.600000
+10     OtterTune     OtterTune 53665.873333   49.571947 53568.200000 53847.800000
+11       Tuneful       Tuneful 53672.960000  164.914376 53462.400000 54043.600000
+12         CMAES         CMAES 53673.566667  102.421524 53462.400000 53949.200000
+13      ParamILS      ParamILS 53688.160000  125.609295 53462.400000 53961.400000
+14            BO            BO 53688.626667  178.855756 53462.400000 54089.600000
+15            GA            GA 53688.746667  110.563184 53462.400000 53897.800000
+16     Hyperband     Hyperband 53704.966667  103.073915 53462.400000 53944.600000
+17       ResTune       ResTune 53705.813333  131.394084 53462.400000 53979.800000
+18           GGA           GGA 53724.980000  127.513962 53462.400000 53995.200000
+19            DE            DE 53732.700000  156.144476 53462.400000 54135.800000
+20          BOHB          BOHB 53742.200000  112.073769 53462.400000 53918.000000
+21          BOCA          BOCA 53744.646667  110.338185 53462.400000 53934.000000
+22      ROBOTune      ROBOTune 53753.426667  114.612375 53568.200000 53961.600000
+23    BestConfig    BestConfig 53757.713333  116.649214 53462.400000 53947.000000
+24  RandomSearch  RandomSearch 53758.840000  118.784655 53462.400000 53947.000000
+25           ACO           ACO 53785.773333  138.446342 53462.400000 54138.400000
+26   PromiseTune   PromiseTune 53803.293333  157.119965 53568.200000 54149.800000
+27          HABO          HABO 53899.940000  186.628890 53462.400000 54169.600000
+28          SWAY          SWAY 54101.353333  357.671063 53667.000000 54466.600000
+29  HillClimbing  HillClimbing 54220.000000 1154.012359 53462.400000 57760.800000
+30            SA            SA 54402.406667 1569.240968 53462.400000 59247.400000
+
+Scott-Knott result:
+
+Groups:
+        SMAC          PSO           ES       ATConf         DEHB        FLASH 
+           1            1            1            2            2            2 
+       irace        ConEx         HEBO     UQGuided    OtterTune      Tuneful 
+           3            4            4            4            5            5 
+       CMAES     ParamILS           BO           GA    Hyperband      ResTune 
+           6            7            8            8            8            9 
+         GGA           DE         BOHB         BOCA     ROBOTune   BestConfig 
+           9           10           11           12           13           13 
+RandomSearch          ACO  PromiseTune         HABO         SWAY HillClimbing 
+          13           14           14           15           16           17 
+          SA 
+          18 

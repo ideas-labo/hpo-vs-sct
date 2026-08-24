@@ -1,0 +1,57 @@
+Problem: rf-167119
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB_DEHB_ES_GA_HEBO_PSO_SMAC
+CMAES → CMAES
+DE → DE
+DEHB → BOHB_DEHB_ES_GA_HEBO_PSO_SMAC
+ES → BOHB_DEHB_ES_GA_HEBO_PSO_SMAC
+GA → BOHB_DEHB_ES_GA_HEBO_PSO_SMAC
+GGA → GGA
+HABO → HABO
+HEBO → BOHB_DEHB_ES_GA_HEBO_PSO_SMAC
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → BOHB_DEHB_ES_GA_HEBO_PSO_SMAC
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → BOHB_DEHB_ES_GA_HEBO_PSO_SMAC
+UQGuided → UQGuided_irace
+irace → UQGuided_irace
+
+Statistics:
+                       optimizer_name    optimizer_name     mean      std      min      max
+0   BOHB_DEHB_ES_GA_HEBO_PSO_SMAC          BOHB 0.000000 0.000000 0.000000 0.000000
+1                    RandomSearch  RandomSearch 0.000333 0.001826 0.000000 0.010000
+2                  UQGuided_irace      UQGuided 0.000333 0.001826 0.000000 0.010000
+3                       Hyperband     Hyperband 0.000333 0.001826 0.000000 0.010000
+4                        ParamILS      ParamILS 0.000333 0.001826 0.000000 0.010000
+5                           CMAES         CMAES 0.000667 0.003651 0.000000 0.020000
+6                              SA            SA 0.001000 0.003051 0.000000 0.010000
+7                              DE            DE 0.001000 0.003051 0.000000 0.010000
+8                             GGA           GGA 0.002000 0.004068 0.000000 0.010000
+9                    HillClimbing  HillClimbing 0.002333 0.005040 0.000000 0.020000
+10                            ACO           ACO 0.003000 0.004661 0.000000 0.010000
+11                           HABO          HABO 0.003667 0.005561 0.000000 0.020000
+12                             BO            BO 0.011000 0.010619 0.000000 0.030000
+
+Scott-Knott result:
+
+Groups:
+BOHB_DEHB_ES_GA_HEBO_PSO_SMAC                  RandomSearch 
+                            1                             1 
+               UQGuided_irace                     Hyperband 
+                            1                             1 
+                     ParamILS                         CMAES 
+                            2                             2 
+                           SA                            DE 
+                            2                             2 
+                          GGA                  HillClimbing 
+                            2                             2 
+                          ACO                          HABO 
+                            2                             2 
+                           BO 
+                            3 

@@ -1,0 +1,57 @@
+Problem: rf-9981
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB_HEBO
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → DEHB_HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0      DEHB_HEBO          DEHB 0.000000 0.000000 0.000000 0.000000
+1             ES            ES 0.000667 0.002537 0.000000 0.010000
+2           SMAC          SMAC 0.002667 0.012847 0.000000 0.070000
+3          CMAES         CMAES 0.004333 0.005040 0.000000 0.010000
+4          irace         irace 0.004667 0.005074 0.000000 0.010000
+5   HillClimbing  HillClimbing 0.005667 0.005040 0.000000 0.010000
+6            PSO           PSO 0.006333 0.008087 0.000000 0.040000
+7       ParamILS      ParamILS 0.006333 0.004901 0.000000 0.010000
+8           BOHB          BOHB 0.006667 0.004795 0.000000 0.010000
+9             GA            GA 0.006667 0.007112 0.000000 0.030000
+10     Hyperband     Hyperband 0.007333 0.004498 0.000000 0.010000
+11           GGA           GGA 0.008667 0.004342 0.000000 0.020000
+12            DE            DE 0.009000 0.009595 0.000000 0.040000
+13  RandomSearch  RandomSearch 0.009000 0.004807 0.000000 0.020000
+14      UQGuided      UQGuided 0.010000 0.010505 0.000000 0.050000
+15            SA            SA 0.011333 0.011059 0.000000 0.060000
+16          HABO          HABO 0.020000 0.018383 0.000000 0.080000
+17           ACO           ACO 0.028667 0.026094 0.000000 0.090000
+18            BO            BO 0.068333 0.038693 0.010000 0.150000
+
+Scott-Knott result:
+
+Groups:
+   DEHB_HEBO           ES         SMAC        CMAES        irace HillClimbing 
+           1            1            2            2            2            3 
+         PSO     ParamILS         BOHB           GA    Hyperband          GGA 
+           4            5            5            5            6            6 
+          DE RandomSearch     UQGuided           SA         HABO          ACO 
+           6            7            7            7            7            7 
+          BO 
+           8 

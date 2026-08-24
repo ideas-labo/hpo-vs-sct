@@ -1,0 +1,64 @@
+Problem: noc-CM-log
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+DE → DE
+ES → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+FLASH → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+GA → GA
+HillClimbing → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+OtterTune → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+PSO → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+PromiseTune → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+ROBOTune → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful
+
+Statistics:
+                                                                       optimizer_name  optimizer_name     mean      std      min      max
+0   ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful      ATConf 4.309194 0.000000 4.309194 4.309194
+1                                                                            BOCA        BOCA 4.310199 0.005508 4.309194 4.339361
+2                                                                              DE          DE 4.312210 0.009205 4.309194 4.339361
+3                                                         BestConfig_RandomSearch  BestConfig 4.313216 0.010430 4.309194 4.339361
+4                                                                              SA          SA 4.313216 0.010430 4.309194 4.339361
+5                                                                              GA          GA 4.314284 0.018173 4.309194 4.401581
+6                                                                           CMAES       CMAES 4.316296 0.019175 4.309194 4.401581
+7                                                                            SWAY        SWAY 4.325899 0.070567 4.309194 4.687796
+8                                                                             ACO         ACO 4.483834 0.219508 4.309194 5.007693
+9                                                                              BO          BO 4.682263 0.190982 4.339361 4.983722
+10                                                                        ResTune     ResTune 4.747210 0.174022 4.339361 4.953555
+
+Scott-Knott result:
+
+Groups:
+ATConf_ConEx_ES_FLASH_HillClimbing_OtterTune_PSO_PromiseTune_ROBOTune_Tuneful 
+                                                                            1 
+                                                                         BOCA 
+                                                                            1 
+                                                                           DE 
+                                                                            1 
+                                                      BestConfig_RandomSearch 
+                                                                            1 
+                                                                           SA 
+                                                                            1 
+                                                                           GA 
+                                                                            1 
+                                                                        CMAES 
+                                                                            2 
+                                                                         SWAY 
+                                                                            2 
+                                                                          ACO 
+                                                                            3 
+                                                                           BO 
+                                                                            4 
+                                                                      ResTune 
+                                                                            5 

@@ -1,0 +1,56 @@
+Problem: rf-146818
+
+Optimizer merge mapping:
+ATConf → ATConf_Tuneful
+BOCA → BOCA
+BOHB → BOHB_ROBOTune
+BestConfig → BestConfig
+ConEx → ConEx_GGA
+DEHB → DEHB
+FLASH → FLASH_SMAC
+GGA → ConEx_GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → BOHB_ROBOTune
+ResTune → ResTune
+SMAC → FLASH_SMAC
+SWAY → SWAY
+Tuneful → ATConf_Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+        optimizer_name   optimizer_name     mean      std      min      max
+0             HEBO         HEBO 0.001333 0.003457 0.000000 0.010000
+1       FLASH_SMAC        FLASH 0.002000 0.004068 0.000000 0.010000
+2        OtterTune    OtterTune 0.002667 0.004498 0.000000 0.010000
+3            irace        irace 0.002667 0.004498 0.000000 0.010000
+4      PromiseTune  PromiseTune 0.003000 0.004661 0.000000 0.010000
+5   ATConf_Tuneful       ATConf 0.003333 0.004795 0.000000 0.010000
+6    BOHB_ROBOTune         BOHB 0.004667 0.005074 0.000000 0.010000
+7             DEHB         DEHB 0.004667 0.005074 0.000000 0.010000
+8       BestConfig   BestConfig 0.005000 0.005085 0.000000 0.010000
+9        ConEx_GGA        ConEx 0.005333 0.005074 0.000000 0.010000
+10       Hyperband    Hyperband 0.005667 0.005040 0.000000 0.010000
+11        UQGuided     UQGuided 0.006000 0.004983 0.000000 0.010000
+12        ParamILS     ParamILS 0.006667 0.004795 0.000000 0.010000
+13            HABO         HABO 0.007000 0.004661 0.000000 0.010000
+14         ResTune      ResTune 0.009333 0.003651 0.000000 0.020000
+15            SWAY         SWAY 0.009333 0.004498 0.000000 0.020000
+16            BOCA         BOCA 0.010000 0.005872 0.000000 0.020000
+
+Scott-Knott result:
+
+Groups:
+          HEBO     FLASH_SMAC      OtterTune          irace    PromiseTune 
+             1              1              2              2              2 
+ATConf_Tuneful  BOHB_ROBOTune           DEHB     BestConfig      ConEx_GGA 
+             2              3              3              4              5 
+     Hyperband       UQGuided       ParamILS           HABO        ResTune 
+             5              5              6              6              7 
+          SWAY           BOCA 
+             7              7 

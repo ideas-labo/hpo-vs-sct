@@ -1,0 +1,70 @@
+Problem: jump3r
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig_ConEx_RandomSearch
+CMAES → CMAES
+ConEx → BestConfig_ConEx_RandomSearch
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_ConEx_RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+                       optimizer_name    optimizer_name     mean      std      min       max
+0                          ATConf        ATConf 1.011829 1.232151 0.054795  6.000000
+1                             PSO           PSO 1.057358 1.365602 0.054795  6.000000
+2                              GA            GA 1.097109 1.317546 0.054795  6.000000
+3                           FLASH         FLASH 1.115292 1.476537 0.054795  7.500000
+4                    HillClimbing  HillClimbing 1.134464 1.502944 0.010274  8.500000
+5                       OtterTune     OtterTune 1.171377 1.338460 0.054795  5.500000
+6                              ES            ES 1.266177 1.897066 0.054795  8.666667
+7                            BOCA          BOCA 1.304186 1.625566 0.040161  7.238095
+8   BestConfig_ConEx_RandomSearch    BestConfig 1.328219 1.807084 0.054795  7.500000
+9                     PromiseTune   PromiseTune 1.395068 1.834419 0.068493  7.500000
+10                             DE            DE 1.466238 2.090107 0.054795  9.666667
+11                             BO            BO 1.586370 2.085137 0.054795  8.000000
+12                          CMAES         CMAES 1.684169 1.987860 0.027397  6.666667
+13                            ACO           ACO 2.109518 2.765480 0.025424 10.000000
+14                        Tuneful       Tuneful 2.156026 3.254870 0.031915 13.500000
+15                       ROBOTune      ROBOTune 2.541802 4.516330 0.027397 18.000000
+16                             SA            SA 2.835123 6.697092 0.010274 36.000000
+17                        ResTune       ResTune 3.162948 5.701318 0.027397 21.500000
+18                           SWAY          SWAY 3.810506 6.996808 0.111111 29.250000
+
+Scott-Knott result:
+
+Groups:
+                       ATConf                           PSO 
+                            1                             1 
+                           GA                         FLASH 
+                            1                             1 
+                 HillClimbing                     OtterTune 
+                            1                             1 
+                           ES                          BOCA 
+                            1                             2 
+BestConfig_ConEx_RandomSearch                   PromiseTune 
+                            3                             3 
+                           DE                            BO 
+                            3                             3 
+                        CMAES                           ACO 
+                            3                             3 
+                      Tuneful                      ROBOTune 
+                            3                             3 
+                           SA                       ResTune 
+                            3                             3 
+                         SWAY 
+                            4 

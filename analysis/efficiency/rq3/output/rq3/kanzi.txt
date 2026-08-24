@@ -1,0 +1,100 @@
+Problem: kanzi
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_ConEx_RandomSearch
+CMAES → CMAES
+ConEx → BestConfig_ConEx_RandomSearch
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_ConEx_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                       optimizer_name    optimizer_name     mean      std      min       max
+0                     PromiseTune   PromiseTune 0.460050 0.598627 0.013378  2.250000
+1                        UQGuided      UQGuided 0.662580 0.694467 0.026756  2.875000
+2                         Tuneful       Tuneful 0.665624 0.844542 0.039088  3.333333
+3                            SMAC          SMAC 0.669006 1.014937 0.006689  4.333333
+4                          ATConf        ATConf 0.679120 0.830932 0.027237  2.750000
+5                            BOCA          BOCA 0.705698 1.149969 0.020067  5.666667
+6                            DEHB          DEHB 0.768470 1.050940 0.019455  4.800000
+7                             PSO           PSO 0.783614 1.540314 0.032573  8.333333
+8                    HillClimbing  HillClimbing 0.840029 0.784383 0.006689  4.000000
+9                           CMAES         CMAES 0.844336 1.867183 0.006689 10.000000
+10                          FLASH         FLASH 0.847838 1.759561 0.032573  9.666667
+11  BestConfig_ConEx_RandomSearch    BestConfig 0.902436 1.766433 0.032573  9.666667
+12                      Hyperband     Hyperband 0.904300 1.648680 0.056604  7.666667
+13                           BOHB          BOHB 0.905060 1.648386 0.056604  7.666667
+14                             ES            ES 0.906450 1.942330 0.032573 10.666667
+15                      OtterTune     OtterTune 0.923736 1.651039 0.036036  7.666667
+16                            ACO           ACO 0.952698 1.099765 0.037931  4.666667
+17                           HEBO          HEBO 1.105350 2.225463 0.006897 11.333333
+18                             DE            DE 1.123888 3.051533 0.032573 17.000000
+19                          irace         irace 1.218169 2.156848 0.046823 11.000000
+20                             GA            GA 1.665217 4.334707 0.032573 23.333333
+21                       ParamILS      ParamILS 1.788384 5.640181 0.032573 31.000000
+22                       ROBOTune      ROBOTune 1.812564 3.941333 0.037931 17.800000
+23                             SA            SA 1.844535 5.356584 0.006689 29.800000
+24                           HABO          HABO 2.136927 8.907832 0.006515 49.000000
+25                            GGA           GGA 2.413225 4.848295 0.019455 20.333333
+26                             BO            BO 2.526479 5.548424 0.032573 28.000000
+27                           SWAY          SWAY 2.957090 6.326229 0.009009 26.000000
+28                        ResTune       ResTune 3.696386 7.027580 0.013029 27.666667
+
+Scott-Knott result:
+
+Groups:
+                  PromiseTune                      UQGuided 
+                            1                             1 
+                      Tuneful                          SMAC 
+                            2                             2 
+                       ATConf                          BOCA 
+                            2                             3 
+                         DEHB                           PSO 
+                            3                             3 
+                 HillClimbing                         CMAES 
+                            3                             3 
+                        FLASH BestConfig_ConEx_RandomSearch 
+                            3                             3 
+                    Hyperband                          BOHB 
+                            3                             3 
+                           ES                     OtterTune 
+                            3                             4 
+                          ACO                          HEBO 
+                            4                             4 
+                           DE                         irace 
+                            4                             4 
+                           GA                      ParamILS 
+                            5                             5 
+                     ROBOTune                            SA 
+                            5                             5 
+                         HABO                           GGA 
+                            6                             6 
+                           BO                          SWAY 
+                            6                             7 
+                      ResTune 
+                            8 

@@ -1,0 +1,58 @@
+Problem: nn-31
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min       max
+0            PSO           PSO 1.119127 1.118272 0.049180  5.000000
+1             DE            DE 1.119833 1.117589 0.049180  5.000000
+2             ES            ES 1.121773 1.115780 0.049180  5.000000
+3       ParamILS      ParamILS 1.136676 1.149691 0.049180  5.000000
+4   RandomSearch  RandomSearch 1.169833 1.232277 0.049180  5.000000
+5             GA            GA 1.294656 1.687883 0.049180  8.250000
+6       UQGuided      UQGuided 1.310706 1.370898 0.049180  5.000000
+7           SMAC          SMAC 1.338709 1.163837 0.037037  5.000000
+8           HEBO          HEBO 1.400391 1.163176 0.052910  4.750000
+9      Hyperband     Hyperband 1.548175 1.387408 0.047619  5.000000
+10          BOHB          BOHB 1.601075 1.447990 0.047619  5.000000
+11          DEHB          DEHB 1.607112 1.394914 0.026390  5.000000
+12           GGA           GGA 1.722692 1.976644 0.031746  9.000000
+13            BO            BO 1.808677 4.090603 0.049180 22.750000
+14         CMAES         CMAES 1.837420 2.756459 0.031746 15.000000
+15           ACO           ACO 1.844718 2.138685 0.031746 10.000000
+16  HillClimbing  HillClimbing 1.937760 2.500973 0.032787 11.000000
+17         irace         irace 1.996722 2.339088 0.031746 10.000000
+18            SA            SA 2.182605 2.972455 0.032787 11.000000
+19          HABO          HABO 3.111235 3.570800 0.047619 17.000000
+
+Scott-Knott result:
+
+Groups:
+         PSO           DE           ES     ParamILS RandomSearch           GA 
+           1            1            1            1            1            2 
+    UQGuided         SMAC         HEBO    Hyperband         BOHB         DEHB 
+           2            2            2            2            2            2 
+         GGA           BO        CMAES          ACO HillClimbing        irace 
+           3            3            4            4            4            4 
+          SA         HABO 
+           4            5 

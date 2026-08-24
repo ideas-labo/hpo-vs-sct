@@ -1,0 +1,60 @@
+Problem: FastDownward
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name      mean       std       min        max
+0             BO            BO  4.248607 11.022194  1.325868  45.592180
+1           BOCA          BOCA  8.441133 16.133177  1.325868  44.007100
+2        ResTune       ResTune  8.705784 16.744357  1.325868  50.398940
+3          CMAES         CMAES  9.854784 17.306085  1.325868  43.911400
+4        Tuneful       Tuneful 12.692602 19.148933  1.325868  44.025320
+5          ConEx         ConEx 19.781855 21.458915  1.325868  44.019000
+6      OtterTune     OtterTune 19.826846 21.488407  1.325868  44.137260
+7   RandomSearch  RandomSearch 21.239518 21.633598  1.325868  44.049600
+8          FLASH         FLASH 22.606049 21.634857  1.325868  43.929420
+9            PSO           PSO 22.606303 21.633256  1.325868  43.929420
+10            DE            DE 22.645640 21.658467  1.325868  44.040160
+11      ROBOTune      ROBOTune 24.107076 21.665225  1.325868  44.187580
+12    BestConfig    BestConfig 25.493456 21.484426  1.325868  44.049600
+13          SWAY          SWAY 26.291960 32.437065  1.335426  75.730660
+14            GA            GA 26.882839 21.207364  1.325868  43.981060
+15        ATConf        ATConf 29.691467 20.397513  1.325868  43.873540
+16            ES            ES 31.117843 19.823700  1.325868  43.981060
+17   PromiseTune   PromiseTune 32.532890 19.131621  1.325868  43.905160
+18           ACO           ACO 39.747720 13.021823  1.335426  44.762720
+19            SA            SA 55.749130 69.018791  1.325868 394.713000
+20  HillClimbing  HillClimbing 65.555525 63.958660 43.873540 393.836800
+
+Scott-Knott result:
+
+Groups:
+          BO         BOCA      ResTune        CMAES      Tuneful        ConEx 
+           1            2            2            2            2            3 
+   OtterTune RandomSearch        FLASH          PSO           DE     ROBOTune 
+           4            4            4            5            6            7 
+  BestConfig         SWAY           GA       ATConf           ES  PromiseTune 
+           8            8            9            9            9           10 
+         ACO           SA HillClimbing 
+          11           11           12 

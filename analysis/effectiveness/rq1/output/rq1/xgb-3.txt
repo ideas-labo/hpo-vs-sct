@@ -1,0 +1,55 @@
+Problem: xgb-3
+
+Optimizer merge mapping:
+ATConf → ATConf_Tuneful
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx_GGA
+DEHB → DEHB_irace
+FLASH → FLASH_SMAC
+GGA → ConEx_GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune_SWAY
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → FLASH_SMAC
+SWAY → OtterTune_SWAY
+Tuneful → ATConf_Tuneful
+UQGuided → UQGuided
+irace → DEHB_irace
+
+Statistics:
+        optimizer_name   optimizer_name     mean      std      min      max
+0       FLASH_SMAC        FLASH 0.004000 0.004983 0.000000 0.010000
+1      PromiseTune  PromiseTune 0.004333 0.005040 0.000000 0.010000
+2       BestConfig   BestConfig 0.005667 0.005040 0.000000 0.010000
+3        ConEx_GGA        ConEx 0.006667 0.004795 0.000000 0.010000
+4   ATConf_Tuneful       ATConf 0.007000 0.004661 0.000000 0.010000
+5         UQGuided     UQGuided 0.007333 0.004498 0.000000 0.010000
+6             HEBO         HEBO 0.007667 0.004302 0.000000 0.010000
+7             BOCA         BOCA 0.008000 0.004068 0.000000 0.010000
+8             BOHB         BOHB 0.008333 0.003790 0.000000 0.010000
+9       DEHB_irace         DEHB 0.008667 0.003457 0.000000 0.010000
+10        ROBOTune     ROBOTune 0.008667 0.003457 0.000000 0.010000
+11       Hyperband    Hyperband 0.009000 0.003051 0.000000 0.010000
+12         ResTune      ResTune 0.009333 0.002537 0.000000 0.010000
+13            HABO         HABO 0.009667 0.001826 0.000000 0.010000
+14        ParamILS     ParamILS 0.009667 0.001826 0.000000 0.010000
+15  OtterTune_SWAY    OtterTune 0.010000 0.000000 0.010000 0.010000
+
+Scott-Knott result:
+
+Groups:
+    FLASH_SMAC    PromiseTune     BestConfig      ConEx_GGA ATConf_Tuneful 
+             1              1              2              2              2 
+      UQGuided           HEBO           BOCA           BOHB     DEHB_irace 
+             2              3              3              3              3 
+      ROBOTune      Hyperband        ResTune           HABO       ParamILS 
+             4              4              4              4              5 
+OtterTune_SWAY 
+             5 

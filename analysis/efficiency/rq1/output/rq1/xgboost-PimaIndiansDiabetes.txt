@@ -1,0 +1,64 @@
+Problem: xgboost-PimaIndiansDiabetes
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_ConEx_FLASH
+ConEx → BestConfig_ConEx_FLASH
+DEHB → DEHB
+FLASH → BestConfig_ConEx_FLASH
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                optimizer_name   optimizer_name     mean      std      min       max
+0                     BOCA         BOCA 0.921733 1.002479 0.014286  5.000000
+1                  ResTune      ResTune 0.959866 0.733545 0.035088  3.000000
+2   BestConfig_ConEx_FLASH   BestConfig 0.964257 1.001303 0.057143  5.000000
+3                 ParamILS     ParamILS 0.998666 1.026599 0.057143  5.000000
+4                   ATConf       ATConf 1.021676 1.063366 0.057143  5.000000
+5                OtterTune    OtterTune 1.032417 1.120557 0.057143  5.000000
+6                  Tuneful      Tuneful 1.154623 1.073835 0.030769  4.500000
+7                     SMAC         SMAC 1.187399 1.360406 0.093333  6.000000
+8                 UQGuided     UQGuided 1.221599 1.301548 0.057143  5.000000
+9                     BOHB         BOHB 1.236446 0.987316 0.053333  3.800000
+10                    HEBO         HEBO 1.270629 1.280568 0.057143  4.000000
+11               Hyperband    Hyperband 1.295970 1.088079 0.053333  3.857143
+12             PromiseTune  PromiseTune 1.342219 1.538709 0.080000  6.000000
+13                   irace        irace 1.521702 1.631231 0.052632  7.000000
+14                     GGA          GGA 1.709834 2.251612 0.057143 10.000000
+15                    DEHB         DEHB 1.802706 2.392746 0.057143 10.000000
+16                ROBOTune     ROBOTune 2.141972 2.702950 0.042857 10.000000
+17                    SWAY         SWAY 3.070407 4.346393 0.100000 17.000000
+18                    HABO         HABO 3.890092 5.131415 0.040000 19.500000
+
+Scott-Knott result:
+
+Groups:
+                  BOCA                ResTune BestConfig_ConEx_FLASH 
+                     1                      1                      1 
+              ParamILS                 ATConf              OtterTune 
+                     1                      1                      1 
+               Tuneful                   SMAC               UQGuided 
+                     2                      3                      4 
+                  BOHB                   HEBO              Hyperband 
+                     4                      5                      6 
+           PromiseTune                  irace                    GGA 
+                     7                      7                      7 
+                  DEHB               ROBOTune                   SWAY 
+                     8                      8                      8 
+                  HABO 
+                     9 

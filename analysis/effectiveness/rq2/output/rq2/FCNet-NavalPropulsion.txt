@@ -1,0 +1,57 @@
+Problem: FCNet-NavalPropulsion
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES_HEBO
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → ES_HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min      max
+0        ES_HEBO            ES 0.000029 0.000000 0.000029 0.000029
+1           DEHB          DEHB 0.000030 0.000002 0.000029 0.000034
+2            PSO           PSO 0.000031 0.000002 0.000029 0.000034
+3           SMAC          SMAC 0.000031 0.000005 0.000029 0.000049
+4          irace         irace 0.000031 0.000002 0.000029 0.000036
+5             GA            GA 0.000034 0.000002 0.000029 0.000038
+6          CMAES         CMAES 0.000037 0.000010 0.000029 0.000077
+7       ParamILS      ParamILS 0.000043 0.000016 0.000029 0.000086
+8       UQGuided      UQGuided 0.000044 0.000010 0.000029 0.000068
+9            GGA           GGA 0.000051 0.000015 0.000033 0.000080
+10          BOHB          BOHB 0.000054 0.000019 0.000035 0.000101
+11  RandomSearch  RandomSearch 0.000054 0.000022 0.000032 0.000120
+12  HillClimbing  HillClimbing 0.000056 0.000103 0.000029 0.000597
+13     Hyperband     Hyperband 0.000058 0.000025 0.000032 0.000118
+14            SA            SA 0.000059 0.000022 0.000029 0.000112
+15            DE            DE 0.000062 0.000021 0.000033 0.000110
+16          HABO          HABO 0.000071 0.000037 0.000034 0.000197
+17            BO            BO 0.000194 0.000172 0.000033 0.000719
+18           ACO           ACO 0.000368 0.001211 0.000033 0.006688
+
+Scott-Knott result:
+
+Groups:
+     ES_HEBO         DEHB          PSO         SMAC        irace           GA 
+           1            2            3            4            5            6 
+       CMAES     ParamILS     UQGuided          GGA         BOHB RandomSearch 
+           6            6            7            8            9            9 
+HillClimbing    Hyperband           SA           DE         HABO           BO 
+          10           10           10           11           11           12 
+         ACO 
+          13 

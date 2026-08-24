@@ -1,0 +1,61 @@
+Problem: xgb-146818
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_GGA
+ConEx → ConEx
+DEHB → DEHB_ROBOTune
+FLASH → FLASH
+GGA → BestConfig_GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband_PromiseTune
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → Hyperband_PromiseTune
+ROBOTune → DEHB_ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+               optimizer_name  optimizer_name     mean      std      min      max
+0                 Tuneful     Tuneful 0.010000 0.000000 0.010000 0.010000
+1                   FLASH       FLASH 0.010333 0.001826 0.010000 0.020000
+2                    BOHB        BOHB 0.010667 0.002537 0.010000 0.020000
+3               OtterTune   OtterTune 0.010667 0.002537 0.010000 0.020000
+4                  ATConf      ATConf 0.010667 0.002537 0.010000 0.020000
+5   Hyperband_PromiseTune   Hyperband 0.011000 0.003051 0.010000 0.020000
+6           DEHB_ROBOTune        DEHB 0.012000 0.004068 0.010000 0.020000
+7                    SMAC        SMAC 0.012667 0.004498 0.010000 0.020000
+8                    HEBO        HEBO 0.012667 0.004498 0.010000 0.020000
+9                   ConEx       ConEx 0.014000 0.004983 0.010000 0.020000
+10         BestConfig_GGA  BestConfig 0.014333 0.005040 0.010000 0.020000
+11                  irace       irace 0.014667 0.005074 0.010000 0.020000
+12               UQGuided    UQGuided 0.015333 0.005074 0.010000 0.020000
+13               ParamILS    ParamILS 0.016333 0.004901 0.010000 0.020000
+14                   HABO        HABO 0.016667 0.005467 0.010000 0.030000
+15                   BOCA        BOCA 0.017333 0.004498 0.010000 0.020000
+16                ResTune     ResTune 0.020000 0.004549 0.010000 0.030000
+17                   SWAY        SWAY 0.020667 0.006915 0.010000 0.030000
+
+Scott-Knott result:
+
+Groups:
+              Tuneful                 FLASH                  BOHB 
+                    1                     1                     1 
+            OtterTune                ATConf Hyperband_PromiseTune 
+                    2                     2                     3 
+        DEHB_ROBOTune                  SMAC                  HEBO 
+                    4                     4                     4 
+                ConEx        BestConfig_GGA                 irace 
+                    4                     4                     4 
+             UQGuided              ParamILS                  HABO 
+                    5                     5                     6 
+                 BOCA               ResTune                  SWAY 
+                    6                     6                     7 

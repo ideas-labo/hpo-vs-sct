@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+
+# Large external artifacts
+data/*
+!data/README.md
+results/
+result/
+
+# Generated logs and temporary files
+*.log
+*.tmp
+*.zip
+*.tar
+*.tar.gz
+
+# Editor and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Codex/local assistant metadata
+.codex/
+.agents/

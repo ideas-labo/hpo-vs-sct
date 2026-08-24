@@ -1,0 +1,60 @@
+Problem: tomcat
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx
+DEHB → DEHB
+FLASH → FLASH
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+     optimizer_name   optimizer_name        mean       std        min         max
+0          SMAC         SMAC  911.183333 16.216171 903.000000  968.400000
+1        ATConf       ATConf  921.910000 23.043218 903.000000  974.800000
+2         FLASH        FLASH  930.353333 23.497347 903.000000  995.800000
+3   PromiseTune  PromiseTune  932.696667 25.888467 903.000000  992.300000
+4         ConEx        ConEx  932.870000 26.031561 903.000000 1001.200000
+5          BOHB         BOHB  934.543333 27.171254 903.000000 1006.300000
+6     OtterTune    OtterTune  935.040000 27.552177 903.000000  995.300000
+7       ResTune      ResTune  935.186667 26.854303 903.000000  999.200000
+8     Hyperband    Hyperband  935.556667 26.451526 903.000000  999.800000
+9          BOCA         BOCA  936.240000 25.691453 903.000000  995.400000
+10     ROBOTune     ROBOTune  936.733333 22.196945 903.000000  972.200000
+11   BestConfig   BestConfig  938.533333 28.366035 903.000000 1014.800000
+12         DEHB         DEHB  940.340000 19.755289 903.000000  972.200000
+13         SWAY         SWAY  941.093333 18.638187 904.200000  967.700000
+14         HEBO         HEBO  943.863333 26.338715 903.000000 1000.000000
+15          GGA          GGA  945.186667 17.909018 903.000000  979.500000
+16     UQGuided     UQGuided  952.100000 32.101348 903.000000 1037.300000
+17        irace        irace  958.760000 28.695760 903.000000 1017.800000
+18      Tuneful      Tuneful  962.980000 28.126652 903.000000 1045.600000
+19         HABO         HABO  975.076667 37.449264 903.000000 1065.500000
+20     ParamILS     ParamILS 1012.340000 39.164935 903.000000 1066.400000
+
+Scott-Knott result:
+
+Groups:
+       SMAC      ATConf       FLASH PromiseTune       ConEx        BOHB 
+          1           1           2           2           2           2 
+  OtterTune     ResTune   Hyperband        BOCA    ROBOTune  BestConfig 
+          2           3           3           3           3           3 
+       DEHB        SWAY        HEBO         GGA    UQGuided       irace 
+          4           4           4           5           6           6 
+    Tuneful        HABO    ParamILS 
+          7           8           9 

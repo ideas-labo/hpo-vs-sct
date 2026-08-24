@@ -1,0 +1,60 @@
+Problem: dconvert
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx
+DEHB → DEHB
+FLASH → FLASH
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+     optimizer_name   optimizer_name     mean      std      min      max
+0          HEBO         HEBO 1.792667 0.006397 1.790000 1.820000
+1         FLASH        FLASH 1.796000 0.014288 1.790000 1.840000
+2     OtterTune    OtterTune 1.799333 0.014126 1.790000 1.840000
+3        ATConf       ATConf 1.800000 0.014622 1.790000 1.840000
+4         irace        irace 1.800667 0.015071 1.790000 1.840000
+5          DEHB         DEHB 1.807667 0.021764 1.790000 1.860000
+6   PromiseTune  PromiseTune 1.811667 0.026403 1.790000 1.890000
+7         ConEx        ConEx 1.812333 0.020957 1.790000 1.850000
+8          SMAC         SMAC 1.813333 0.067022 1.790000 2.150000
+9      ROBOTune     ROBOTune 1.813667 0.021891 1.790000 1.850000
+10     UQGuided     UQGuided 1.817000 0.028545 1.790000 1.880000
+11         BOHB         BOHB 1.824000 0.023134 1.790000 1.880000
+12         HABO         HABO 1.832333 0.031259 1.790000 1.930000
+13    Hyperband    Hyperband 1.835000 0.022245 1.790000 1.890000
+14          GGA          GGA 1.835000 0.024600 1.790000 1.890000
+15   BestConfig   BestConfig 1.837000 0.027935 1.790000 1.890000
+16         BOCA         BOCA 1.838667 0.020965 1.790000 1.870000
+17     ParamILS     ParamILS 1.849667 0.081006 1.790000 2.180000
+18      Tuneful      Tuneful 1.906333 0.064886 1.830000 2.170000
+19         SWAY         SWAY 1.906333 0.139073 1.790000 2.440000
+20      ResTune      ResTune 2.080333 0.173811 1.800000 2.350000
+
+Scott-Knott result:
+
+Groups:
+       HEBO       FLASH   OtterTune      ATConf       irace        DEHB 
+          1           1           1           1           2           2 
+PromiseTune       ConEx        SMAC    ROBOTune    UQGuided        BOHB 
+          3           3           4           4           4           5 
+       HABO   Hyperband         GGA  BestConfig        BOCA    ParamILS 
+          6           6           7           7           7           7 
+    Tuneful        SWAY     ResTune 
+          8           9          10 

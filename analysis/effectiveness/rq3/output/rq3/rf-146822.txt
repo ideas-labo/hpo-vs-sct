@@ -1,0 +1,62 @@
+Problem: rf-146822
+
+Optimizer merge mapping:
+ACO → ACO_HillClimbing
+ATConf → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+BO → BO
+BOCA → BOCA
+BOHB → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+BestConfig → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+CMAES → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+ConEx → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+DE → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+DEHB → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+ES → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+FLASH → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+GA → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+GGA → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+HABO → HABO
+HEBO → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+HillClimbing → ACO_HillClimbing
+Hyperband → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+OtterTune → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+PSO → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+ParamILS → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+PromiseTune → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+ROBOTune → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+RandomSearch → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+ResTune → ResTune
+SA → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+SMAC → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+SWAY → SWAY
+Tuneful → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+UQGuided → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+irace → ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace
+
+Statistics:
+                                                                                                                                                          optimizer_name optimizer_name     mean      std      min      max
+0  ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace     ATConf 0.010000 0.000000 0.010000 0.010000
+1                                                                                                                                                   ACO_HillClimbing        ACO 0.010333 0.001826 0.010000 0.020000
+2                                                                                                                                                               HABO       HABO 0.011333 0.003457 0.010000 0.020000
+3                                                                                                                                                            ResTune    ResTune 0.011667 0.003790 0.010000 0.020000
+4                                                                                                                                                                 BO         BO 0.013333 0.005467 0.010000 0.030000
+5                                                                                                                                                               BOCA       BOCA 0.014667 0.007303 0.010000 0.040000
+6                                                                                                                                                               SWAY       SWAY 0.030333 0.026455 0.010000 0.080000
+
+Scott-Knott result:
+
+Groups:
+ATConf_BOHB_BestConfig_CMAES_ConEx_DE_DEHB_ES_FLASH_GA_GGA_HEBO_Hyperband_OtterTune_PSO_ParamILS_PromiseTune_ROBOTune_RandomSearch_SA_SMAC_Tuneful_UQGuided_irace 
+                                                                                                                                                                1 
+                                                                                                                                                 ACO_HillClimbing 
+                                                                                                                                                                1 
+                                                                                                                                                             HABO 
+                                                                                                                                                                2 
+                                                                                                                                                          ResTune 
+                                                                                                                                                                2 
+                                                                                                                                                               BO 
+                                                                                                                                                                3 
+                                                                                                                                                             BOCA 
+                                                                                                                                                                3 
+                                                                                                                                                             SWAY 
+                                                                                                                                                                4 

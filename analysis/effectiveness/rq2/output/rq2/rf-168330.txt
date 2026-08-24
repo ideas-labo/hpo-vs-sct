@@ -1,0 +1,53 @@
+Problem: rf-168330
+
+Optimizer merge mapping:
+ACO → ACO_GA_ParamILS
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE_SMAC_UQGuided
+DEHB → DEHB_HEBO
+ES → ES
+GA → ACO_GA_ParamILS
+GGA → GGA
+HABO → HABO
+HEBO → DEHB_HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ACO_GA_ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → DE_SMAC_UQGuided
+UQGuided → DE_SMAC_UQGuided
+irace → irace
+
+Statistics:
+          optimizer_name    optimizer_name     mean      std      min      max
+0              CMAES         CMAES 0.006333 0.004901 0.000000 0.010000
+1          DEHB_HEBO          DEHB 0.006667 0.004795 0.000000 0.010000
+2              irace         irace 0.007333 0.004498 0.000000 0.010000
+3                 ES            ES 0.007333 0.004498 0.000000 0.010000
+4               BOHB          BOHB 0.007667 0.004302 0.000000 0.010000
+5                PSO           PSO 0.008000 0.004068 0.000000 0.010000
+6    ACO_GA_ParamILS           ACO 0.008333 0.003790 0.000000 0.010000
+7                 SA            SA 0.008667 0.003457 0.000000 0.010000
+8          Hyperband     Hyperband 0.009000 0.003051 0.000000 0.010000
+9               HABO          HABO 0.009000 0.003051 0.000000 0.010000
+10      HillClimbing  HillClimbing 0.009333 0.002537 0.000000 0.010000
+11      RandomSearch  RandomSearch 0.009333 0.002537 0.000000 0.010000
+12  DE_SMAC_UQGuided            DE 0.009333 0.002537 0.000000 0.010000
+13               GGA           GGA 0.009667 0.001826 0.000000 0.010000
+14                BO            BO 0.012000 0.006103 0.010000 0.040000
+
+Scott-Knott result:
+
+Groups:
+           CMAES        DEHB_HEBO            irace               ES 
+               1                2                2                2 
+            BOHB              PSO  ACO_GA_ParamILS               SA 
+               2                2                2                2 
+       Hyperband             HABO     HillClimbing     RandomSearch 
+               3                3                3                3 
+DE_SMAC_UQGuided              GGA               BO 
+               3                4                4 

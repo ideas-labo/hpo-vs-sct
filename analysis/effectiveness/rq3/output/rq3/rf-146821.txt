@@ -1,0 +1,110 @@
+Problem: rf-146821
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf_PSO
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful
+ES → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful
+FLASH → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful
+PSO → ATConf_PSO
+ParamILS → ParamILS
+PromiseTune → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful
+ROBOTune → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                                                   optimizer_name    optimizer_name     mean      std      min      max
+0   DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful          DEHB 0.000000 0.000000 0.000000 0.000000
+1                                                        SMAC          SMAC 0.000667 0.003651 0.000000 0.020000
+2                                                       CMAES         CMAES 0.001333 0.005713 0.000000 0.030000
+3                                                  ATConf_PSO        ATConf 0.003667 0.004901 0.000000 0.010000
+4                                                       irace         irace 0.004000 0.005632 0.000000 0.020000
+5                                                       ConEx         ConEx 0.005333 0.005713 0.000000 0.020000
+6                                                          GA            GA 0.007000 0.007497 0.000000 0.030000
+7                                                    ParamILS      ParamILS 0.007333 0.007849 0.000000 0.030000
+8                                                   Hyperband     Hyperband 0.008333 0.004611 0.000000 0.020000
+9                                                        BOHB          BOHB 0.011333 0.007303 0.000000 0.030000
+10                                                         DE            DE 0.012000 0.007144 0.000000 0.040000
+11                                                   UQGuided      UQGuided 0.013000 0.011788 0.000000 0.060000
+12                                                 BestConfig    BestConfig 0.014333 0.008172 0.000000 0.030000
+13                                               RandomSearch  RandomSearch 0.015333 0.010417 0.000000 0.050000
+14                                                       HABO          HABO 0.015667 0.011943 0.000000 0.050000
+15                                                        GGA           GGA 0.015667 0.014065 0.000000 0.070000
+16                                               HillClimbing  HillClimbing 0.016333 0.018473 0.000000 0.060000
+17                                                         SA            SA 0.018000 0.014479 0.000000 0.060000
+18                                                        ACO           ACO 0.028000 0.028454 0.000000 0.100000
+19                                                    ResTune       ResTune 0.112000 0.062334 0.010000 0.250000
+20                                                         BO            BO 0.129000 0.095244 0.010000 0.390000
+21                                                       BOCA          BOCA 0.155333 0.153077 0.000000 0.550000
+22                                                       SWAY          SWAY 0.238333 0.142686 0.000000 0.470000
+
+Scott-Knott result:
+
+Groups:
+DEHB_ES_FLASH_HEBO_OtterTune_PromiseTune_ROBOTune_Tuneful 
+                                                        1 
+                                                     SMAC 
+                                                        1 
+                                                    CMAES 
+                                                        2 
+                                               ATConf_PSO 
+                                                        2 
+                                                    irace 
+                                                        2 
+                                                    ConEx 
+                                                        3 
+                                                       GA 
+                                                        4 
+                                                 ParamILS 
+                                                        4 
+                                                Hyperband 
+                                                        4 
+                                                     BOHB 
+                                                        4 
+                                                       DE 
+                                                        4 
+                                                 UQGuided 
+                                                        4 
+                                               BestConfig 
+                                                        5 
+                                             RandomSearch 
+                                                        5 
+                                                     HABO 
+                                                        5 
+                                                      GGA 
+                                                        6 
+                                             HillClimbing 
+                                                        7 
+                                                       SA 
+                                                        7 
+                                                      ACO 
+                                                        8 
+                                                  ResTune 
+                                                        9 
+                                                       BO 
+                                                        9 
+                                                     BOCA 
+                                                       10 
+                                                     SWAY 
+                                                       11 

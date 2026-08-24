@@ -1,0 +1,60 @@
+Problem: MariaDB
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min       max
+0   HillClimbing  HillClimbing 0.743659 0.794298 0.031250  2.714286
+1            PSO           PSO 0.907238 1.086667 0.018182  4.333333
+2      OtterTune     OtterTune 1.072721 1.626036 0.018182  6.666667
+3             ES            ES 1.132254 1.775302 0.018182  8.333333
+4         ATConf        ATConf 1.263157 2.427821 0.018182 11.714286
+5             SA            SA 1.435775 2.816683 0.039062 15.500000
+6             GA            GA 1.450412 2.715604 0.018182 14.000000
+7          FLASH         FLASH 1.670245 2.955474 0.018182 11.666667
+8           SWAY          SWAY 1.685175 3.045822 0.029197 12.285714
+9             DE            DE 1.703947 2.940897 0.018182 14.000000
+10          BOCA          BOCA 1.807820 3.932036 0.018182 20.000000
+11         ConEx         ConEx 1.863701 3.244482 0.018182 13.285714
+12       Tuneful       Tuneful 1.940899 3.231704 0.031818 12.750000
+13           ACO           ACO 1.983684 3.296969 0.033898 12.857143
+14   PromiseTune   PromiseTune 2.032136 3.109275 0.023438 11.857143
+15  RandomSearch  RandomSearch 2.140556 4.243454 0.018182 20.571429
+16         CMAES         CMAES 2.272948 4.903434 0.014599 23.500000
+17       ResTune       ResTune 2.281321 4.927240 0.036496 26.333333
+18    BestConfig    BestConfig 2.532072 5.736755 0.018182 31.000000
+19      ROBOTune      ROBOTune 3.045578 6.013188 0.011299 23.250000
+20            BO            BO 4.046481 8.238001 0.018182 34.666667
+
+Scott-Knott result:
+
+Groups:
+HillClimbing          PSO    OtterTune           ES       ATConf           SA 
+           1            1            1            1            1            2 
+          GA        FLASH         SWAY           DE         BOCA        ConEx 
+           2            2            2            2            3            3 
+     Tuneful          ACO  PromiseTune RandomSearch        CMAES      ResTune 
+           3            3            3            3            3            3 
+  BestConfig     ROBOTune           BO 
+           3            4            4 

@@ -1,0 +1,87 @@
+Problem: sac
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx_RandomSearch
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → ConEx_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+            optimizer_name    optimizer_name     mean      std      min      max
+0                 SWAY          SWAY 0.419000 0.044594 0.390000 0.620000
+1               ATConf        ATConf 0.437333 0.071820 0.410000 0.720000
+2                 SMAC          SMAC 0.461333 0.061067 0.410000 0.550000
+3                  PSO           PSO 0.470000 0.063300 0.410000 0.550000
+4                FLASH         FLASH 0.490333 0.060940 0.410000 0.550000
+5                  GGA           GGA 0.523333 0.047730 0.410000 0.550000
+6                   ES            ES 0.524667 0.044932 0.410000 0.550000
+7              Tuneful       Tuneful 0.526333 0.040555 0.410000 0.560000
+8                irace         irace 0.528333 0.047422 0.410000 0.550000
+9                  ACO           ACO 0.532000 0.047951 0.410000 0.560000
+10                DEHB          DEHB 0.533000 0.039840 0.410000 0.560000
+11            UQGuided      UQGuided 0.536333 0.033372 0.410000 0.550000
+12          BestConfig    BestConfig 0.537000 0.031089 0.410000 0.550000
+13           OtterTune     OtterTune 0.538333 0.024647 0.410000 0.550000
+14                  GA            GA 0.538333 0.032492 0.420000 0.550000
+15                HABO          HABO 0.538333 0.034047 0.410000 0.560000
+16                BOHB          BOHB 0.540333 0.023265 0.420000 0.550000
+17                HEBO          HEBO 0.541333 0.023450 0.420000 0.550000
+18                  BO            BO 0.542667 0.023625 0.420000 0.550000
+19           Hyperband     Hyperband 0.543000 0.023657 0.420000 0.550000
+20                  DE            DE 0.543667 0.022047 0.430000 0.560000
+21            ROBOTune      ROBOTune 0.544333 0.005040 0.540000 0.550000
+22  ConEx_RandomSearch         ConEx 0.544667 0.005074 0.540000 0.550000
+23                BOCA          BOCA 0.546667 0.004795 0.540000 0.550000
+24               CMAES         CMAES 0.546667 0.007581 0.540000 0.560000
+25         PromiseTune   PromiseTune 0.547000 0.005350 0.540000 0.560000
+26            ParamILS      ParamILS 0.553333 0.009942 0.540000 0.570000
+27             ResTune       ResTune 0.557333 0.017604 0.540000 0.600000
+28                  SA            SA 0.575333 0.061293 0.540000 0.750000
+29        HillClimbing  HillClimbing 0.625333 0.096123 0.540000 0.800000
+
+Scott-Knott result:
+
+Groups:
+              SWAY             ATConf               SMAC                PSO 
+                 1                  2                  3                  4 
+             FLASH                GGA                 ES            Tuneful 
+                 5                  5                  5                  6 
+             irace                ACO               DEHB           UQGuided 
+                 7                  7                  8                  8 
+        BestConfig          OtterTune                 GA               HABO 
+                 9                 10                 11                 11 
+              BOHB               HEBO                 BO          Hyperband 
+                12                 12                 12                 13 
+                DE           ROBOTune ConEx_RandomSearch               BOCA 
+                13                 13                 13                 13 
+             CMAES        PromiseTune           ParamILS            ResTune 
+                14                 14                 14                 15 
+                SA       HillClimbing 
+                16                 17 

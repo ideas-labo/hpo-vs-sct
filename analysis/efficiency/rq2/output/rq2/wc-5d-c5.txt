@@ -1,0 +1,67 @@
+Problem: wc-5d-c5
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig_ConEx_FLASH_RandomSearch
+CMAES → CMAES
+ConEx → BestConfig_ConEx_FLASH_RandomSearch
+DE → DE
+ES → ES
+FLASH → BestConfig_ConEx_FLASH_RandomSearch
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_ConEx_FLASH_RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+                             optimizer_name    optimizer_name     mean       std      min       max
+0                                  BOCA          BOCA 1.142337  1.703819 0.078431 10.000000
+1                                    BO            BO 1.467892  2.020767 0.078431  8.000000
+2                                ATConf        ATConf 1.685670  2.085421 0.078431  7.000000
+3                             OtterTune     OtterTune 1.719003  2.163297 0.078431  7.000000
+4                               ResTune       ResTune 1.763704  1.617264 0.133333  7.000000
+5                          HillClimbing  HillClimbing 1.811520  1.288939 0.137255  6.000000
+6                                   PSO           PSO 2.201225  3.351278 0.078431 13.000000
+7                           PromiseTune   PromiseTune 2.212255  1.919389 0.117647  6.000000
+8   BestConfig_ConEx_FLASH_RandomSearch    BestConfig 2.301225  3.710161 0.078431 16.000000
+9                                    DE            DE 2.334559  3.794541 0.078431 16.000000
+10                                   ES            ES 2.334559  3.839710 0.078431 17.000000
+11                                  ACO           ACO 2.566127  3.595681 0.058824 17.000000
+12                              Tuneful       Tuneful 2.642053  3.698650 0.058824 19.000000
+13                                   GA            GA 2.767892  5.496789 0.078431 27.000000
+14                             ROBOTune      ROBOTune 2.824929  3.584140 0.078431 16.000000
+15                                   SA            SA 4.012625  5.233062 0.200000 24.000000
+16                                CMAES         CMAES 5.233437  9.679011 0.039216 46.000000
+17                                 SWAY          SWAY 5.575403 10.087295 0.117647 41.000000
+
+Scott-Knott result:
+
+Groups:
+                               BOCA                                  BO 
+                                  1                                   1 
+                             ATConf                           OtterTune 
+                                  1                                   1 
+                            ResTune                        HillClimbing 
+                                  1                                   1 
+                                PSO                         PromiseTune 
+                                  2                                   3 
+BestConfig_ConEx_FLASH_RandomSearch                                  DE 
+                                  3                                   3 
+                                 ES                                 ACO 
+                                  3                                   4 
+                            Tuneful                                  GA 
+                                  5                                   5 
+                           ROBOTune                                  SA 
+                                  5                                   5 
+                              CMAES                                SWAY 
+                                  6                                   7 

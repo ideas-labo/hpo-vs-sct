@@ -1,0 +1,65 @@
+Problem: deeparch
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+                 optimizer_name    optimizer_name      mean       std      min        max
+0                        BO            BO  0.972314  0.862085 0.011628   4.000000
+1                      BOCA          BOCA  1.495579  1.934410 0.011628   6.000000
+2                    ATConf        ATConf  1.691035  2.033315 0.011628   7.000000
+3                 OtterTune     OtterTune  1.724787  2.267174 0.011628   8.000000
+4              HillClimbing  HillClimbing  1.913269  1.949024 0.011628   6.428571
+5                     CMAES         CMAES  1.937289  2.616154 0.025210  10.000000
+6                   ResTune       ResTune  2.214829  5.720083 0.029851  31.333333
+7                   Tuneful       Tuneful  2.326576  4.118515 0.017442  21.000000
+8                  ROBOTune      ROBOTune  2.327961  3.286590 0.050420  16.000000
+9                       ACO           ACO  2.577861  3.693669 0.025210  17.500000
+10                      PSO           PSO  2.776630  5.027413 0.011628  22.000000
+11                       ES            ES  3.048138  5.589648 0.011628  23.000000
+12                       GA            GA  3.110080  5.734446 0.011628  19.000000
+13              PromiseTune   PromiseTune  3.131599  4.537432 0.034884  21.333333
+14                       DE            DE  3.183215  5.281230 0.011628  19.000000
+15                    FLASH         FLASH  4.535478  9.509255 0.011628  34.000000
+16                    ConEx         ConEx  4.835478 10.277588 0.011628  40.000000
+17  BestConfig_RandomSearch    BestConfig  4.868811 10.281625 0.011628  40.000000
+18                       SA            SA  5.121091 10.704068 0.011628  56.500000
+19                     SWAY          SWAY 13.141838 36.769585 0.050420 197.000000
+
+Scott-Knott result:
+
+Groups:
+                     BO                    BOCA                  ATConf 
+                      1                       1                       1 
+              OtterTune            HillClimbing                   CMAES 
+                      1                       1                       1 
+                ResTune                 Tuneful                ROBOTune 
+                      1                       1                       1 
+                    ACO                     PSO                      ES 
+                      1                       1                       1 
+                     GA             PromiseTune                      DE 
+                      1                       2                       3 
+                  FLASH                   ConEx BestConfig_RandomSearch 
+                      3                       3                       3 
+                     SA                    SWAY 
+                      4                       4 

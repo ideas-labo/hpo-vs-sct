@@ -1,0 +1,87 @@
+Problem: rf-146818
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH_RandomSearch
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → FLASH_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+            optimizer_name    optimizer_name     mean      std      min       max
+0          PromiseTune   PromiseTune 0.340989 0.589808 0.014815  2.000000
+1                 SMAC          SMAC 0.466893 0.598971 0.015385  2.000000
+2                 HEBO          HEBO 0.504124 0.608596 0.022222  2.000000
+3                CMAES         CMAES 0.540904 0.811372 0.015152  4.000000
+4           BestConfig    BestConfig 0.655116 0.742255 0.015152  3.000000
+5             ROBOTune      ROBOTune 0.660499 1.071400 0.014815  4.000000
+6                 HABO          HABO 0.664372 1.084765 0.014815  5.000000
+7              ResTune       ResTune 0.693764 1.033179 0.008130  5.000000
+8                irace         irace 0.712215 1.418823 0.015873  7.000000
+9               ATConf        ATConf 0.719180 1.218959 0.015152  6.000000
+10                 ACO           ACO 0.723452 1.419869 0.015873  7.000000
+11                 PSO           PSO 0.726228 1.351033 0.015152  7.000000
+12                BOCA          BOCA 0.728348 1.357743 0.015152  7.000000
+13            ParamILS      ParamILS 0.732392 1.350136 0.015152  7.000000
+14                  ES            ES 0.738554 1.349874 0.015152  7.000000
+15                  GA            GA 0.742426 1.350538 0.015152  7.000000
+16  FLASH_RandomSearch         FLASH 0.749380 1.348873 0.015152  7.000000
+17               ConEx         ConEx 0.750051 1.349038 0.015152  7.000000
+18           Hyperband     Hyperband 0.750266 1.146618 0.031188  3.929688
+19                 GGA           GGA 0.752710 1.476800 0.030303  8.000000
+20                  DE            DE 0.756277 1.349063 0.015152  7.000000
+21            UQGuided      UQGuided 0.770737 1.352433 0.015152  7.000000
+22        HillClimbing  HillClimbing 0.783043 1.347808 0.015152  7.000000
+23                BOHB          BOHB 0.788865 1.161734 0.031188  3.929688
+24           OtterTune     OtterTune 0.789070 1.533286 0.015152  8.000000
+25                  BO            BO 0.796464 1.342504 0.015152  7.000000
+26                DEHB          DEHB 0.815403 1.165828 0.029630  4.000000
+27             Tuneful       Tuneful 0.843728 1.472159 0.014815  7.000000
+28                  SA            SA 1.687248 5.449042 0.015152 30.000000
+29                SWAY          SWAY 3.589413 9.106251 0.015385 43.000000
+
+Scott-Knott result:
+
+Groups:
+       PromiseTune               SMAC               HEBO              CMAES 
+                 1                  2                  2                  2 
+        BestConfig           ROBOTune               HABO            ResTune 
+                 2                  2                  2                  2 
+             irace             ATConf                ACO                PSO 
+                 2                  3                  3                  3 
+              BOCA           ParamILS                 ES                 GA 
+                 3                  3                  3                  3 
+FLASH_RandomSearch              ConEx          Hyperband                GGA 
+                 3                  3                  3                  3 
+                DE           UQGuided       HillClimbing               BOHB 
+                 4                  4                  4                  4 
+         OtterTune                 BO               DEHB            Tuneful 
+                 4                  4                  4                  4 
+                SA               SWAY 
+                 4                  5 

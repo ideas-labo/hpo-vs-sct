@@ -1,0 +1,59 @@
+Problem: PostgreSQL
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+ConEx → ConEx_FLASH
+DEHB → DEHB
+FLASH → ConEx_FLASH
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+     optimizer_name   optimizer_name     mean      std      min       max
+0       ResTune      ResTune 0.977540 0.639340 0.116667  3.000000
+1   PromiseTune  PromiseTune 1.232520 1.360696 0.066667  6.000000
+2      UQGuided     UQGuided 1.271355 1.743429 0.181818 10.000000
+3      ParamILS     ParamILS 1.329694 1.923532 0.181818 11.000000
+4          SMAC         SMAC 1.518423 1.989875 0.170213 10.000000
+5     OtterTune    OtterTune 1.675636 2.411964 0.181818 13.000000
+6        ATConf       ATConf 1.761786 2.266044 0.181818 11.000000
+7          BOCA         BOCA 1.811223 2.640425 0.181818 11.000000
+8   ConEx_FLASH        ConEx 1.980217 5.148328 0.181818 29.000000
+9          BOHB         BOHB 2.248933 2.493221 0.116667 10.500000
+10         DEHB         DEHB 2.270339 2.560033 0.106383 11.000000
+11         HEBO         HEBO 2.457748 2.649484 0.150000 12.000000
+12        irace        irace 2.507032 2.525477 0.133333 10.250000
+13    Hyperband    Hyperband 2.581054 3.237938 0.116667 12.500000
+14   BestConfig   BestConfig 2.684741 5.695016 0.181818 29.000000
+15      Tuneful      Tuneful 2.812555 2.567715 0.033333 10.000000
+16         SWAY         SWAY 2.868377 4.244522 0.042553 21.000000
+17         HABO         HABO 2.931198 3.538767 0.085106 15.000000
+18     ROBOTune     ROBOTune 3.376004 5.123399 0.214286 17.000000
+19          GGA          GGA 3.459964 6.199875 0.181818 27.000000
+
+Scott-Knott result:
+
+Groups:
+    ResTune PromiseTune    UQGuided    ParamILS        SMAC   OtterTune 
+          1           2           2           3           3           3 
+     ATConf        BOCA ConEx_FLASH        BOHB        DEHB        HEBO 
+          3           3           3           4           4           4 
+      irace   Hyperband  BestConfig     Tuneful        SWAY        HABO 
+          5           5           5           5           5           6 
+   ROBOTune         GGA 
+          6           6 

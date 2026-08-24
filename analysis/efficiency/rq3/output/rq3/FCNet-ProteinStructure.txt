@@ -1,0 +1,84 @@
+Problem: FCNet-ProteinStructure
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean       std      min       max
+0    PromiseTune   PromiseTune 0.295741  0.508195 0.022059  2.000000
+1         ATConf        ATConf 0.367602  0.672117 0.009615  2.666667
+2       ParamILS      ParamILS 0.413922  0.771574 0.009615  3.666667
+3      OtterTune     OtterTune 0.424592  0.941951 0.009615  4.666667
+4           SMAC          SMAC 0.492783  1.042524 0.014870  5.333333
+5   HillClimbing  HillClimbing 0.535070  1.020550 0.007435  4.333333
+6        Tuneful       Tuneful 0.568955  1.161209 0.007435  5.000000
+7             ES            ES 0.590623  1.184926 0.009615  4.666667
+8          FLASH         FLASH 0.593932  1.157520 0.009615  4.000000
+9           DEHB          DEHB 0.656930  1.300238 0.007435  6.500000
+10       ResTune       ResTune 0.667507  0.405249 0.008130  1.000000
+11         ConEx         ConEx 0.674247  1.403775 0.009615  5.888889
+12           PSO           PSO 0.697933  1.826906 0.009615  9.333333
+13  RandomSearch  RandomSearch 0.717583  1.347276 0.009615  5.444444
+14         irace         irace 0.738487  1.702558 0.007463  8.500000
+15           GGA           GGA 0.741349  1.413746 0.014706  6.666667
+16          HEBO          HEBO 0.776722  1.695736 0.024691  6.666667
+17            BO            BO 0.838502  1.480479 0.009615  6.444444
+18    BestConfig    BestConfig 0.874003  1.581354 0.016393  5.444444
+19         CMAES         CMAES 0.898011  2.899689 0.016304 15.666667
+20      ROBOTune      ROBOTune 0.917057  2.498963 0.007353 13.000000
+21            GA            GA 0.965305  2.596510 0.009615 13.000000
+22          BOCA          BOCA 1.029676  2.631792 0.009615 11.166667
+23     Hyperband     Hyperband 1.043814  2.326314 0.012195  8.666667
+24          BOHB          BOHB 1.102561  3.015217 0.012195 15.666667
+25           ACO           ACO 1.163800  2.513208 0.007463  8.833333
+26      UQGuided      UQGuided 1.281447  2.978490 0.009615 12.000000
+27            DE            DE 1.478598  4.725621 0.009615 23.666667
+28          SWAY          SWAY 1.745912  6.141343 0.007463 32.666667
+29            SA            SA 2.873086  7.065865 0.007435 34.333333
+30          HABO          HABO 3.522974 11.721184 0.011194 64.666667
+
+Scott-Knott result:
+
+Groups:
+ PromiseTune       ATConf     ParamILS    OtterTune         SMAC HillClimbing 
+           1            1            2            2            2            2 
+     Tuneful           ES        FLASH         DEHB      ResTune        ConEx 
+           2            3            3            4            4            5 
+         PSO RandomSearch        irace          GGA         HEBO           BO 
+           5            5            5            5            5            5 
+  BestConfig        CMAES     ROBOTune           GA         BOCA    Hyperband 
+           5            5            5            5            5            5 
+        BOHB          ACO     UQGuided           DE         SWAY           SA 
+           5            5            6            6            6            6 
+        HABO 
+           7 

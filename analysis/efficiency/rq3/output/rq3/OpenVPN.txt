@@ -1,0 +1,84 @@
+Problem: OpenVPN
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean       std      min       max
+0   HillClimbing  HillClimbing 0.601926  1.113248 0.016667  4.500000
+1      OtterTune     OtterTune 0.825139  1.700207 0.024876  7.000000
+2         ATConf        ATConf 0.828581  1.645753 0.024876  8.000000
+3           HEBO          HEBO 0.860337  1.667476 0.009950  8.500000
+4           SMAC          SMAC 0.864982  1.822018 0.014925  9.000000
+5       ParamILS      ParamILS 1.025116  2.533054 0.024876 13.000000
+6           DEHB          DEHB 1.049801  2.431375 0.010152 11.000000
+7             SA            SA 1.165299  2.527087 0.019900 12.285714
+8            PSO           PSO 1.280237  2.590302 0.024876 12.000000
+9        ResTune       ResTune 1.339754  2.430185 0.015228 11.000000
+10   PromiseTune   PromiseTune 1.497998  2.971979 0.055556 12.000000
+11            ES            ES 1.505707  3.641192 0.024876 16.000000
+12    BestConfig    BestConfig 1.631688  3.509072 0.014925 15.500000
+13     Hyperband     Hyperband 1.641550  3.630696 0.014925 17.333333
+14          BOHB          BOHB 1.687141  3.739358 0.014925 18.083333
+15         CMAES         CMAES 1.691278  3.494306 0.022222 15.500000
+16      UQGuided      UQGuided 1.751948  6.144790 0.024876 33.500000
+17         FLASH         FLASH 1.760673  4.141263 0.024876 18.000000
+18       Tuneful       Tuneful 1.787183  4.179326 0.011111 16.500000
+19            DE            DE 1.964086  4.589431 0.024876 22.500000
+20         irace         irace 2.034182  5.266235 0.015038 26.500000
+21           GGA           GGA 2.190621  7.022382 0.010309 38.000000
+22         ConEx         ConEx 2.213322  4.445219 0.024876 18.000000
+23  RandomSearch  RandomSearch 2.300359  4.569628 0.024876 18.000000
+24            GA            GA 2.825234  9.377562 0.024876 51.000000
+25           ACO           ACO 3.082747  8.921358 0.015038 47.000000
+26            BO            BO 3.216751 14.416159 0.024876 79.500000
+27          BOCA          BOCA 3.451539  8.002907 0.024876 36.500000
+28          HABO          HABO 4.127591 12.134551 0.016667 63.500000
+29      ROBOTune      ROBOTune 4.207103 15.589005 0.011111 85.000000
+30          SWAY          SWAY 5.213052 14.382283 0.015625 62.000000
+
+Scott-Knott result:
+
+Groups:
+HillClimbing    OtterTune       ATConf         HEBO         SMAC     ParamILS 
+           1            1            1            1            1            1 
+        DEHB           SA          PSO      ResTune  PromiseTune           ES 
+           1            1            2            2            2            2 
+  BestConfig    Hyperband         BOHB        CMAES     UQGuided        FLASH 
+           3            4            4            4            4            5 
+     Tuneful           DE        irace          GGA        ConEx RandomSearch 
+           5            5            5            5            5            6 
+          GA          ACO           BO         BOCA         HABO     ROBOTune 
+           7            7            7            7            7            7 
+        SWAY 
+           8 

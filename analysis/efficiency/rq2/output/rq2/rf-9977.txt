@@ -1,0 +1,57 @@
+Problem: rf-9977
+
+Optimizer merge mapping:
+ACO → ACO_irace
+BO → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+BOHB → BOHB
+CMAES → CMAES
+DE → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+DEHB → DEHB
+ES → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+GA → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+ParamILS → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+RandomSearch → BO_DE_ES_GA_PSO_ParamILS_RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → ACO_irace
+
+Statistics:
+                               optimizer_name    optimizer_name     mean      std      min       max
+0                               ACO_irace           ACO 0.850101 0.818796 0.020833  2.600000
+1                                   CMAES         CMAES 0.877332 1.067594 0.020833  4.000000
+2                                     GGA           GGA 0.882634 1.176137 0.020833  5.000000
+3                            HillClimbing  HillClimbing 0.957249 1.053673 0.020833  4.000000
+4   BO_DE_ES_GA_PSO_ParamILS_RandomSearch            BO 0.972529 1.344293 0.020833  6.000000
+5                                    SMAC          SMAC 0.999268 1.173190 0.020833  4.000000
+6                                UQGuided      UQGuided 1.046522 1.621161 0.020833  8.000000
+7                               Hyperband     Hyperband 1.111447 1.482479 0.040568  3.929688
+8                                    BOHB          BOHB 1.111459 1.482470 0.040934  3.929688
+9                                    DEHB          DEHB 1.131223 1.509057 0.041667  4.000000
+10                                   HEBO          HEBO 1.287357 1.606733 0.020833  6.000000
+11                                     SA            SA 1.389946 1.784667 0.020833  8.166667
+12                                   HABO          HABO 2.307285 4.138474 0.029851 19.000000
+
+Scott-Knott result:
+
+Groups:
+                            ACO_irace                                 CMAES 
+                                    1                                     1 
+                                  GGA                          HillClimbing 
+                                    1                                     1 
+BO_DE_ES_GA_PSO_ParamILS_RandomSearch                                  SMAC 
+                                    2                                     2 
+                             UQGuided                             Hyperband 
+                                    2                                     2 
+                                 BOHB                                  DEHB 
+                                    2                                     2 
+                                 HEBO                                    SA 
+                                    2                                     3 
+                                 HABO 
+                                    3 

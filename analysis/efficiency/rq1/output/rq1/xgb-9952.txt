@@ -1,0 +1,58 @@
+Problem: xgb-9952
+
+Optimizer merge mapping:
+ATConf → ATConf
+BOCA → BOCA
+BOHB → BOHB_Hyperband
+BestConfig → BestConfig
+ConEx → ConEx_FLASH
+DEHB → DEHB
+FLASH → ConEx_FLASH
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+Hyperband → BOHB_Hyperband
+OtterTune → OtterTune
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+ResTune → ResTune
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+        optimizer_name   optimizer_name      mean       std      min       max
+0      PromiseTune  PromiseTune  0.722968  0.882220 0.025974  2.000000
+1             BOCA         BOCA  0.918664  0.930047 0.028571  3.000000
+2      ConEx_FLASH        ConEx  1.009302  1.327917 0.028571  6.000000
+3         ParamILS     ParamILS  1.009800  1.327603 0.028571  6.000000
+4        OtterTune    OtterTune  1.012489  1.327168 0.028571  6.000000
+5           ATConf       ATConf  1.012540  1.327991 0.028571  6.000000
+6              GGA          GGA  1.086220  1.338540 0.025974  5.000000
+7             SMAC         SMAC  1.090833  1.437774 0.025974  5.000000
+8         UQGuided     UQGuided  1.263816  1.761170 0.028571  9.000000
+9          Tuneful      Tuneful  1.295524  1.576512 0.025974  5.000000
+10           irace        irace  1.308081  1.667727 0.025974  6.000000
+11            HEBO         HEBO  1.337014  2.261784 0.028571 11.000000
+12      BestConfig   BestConfig  1.398986  1.887607 0.025974  7.000000
+13         ResTune      ResTune  1.406826  2.040997 0.025974  7.000000
+14  BOHB_Hyperband         BOHB  1.444853  1.763116 0.051909  3.997000
+15            DEHB         DEHB  1.447563  1.760449 0.051948  4.000000
+16        ROBOTune     ROBOTune  1.476055  2.140372 0.025974  9.000000
+17            HABO         HABO  3.688009  4.690051 0.025974 15.000000
+18            SWAY         SWAY 10.703299 21.909687 0.027778 70.000000
+
+Scott-Knott result:
+
+Groups:
+   PromiseTune           BOCA    ConEx_FLASH       ParamILS      OtterTune 
+             1              2              2              2              2 
+        ATConf            GGA           SMAC       UQGuided        Tuneful 
+             2              2              2              2              2 
+         irace           HEBO     BestConfig        ResTune BOHB_Hyperband 
+             2              2              2              2              2 
+          DEHB       ROBOTune           HABO           SWAY 
+             2              2              3              3 

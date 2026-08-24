@@ -1,0 +1,57 @@
+Problem: xgboost-CNAE9
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO_ES
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → BO_ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min       max
+0            PSO           PSO 1.269059 1.344603 0.058824  5.000000
+1             DE            DE 1.273821 1.343084 0.058824  5.000000
+2          BO_ES            BO 1.276202 1.342514 0.058824  5.000000
+3       ParamILS      ParamILS 1.280964 1.341754 0.058824  5.000000
+4             GA            GA 1.288107 1.341564 0.058824  5.000000
+5   RandomSearch  RandomSearch 1.300012 1.343780 0.058824  5.000000
+6           BOHB          BOHB 1.457262 1.592698 0.037736  8.000000
+7          CMAES         CMAES 1.512010 1.835524 0.029412  8.500000
+8           HEBO          HEBO 1.547533 1.647296 0.029412  6.500000
+9      Hyperband     Hyperband 1.579124 1.734099 0.037736  8.000000
+10          SMAC          SMAC 1.644015 2.163794 0.073529 10.500000
+11          DEHB          DEHB 1.814721 3.163166 0.029412 16.000000
+12      UQGuided      UQGuided 2.062166 4.095934 0.058824 22.500000
+13           GGA           GGA 2.117603 3.337031 0.044118 17.000000
+14         irace         irace 2.598678 2.816607 0.058824 12.500000
+15           ACO           ACO 2.772698 3.598391 0.058824 17.333333
+16          HABO          HABO 3.180897 7.420667 0.019608 30.000000
+17  HillClimbing  HillClimbing 3.198809 4.326795 0.127451 17.500000
+18            SA            SA 4.949014 6.565360 0.142857 31.000000
+
+Scott-Knott result:
+
+Groups:
+         PSO           DE        BO_ES     ParamILS           GA RandomSearch 
+           1            1            1            1            2            2 
+        BOHB        CMAES         HEBO    Hyperband         SMAC         DEHB 
+           2            2            2            2            2            2 
+    UQGuided          GGA        irace          ACO         HABO HillClimbing 
+           2            2            2            3            3            3 
+          SA 
+           4 

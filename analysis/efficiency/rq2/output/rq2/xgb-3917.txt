@@ -1,0 +1,58 @@
+Problem: xgb-3917
+
+Optimizer merge mapping:
+ACO → ACO
+BO → BO
+BOHB → BOHB
+CMAES → CMAES
+DE → DE
+DEHB → DEHB
+ES → ES
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+PSO → PSO
+ParamILS → ParamILS
+RandomSearch → RandomSearch
+SA → SA
+SMAC → SMAC
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+      optimizer_name    optimizer_name     mean      std      min       max
+0             BO            BO 1.095483 1.296777 0.016260  6.000000
+1             GA            GA 1.104732 1.289852 0.016260  6.000000
+2             ES            ES 1.105572 1.289319 0.016260  6.000000
+3   RandomSearch  RandomSearch 1.106413 1.288803 0.016260  6.000000
+4       ParamILS      ParamILS 1.107254 1.288302 0.016260  6.000000
+5            PSO           PSO 1.110617 1.286464 0.016260  6.000000
+6             DE            DE 1.119866 1.282761 0.016260  6.000000
+7           SMAC          SMAC 1.163275 1.098511 0.024390  4.000000
+8          CMAES         CMAES 1.167384 1.688315 0.048780  9.000000
+9       UQGuided      UQGuided 1.195262 1.558477 0.016260  8.000000
+10           ACO           ACO 1.315052 1.322024 0.032787  5.000000
+11         irace         irace 1.319033 1.337794 0.032787  5.000000
+12  HillClimbing  HillClimbing 1.347677 2.064326 0.024390 11.000000
+13           GGA           GGA 1.451068 1.883716 0.048780  9.000000
+14     Hyperband     Hyperband 1.514956 1.488133 0.032496  3.997000
+15          BOHB          BOHB 1.518602 1.487308 0.032496  3.997000
+16          DEHB          DEHB 1.620747 1.686920 0.054803  6.555556
+17          HEBO          HEBO 1.654863 2.324164 0.032520  9.000000
+18            SA            SA 2.011353 5.224723 0.050446 29.000000
+19          HABO          HABO 2.248880 3.449957 0.029412 17.000000
+
+Scott-Knott result:
+
+Groups:
+          BO           GA           ES RandomSearch     ParamILS          PSO 
+           1            1            1            1            2            2 
+          DE         SMAC        CMAES     UQGuided          ACO        irace 
+           2            2            2            2            2            2 
+HillClimbing          GGA    Hyperband         BOHB         DEHB         HEBO 
+           3            3            3            4            4            4 
+          SA         HABO 
+           4            4 

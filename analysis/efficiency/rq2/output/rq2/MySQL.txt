@@ -1,0 +1,60 @@
+Problem: MySQL
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+ES → ES
+FLASH → FLASH
+GA → GA
+HillClimbing → HillClimbing
+OtterTune → OtterTune
+PSO → PSO
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → RandomSearch
+ResTune → ResTune
+SA → SA
+SWAY → SWAY
+Tuneful → Tuneful
+
+Statistics:
+      optimizer_name    optimizer_name     mean       std      min       max
+0         ATConf        ATConf 0.977526  1.674760 0.038674  8.666667
+1      OtterTune     OtterTune 0.981204  1.433516 0.037037  7.333333
+2             ES            ES 1.054939  1.418342 0.103448  7.666667
+3          FLASH         FLASH 1.279850  2.888702 0.103448 16.333333
+4             GA            GA 1.300847  1.629091 0.103448  7.666667
+5            PSO           PSO 1.397562  3.566036 0.070588 20.000000
+6          ConEx         ConEx 1.403381  3.036095 0.103448 17.000000
+7   RandomSearch  RandomSearch 1.437789  3.051920 0.103448 17.000000
+8   HillClimbing  HillClimbing 1.708249  3.136830 0.031746 13.500000
+9             BO            BO 1.920777  4.142977 0.103448 23.333333
+10          SWAY          SWAY 1.945631  4.000509 0.022727 17.500000
+11   PromiseTune   PromiseTune 2.006670  4.387877 0.034091 20.666667
+12         CMAES         CMAES 2.195847  3.443544 0.015873 13.000000
+13       Tuneful       Tuneful 2.268674  4.665313 0.041176 22.000000
+14            DE            DE 2.360685  7.424949 0.099548 41.333333
+15            SA            SA 2.397582  5.706347 0.066298 28.000000
+16          BOCA          BOCA 2.460613  6.987307 0.079365 38.666667
+17           ACO           ACO 2.497272  4.933889 0.034091 22.000000
+18    BestConfig    BestConfig 2.931775  5.118615 0.057692 24.000000
+19      ROBOTune      ROBOTune 4.598621  9.427023 0.056818 43.500000
+20       ResTune       ResTune 7.194376 18.172997 0.010582 94.000000
+
+Scott-Knott result:
+
+Groups:
+      ATConf    OtterTune           ES        FLASH           GA          PSO 
+           1            1            1            1            2            2 
+       ConEx RandomSearch HillClimbing           BO         SWAY  PromiseTune 
+           2            2            2            2            2            2 
+       CMAES      Tuneful           DE           SA         BOCA          ACO 
+           2            2            2            2            3            4 
+  BestConfig     ROBOTune      ResTune 
+           4            5            5 

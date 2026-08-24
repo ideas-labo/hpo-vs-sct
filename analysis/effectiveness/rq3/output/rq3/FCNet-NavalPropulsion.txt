@@ -1,0 +1,90 @@
+Problem: FCNet-NavalPropulsion
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig_RandomSearch
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES_HEBO
+FLASH → FLASH
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → ES_HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → BestConfig_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+                 optimizer_name    optimizer_name     mean      std      min      max
+0                   ES_HEBO            ES 0.000029 0.000000 0.000029 0.000029
+1                      DEHB          DEHB 0.000030 0.000002 0.000029 0.000034
+2                       PSO           PSO 0.000031 0.000002 0.000029 0.000034
+3                      SMAC          SMAC 0.000031 0.000005 0.000029 0.000049
+4                     irace         irace 0.000031 0.000002 0.000029 0.000036
+5                     FLASH         FLASH 0.000032 0.000007 0.000029 0.000067
+6                 OtterTune     OtterTune 0.000032 0.000003 0.000029 0.000040
+7                        GA            GA 0.000034 0.000002 0.000029 0.000038
+8                     ConEx         ConEx 0.000035 0.000003 0.000029 0.000039
+9                  ROBOTune      ROBOTune 0.000035 0.000003 0.000029 0.000043
+10                   ATConf        ATConf 0.000037 0.000004 0.000029 0.000048
+11                    CMAES         CMAES 0.000037 0.000010 0.000029 0.000077
+12                 ParamILS      ParamILS 0.000043 0.000016 0.000029 0.000086
+13                 UQGuided      UQGuided 0.000044 0.000010 0.000029 0.000068
+14                      GGA           GGA 0.000051 0.000015 0.000033 0.000080
+15                     SWAY          SWAY 0.000052 0.000018 0.000029 0.000104
+16                     BOHB          BOHB 0.000054 0.000019 0.000035 0.000101
+17  BestConfig_RandomSearch    BestConfig 0.000054 0.000022 0.000032 0.000120
+18              PromiseTune   PromiseTune 0.000055 0.000018 0.000036 0.000106
+19             HillClimbing  HillClimbing 0.000056 0.000103 0.000029 0.000597
+20                     BOCA          BOCA 0.000057 0.000026 0.000034 0.000161
+21                Hyperband     Hyperband 0.000058 0.000025 0.000032 0.000118
+22                       SA            SA 0.000059 0.000022 0.000029 0.000112
+23                       DE            DE 0.000062 0.000021 0.000033 0.000110
+24                     HABO          HABO 0.000071 0.000037 0.000034 0.000197
+25                       BO            BO 0.000194 0.000172 0.000033 0.000719
+26                  ResTune       ResTune 0.000201 0.000163 0.000029 0.000560
+27                  Tuneful       Tuneful 0.000342 0.000179 0.000029 0.000615
+28                      ACO           ACO 0.000368 0.001211 0.000033 0.006688
+
+Scott-Knott result:
+
+Groups:
+                ES_HEBO                    DEHB                     PSO 
+                      1                       1                       2 
+                   SMAC                   irace                   FLASH 
+                      3                       4                       5 
+              OtterTune                      GA                   ConEx 
+                      6                       7                       8 
+               ROBOTune                  ATConf                   CMAES 
+                      8                       8                       9 
+               ParamILS                UQGuided                     GGA 
+                     10                      11                      12 
+                   SWAY                    BOHB BestConfig_RandomSearch 
+                     13                      13                      13 
+            PromiseTune            HillClimbing                    BOCA 
+                     13                      14                      14 
+              Hyperband                      SA                      DE 
+                     14                      14                      15 
+                   HABO                      BO                 ResTune 
+                     16                      17                      18 
+                Tuneful                     ACO 
+                     18                      19 

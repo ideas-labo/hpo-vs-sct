@@ -1,0 +1,87 @@
+Problem: nn-146818
+
+Optimizer merge mapping:
+ACO → ACO
+ATConf → ATConf
+BO → BO
+BOCA → BOCA
+BOHB → BOHB
+BestConfig → BestConfig
+CMAES → CMAES
+ConEx → ConEx
+DE → DE
+DEHB → DEHB
+ES → ES
+FLASH → FLASH_RandomSearch
+GA → GA
+GGA → GGA
+HABO → HABO
+HEBO → HEBO
+HillClimbing → HillClimbing
+Hyperband → Hyperband
+OtterTune → OtterTune
+PSO → PSO
+ParamILS → ParamILS
+PromiseTune → PromiseTune
+ROBOTune → ROBOTune
+RandomSearch → FLASH_RandomSearch
+ResTune → ResTune
+SA → SA
+SMAC → SMAC
+SWAY → SWAY
+Tuneful → Tuneful
+UQGuided → UQGuided
+irace → irace
+
+Statistics:
+            optimizer_name    optimizer_name     mean       std      min       max
+0          PromiseTune   PromiseTune 0.498488  0.778332 0.037975  3.000000
+1               ATConf        ATConf 0.635109  0.891684 0.025316  4.000000
+2            OtterTune     OtterTune 0.637103  0.872477 0.025316  4.000000
+3                 SMAC          SMAC 0.643274  0.836889 0.025316  4.000000
+4                 HABO          HABO 0.654543  0.946668 0.028986  4.600000
+5                   ES            ES 0.664823  0.886230 0.025316  4.000000
+6                ConEx         ConEx 0.672553  0.880818 0.025316  4.000000
+7   FLASH_RandomSearch         FLASH 0.677830  0.881048 0.025316  4.000000
+8                  PSO           PSO 0.686860  0.904884 0.025316  4.000000
+9              ResTune       ResTune 0.694534  1.112314 0.022222  6.000000
+10                  GA            GA 0.715052  0.933685 0.025316  4.000000
+11                HEBO          HEBO 0.725587  0.880300 0.028986  4.000000
+12            ParamILS      ParamILS 0.727786  0.995700 0.025316  4.000000
+13                  DE            DE 0.733199  0.957146 0.025316  4.000000
+14                BOCA          BOCA 0.754144  0.903478 0.025316  4.000000
+15               CMAES         CMAES 0.798225  1.529762 0.028986  7.000000
+16            ROBOTune      ROBOTune 0.913752  1.362013 0.028986  7.000000
+17                  BO            BO 0.933806  1.870457 0.025316  9.666667
+18                 GGA           GGA 0.963467  2.094200 0.030769 11.000000
+19            UQGuided      UQGuided 0.999116  1.254002 0.025316  4.000000
+20               irace         irace 1.096437  2.156886 0.052769 11.000000
+21             Tuneful       Tuneful 1.116445  2.933319 0.025316 15.000000
+22          BestConfig    BestConfig 1.160133  1.666327 0.054054  7.000000
+23                 ACO           ACO 1.280853  2.722392 0.052769 14.000000
+24        HillClimbing  HillClimbing 1.306757  3.294017 0.043478 18.000000
+25                DEHB          DEHB 1.630671  3.354571 0.072464 15.518519
+26                BOHB          BOHB 1.819956  3.316640 0.071748 15.000000
+27                  SA            SA 3.091649 10.994454 0.052769 60.000000
+28           Hyperband     Hyperband 3.111051  9.727098 0.072464 51.975309
+29                SWAY          SWAY 4.426866 17.030044 0.111111 94.000000
+
+Scott-Knott result:
+
+Groups:
+       PromiseTune             ATConf          OtterTune               SMAC 
+                 1                  1                  2                  2 
+              HABO                 ES              ConEx FLASH_RandomSearch 
+                 2                  2                  2                  3 
+               PSO            ResTune                 GA               HEBO 
+                 3                  3                  3                  3 
+          ParamILS                 DE               BOCA              CMAES 
+                 3                  3                  3                  3 
+          ROBOTune                 BO                GGA           UQGuided 
+                 3                  3                  3                  3 
+             irace            Tuneful         BestConfig                ACO 
+                 3                  3                  3                  3 
+      HillClimbing               DEHB               BOHB                 SA 
+                 3                  4                  4                  5 
+         Hyperband               SWAY 
+                 5                  5 
